@@ -1,16 +1,16 @@
 #include <iostream>
 using namespace std;
 
-// n is the length of arr
-void selectionsort(int arr[], int n) {
-  for (int i = 0; i < n - 1; i++) {
-    int min = i;
-    for (int j = i + 1; j < n; j++) {
-      if (arr[j] < arr[min]) {
-        min = j;
-      }
+void sort(int arr[], int n) {
+  int temp, j;
+  for (int i = 1; i < n; i++) {
+    temp = arr[i];
+    j = i - 1;
+    while (j >= 0 && arr[j] > temp) {
+      arr[j + 1] = arr[j];
+      j--;
     }
-    swap(arr[min], arr[i]);
+    arr[j + 1] = temp;
   }
 }
 
@@ -22,7 +22,7 @@ int main() {
     cout << "arr[" << i << "] = ";
     cin >> arr[i];
   }
-  selectionsort(arr, n);
+  sort(arr, n);
   for (int i = 0; i < n; i++) {
     cout << arr[i] << " ";
   }

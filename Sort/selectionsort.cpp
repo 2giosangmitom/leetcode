@@ -1,20 +1,15 @@
 #include <iostream>
 using namespace std;
 
-// n is the length of the arr
-void bubbleSort(int arr[], int n) {
-  bool haveSwap = false;
+void selectionsort(int arr[], int n) {
   for (int i = 0; i < n - 1; i++) {
-    haveSwap = false;
-    for (int j = 0; j < n - i - 1; j++) {
-      if (arr[j] > arr[j + 1]) {
-        swap(arr[j], arr[j + 1]);
-        haveSwap = true;
+    int min = i;
+    for (int j = i + 1; j < n; j++) {
+      if (arr[j] < arr[min]) {
+        min = j;
       }
     }
-    if (haveSwap == false) {
-      break;
-    }
+    swap(arr[min], arr[i]);
   }
 }
 
@@ -26,9 +21,8 @@ int main() {
     cout << "arr[" << i << "] = ";
     cin >> arr[i];
   }
-  bubbleSort(arr, n);
+  selectionsort(arr, n);
   for (int i = 0; i < n; i++) {
     cout << arr[i] << " ";
   }
-  return 0;
 }
