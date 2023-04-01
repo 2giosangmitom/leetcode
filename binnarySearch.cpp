@@ -18,7 +18,7 @@ int binarySearch(int arr[], int left, int right, int x) {
 }
 
 int main() {
-  int n;
+  int n, target;
   cout << "Length of arr = ";
   cin >> n;
   int arr[n];
@@ -26,7 +26,6 @@ int main() {
     cout << "arr[" << i << "] = ";
     cin >> arr[i];
   }
-  int target;
   cout << "Search: ";
   cin >> target;
   int result = binarySearch(arr, 0, n - 1, target);
