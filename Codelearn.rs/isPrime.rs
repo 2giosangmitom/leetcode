@@ -23,7 +23,7 @@ fn is_prime(n: u32) -> bool {
 
 fn main() {
     let mut n = String::new();
-    print!("n = {}", n);
+    print!("n = ");
     io::stdout().flush().unwrap();
     io::stdin().read_line(&mut n).expect("Failed to read line!");
     let n: u32 = n.trim().parse().expect("n entered wasn't a number!");
