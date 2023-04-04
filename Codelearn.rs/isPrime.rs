@@ -1,10 +1,8 @@
-// https://codelearn.io/learning/thuat-toan-can-ban/3831
 use std::io;
 use std::io::Write;
 
 fn is_prime(n: u32) -> bool {
-    let mut result: bool;
-    result = true;
+    let mut result = true;
     if n < 2 {
         result = false;
     }
