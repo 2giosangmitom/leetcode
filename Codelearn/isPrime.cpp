@@ -1,21 +1,18 @@
 // https://codelearn.io/learning/thuat-toan-can-ban/3831
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 bool isPrime(int n) {
-  if (n < 2) {
+  if (n < 2)
     return false;
-  }
-  if (n % 2 == 0) {
+  if (n % 2 == 0)
     return false;
-  }
-  if (n == 2) {
+  if (n == 2)
     return true;
-  }
-  for (int i = 3; i < n / 2; i += 2) {
-    if (n % i == 0) {
+  for (int i = 3; i < sqrt(n); i += 2) {
+    if (n % i == 0)
       return false;
-    }
   }
   return true;
 }
