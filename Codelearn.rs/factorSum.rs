@@ -1,4 +1,4 @@
-// https://codelearn.io/learning/thuat-toan-can-ban/3831
+// https://codelearn.io/learning/thuat-toan-can-ban/3811
 use std::io;
 use std::io::Write;
 
