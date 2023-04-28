@@ -4,7 +4,7 @@ using namespace std;
 
 int solve(int n) {
   int k = 2, sum = 0;
-  while (n > 1) {
+  while (n != 1) {
     while (n % k == 0) {
       sum += k;
       n /= k;
@@ -15,15 +15,15 @@ int solve(int n) {
 }
 
 int factorSum(int n) {
-  while (n != solve(n)) {
+  while (solve(n) != n) {
     n = solve(n);
   }
   return n;
 }
 
 int main() {
-  cout << "n = ";
   int n;
+  cout << "n = ";
   cin >> n;
   cout << factorSum(n);
 }
