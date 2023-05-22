@@ -50,11 +50,9 @@ void mergeSort(int arr[], int left, int right) {
 
 int main() {
   int n;
-  int arr[1000];
-  do {
-    cout << "n = ";
-    cin >> n;
-  } while (n <= 0);
+  cout << "n = ";
+  cin >> n;
+  int arr[n];
   for (int i = 0; i < n; i++) {
     cout << "arr[" << i << "] = ";
     cin >> arr[i];

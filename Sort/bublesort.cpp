@@ -17,9 +17,10 @@ void bubbleSort(int arr[], int n) {
 }
 
 int main() {
-  int n, arr[1000];
+  int n;
   cout << "Length of arr = ";
   cin >> n;
+  int arr[n];
   for (int i = 0; i < n; i++) {
     cout << "arr[" << i << "] = ";
     cin >> arr[i];
