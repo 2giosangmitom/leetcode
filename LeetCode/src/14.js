@@ -14,4 +14,3 @@ const longestCommonPrefix = function (strs) {
 	}
 	return prefix;
 };
-
