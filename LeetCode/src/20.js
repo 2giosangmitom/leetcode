@@ -1,21 +1,22 @@
 // Valid Parentheses
 const isValid = function (s) {
-	const openers = new Set(["{", "[", "("]);
-	const closers = new Set(["}", "]", ")"]);
-	const map = new Map();
-
-	map.set("{", "}");
-	map.set("(", ")");
-	map.set("[", "]");
-
+	if (s.length % 2 !== 0) {
+		return false;
+	}
 	const stack = [];
-
-	for (const bracket of s) {
-		if (openers.has(bracket)) {
-			stack.push(bracket);
-		} else if (closers.has(bracket)) {
-			const fromStack = stack.pop();
-			if (map.get(fromStack) !== bracket) {
+	for (char of s) {
+		if (char === "(" || char === "{" || char === "[") {
+			stack.push(char);
+		} else {
+			if (stack.length === 0) {
+				return false;
+			} else if (char === ")" && stack[stack.length - 1] === "(") {
+				stack.pop();
+			} else if (char === "}" && stack[stack.length - 1] === "{") {
+				stack.pop();
+			} else if (char === "]" && stack[stack.length - 1] === "[") {
+				stack.pop();
+			} else {
 				return false;
 			}
 		}
