@@ -10,5 +10,3 @@ const myPow = function (x, n) {
 	}
 	return n < 0 ? 1 / result : result;
 };
-
-console.log(myPow(2, 2));
