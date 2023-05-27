@@ -8,7 +8,7 @@ const search = function (nums, target) {
 			return middle;
 		} else if (nums[middle] < target) {
 			left = middle + 1;
-		} else if (nums[middle] > target) {
+		} else {
 			right = middle - 1;
 		}
 	}
