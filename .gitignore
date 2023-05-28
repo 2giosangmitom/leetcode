@@ -1,5 +1,5 @@
 a.out
 .vscode
-out
+bin
 package-lock.json
 node_modules
