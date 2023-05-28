@@ -1,3 +1,5 @@
 a.out
 .vscode
 out
+package-lock.json
+node_modules
