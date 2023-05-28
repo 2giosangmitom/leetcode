@@ -1,3 +1,4 @@
+// Unique Email Addresses
 const numUniqueEmails = function (emails) {
 	const uniqueEmails = [];
 	emails.forEach((email) => {
