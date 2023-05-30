@@ -14,7 +14,7 @@ impl Solution {
                 'C' => number = 100,
                 'D' => number = 500,
                 'M' => number = 1000,
-                _ => break,
+                _ => panic!("Invalid roman number"),
             }
             if number * 4 < result {
                 result -= number;
@@ -22,6 +22,6 @@ impl Solution {
                 result += number;
             }
         }
-        return result;
+        result
     }
 }

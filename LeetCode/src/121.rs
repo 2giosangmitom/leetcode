@@ -13,6 +13,6 @@ impl Solution {
                 buy_day = sell_day;
             }
         }
-        return max_profit;
+        max_profit
     }
 }
