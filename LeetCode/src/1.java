@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 class Solution {
   public int[] twoSum(int[] nums, int target) {
-    var Hash = new HashMap<Integer, Integer>();
+    var hashMap = new HashMap<Integer, Integer>();
     for (var i = 0; i < nums.length; ++i) {
       var needNumber = target - nums[i];
-      if (Hash.containsKey(needNumber)) {
-        return new int[] {Hash.get(needNumber), i};
+      if (hashMap.containsKey(needNumber)) {
+        return new int[] {hashMap.get(needNumber), i};
       }
-      Hash.put(nums[i], i);
+      hashMap.put(nums[i], i);
     }
     return new int[] {-1};
   }
