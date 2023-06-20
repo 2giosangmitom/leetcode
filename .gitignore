@@ -3,3 +3,4 @@ a.out
 bin
 package-lock.json
 node_modules
+.php-cs-fixer.cache
