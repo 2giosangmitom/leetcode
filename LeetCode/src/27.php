@@ -1,6 +1,5 @@
 <?php
 
-// Remove Element
 class Solution
 {
   function removeElement(&$nums, $val)

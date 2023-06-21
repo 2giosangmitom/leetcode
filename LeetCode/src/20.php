@@ -1,6 +1,5 @@
 <?php
 
-// Valid Parentheses
 class Solution
 {
   function isValid($s)

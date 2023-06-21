@@ -1,6 +1,5 @@
 <?php
 
-// Longest Common Prefix
 class Solution
 {
   function longestCommonPrefix($strs)

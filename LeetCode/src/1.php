@@ -1,6 +1,5 @@
 <?php
 
-// Two Sum
 class Solution
 {
     public function twoSum($nums, $target)

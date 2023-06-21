@@ -1,4 +1,3 @@
-// Best Time to Buy and Sell Stock
 use std::cmp;
 
 impl Solution {

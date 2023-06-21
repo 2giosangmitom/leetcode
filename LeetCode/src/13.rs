@@ -1,4 +1,3 @@
-// Roman to Integer
 struct Solution;
 
 impl Solution {

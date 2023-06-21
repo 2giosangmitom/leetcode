@@ -1,4 +1,3 @@
-// Design Parking System
 struct ParkingSystem {
     big: i32,
     medium: i32,
