@@ -9,8 +9,9 @@ class Solution
       return false;
     }
     $stack = [];
+    $open = ["(", "{", "["];
     for ($i = 0; $i < strlen($s); ++$i) {
-      if ($s[$i] === "(" or $s[$i] === "{" or $s[$i] === "[") {
+      if (in_array($s[$i], $open)) {
         array_push($stack, $s[$i]);
       } else {
         if ($s[$i] === ")" and end($stack) === "(") {
