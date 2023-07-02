@@ -21,6 +21,6 @@ class Solution {
     int[] nums2 = {3, 2, 4};
     System.out.println(Arrays.toString(s.twoSum(nums2, 6))); // TEST: => [1, 2]
     int[] nums3 = {3, 2};
-    System.out.println(Arrays.toString(s.twoSum(nums3, 6))); // TEST: => [0, 1]
+    System.out.println(Arrays.toString(s.twoSum(nums3, 6))); // TEST: => [-1]
   }
 }
