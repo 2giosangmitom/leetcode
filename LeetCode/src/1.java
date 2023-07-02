@@ -11,7 +11,7 @@ class Solution {
       }
       hashMap.put(nums[i], i);
     }
-    return new int[] { -1 };
+    return new int[-1];
   }
 
   public static void main(String[] args) {
