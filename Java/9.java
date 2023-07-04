@@ -18,7 +18,7 @@ class Solution {
   }
 
   public static void main(String[] args) {
-    var test = new Solution();
+    Solution test = new Solution();
     System.out.println(test.isPalindrome(121)); // TEST: => true
     System.out.println(test.isPalindrome(-121)); // TEST: => false
     System.out.println(test.isPalindrome(10)); // TEST: => false

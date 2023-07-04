@@ -11,7 +11,7 @@ class Solution {
   }
 
   public static void main(String[] args) {
-    var test = new Solution();
+    Solution test = new Solution();
     String[] strs = {"flower", "flow", "flight"}; // TEST: => "fl"
     System.out.println(test.longestCommonPrefix(strs));
   }

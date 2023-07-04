@@ -3,9 +3,9 @@ import java.util.HashMap;
 
 class Solution {
   public int[] twoSum(int[] nums, int target) {
-    var hashMap = new HashMap<Integer, Integer>();
+    HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();
     for (var i = 0; i < nums.length; ++i) {
-      var needNumber = target - nums[i];
+      int needNumber = target - nums[i];
       if (hashMap.containsKey(needNumber)) {
         return new int[] {hashMap.get(needNumber), i};
       }
@@ -15,7 +15,7 @@ class Solution {
   }
 
   public static void main(String[] args) {
-    var s = new Solution();
+    Solution s = new Solution();
     int[] nums = {2, 7, 11, 15};
     System.out.println(Arrays.toString(s.twoSum(nums, 9))); // TEST: => [0, 1]
     int[] nums2 = {3, 2, 4};
