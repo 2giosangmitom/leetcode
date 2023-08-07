@@ -1,6 +1,2 @@
-a.out
-.vscode
-bin
-package-lock.json
 node_modules
-.php-cs-fixer.cache
+coverage
