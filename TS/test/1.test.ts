@@ -1,24 +1,24 @@
 import twoSum from "../src/1";
 import { describe, expect, test } from "@jest/globals";
 
+interface tt {
+  nums: number[];
+  target: number;
+  expect: number[];
+}
+
+const cases: tt[] = [
+  { nums: [2, 7, 11, 15], target: 9, expect: [0, 1] },
+  { nums: [3, 2, 4], target: 6, expect: [1, 2] },
+  { nums: [3, 3], target: 6, expect: [0, 1] },
+  { nums: [2, 3, 4, 1, 25, 8], target: 30, expect: [-1] },
+];
+
 describe("Two Sum", () => {
-  test("case 1", () => {
-    const got = twoSum([2, 7, 11, 15], 9);
-    expect(got).toEqual([0, 1]);
-  });
-
-  test("case 2", () => {
-    const got = twoSum([3, 2, 4], 6);
-    expect(got).toEqual([1, 2]);
-  });
-
-  test("case 3", () => {
-    const got = twoSum([3, 3], 6);
-    expect(got).toEqual([0, 1]);
-  });
-
-  test("case 4", () => {
-    const got = twoSum([2, 3, 4, 1, 25, 8], 30);
-    expect(got).toEqual([-1]);
-  });
+  for (const [i, t] of cases.entries()) {
+    test(`case ${i}`, () => {
+      const got = twoSum(t.nums, t.target);
+      expect(got).toEqual(t.expect);
+    });
+  }
 });
