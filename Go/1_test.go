@@ -9,8 +9,8 @@ func TestTwoSum(t *testing.T) {
 	tt := []struct {
 		name   string
 		nums   []int
-		target int
 		want   []int
+		target int
 	}{
 		{name: "case 1", nums: []int{2, 7, 11, 15}, target: 9, want: []int{0, 1}},
 		{name: "case 2", nums: []int{3, 2, 4}, target: 6, want: []int{1, 2}},
