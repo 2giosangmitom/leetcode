@@ -1,10 +1,12 @@
 mod palindrome_num;
+mod roman2int;
 mod two_sum;
 
 #[cfg(test)]
 mod tests {
     use crate::{
         palindrome_num::{self, PalindromeNumber},
+        roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
     };
 
@@ -41,11 +43,31 @@ mod tests {
         let cases: Vec<Tt> = vec![
             Tt { num: -10, want: false },
             Tt { num: 5, want: true },
-            Tt { num: 121, want: true }
+            Tt { num: 121, want: true },
         ];
 
         for t in cases.iter() {
             let result: bool = palindrome_num::Solution::is_palindrome(t.num);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_13() {
+        struct Tt {
+            roman: String,
+            want: i32,
+        }
+
+        #[rustfmt::skip]
+        let cases: Vec<Tt> = vec![
+            Tt { roman: "III".to_string(), want: 3 },
+            Tt { roman: "LVIII".to_string(), want: 58 },
+            Tt { roman: "MCMXCIV".to_string(), want: 1994 },
+        ];
+
+        for t in cases.iter() {
+            let result: i32 = roman2int::Solution::roman_to_int(t.roman.clone());
             assert_eq!(result, t.want);
         }
     }
