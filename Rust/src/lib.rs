@@ -1,3 +1,4 @@
+mod longest_common_prefix;
 mod palindrome_num;
 mod roman2int;
 mod two_sum;
@@ -5,6 +6,7 @@ mod two_sum;
 #[cfg(test)]
 mod tests {
     use crate::{
+        longest_common_prefix::{self, LongestCommonPrefix},
         palindrome_num::{self, PalindromeNumber},
         roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
@@ -68,6 +70,25 @@ mod tests {
 
         for t in cases.iter() {
             let result: i32 = roman2int::Solution::roman_to_int(t.roman.clone());
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_14() {
+        struct Tt {
+            strs: Vec<String>,
+            want: String,
+        }
+
+        #[rustfmt::skip]
+        let cases: Vec<Tt> = vec![
+            Tt { strs: vec!["flower".to_string(), "flow".to_string(), "flight".to_string()], want: "fl".to_string() },
+            Tt { strs: vec!["dog".to_string(), "racecar".to_string(), "car".to_string()], want: "".to_string() },
+        ];
+
+        for t in cases.iter() {
+            let result = longest_common_prefix::Solution::longest_common_prefix(t.strs.clone());
             assert_eq!(result, t.want);
         }
     }
