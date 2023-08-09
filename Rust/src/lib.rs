@@ -2,6 +2,7 @@ mod longest_common_prefix;
 mod palindrome_num;
 mod roman2int;
 mod two_sum;
+mod valid_parentheses;
 
 #[cfg(test)]
 mod tests {
@@ -10,6 +11,7 @@ mod tests {
         palindrome_num::{self, PalindromeNumber},
         roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
+        valid_parentheses::{self, ValidParentheses},
     };
 
     #[test]
@@ -20,12 +22,27 @@ mod tests {
             want: Vec<i32>,
         }
 
-        #[rustfmt::skip]
         let cases: Vec<Tt> = vec![
-            Tt { nums: vec![2, 7, 11, 15], target: 9, want: vec![0, 1] },
-            Tt { nums: vec![3, 2, 4], target: 6, want: vec![1, 2] },
-            Tt { nums: vec![3, 3], target: 6, want: vec![0, 1] },
-            Tt { nums: vec![2, 3, 4, 1, 25, 8], target: 30, want: vec![-1] },
+            Tt {
+                nums: vec![2, 7, 11, 15],
+                target: 9,
+                want: vec![0, 1],
+            },
+            Tt {
+                nums: vec![3, 2, 4],
+                target: 6,
+                want: vec![1, 2],
+            },
+            Tt {
+                nums: vec![3, 3],
+                target: 6,
+                want: vec![0, 1],
+            },
+            Tt {
+                nums: vec![2, 3, 4, 1, 25, 8],
+                target: 30,
+                want: vec![-1],
+            },
         ];
 
         for t in cases.iter() {
@@ -41,7 +58,6 @@ mod tests {
             want: bool,
         }
 
-        #[rustfmt::skip]
         let cases: Vec<Tt> = vec![
             Tt { num: -10, want: false },
             Tt { num: 5, want: true },
@@ -61,11 +77,19 @@ mod tests {
             want: i32,
         }
 
-        #[rustfmt::skip]
         let cases: Vec<Tt> = vec![
-            Tt { roman: "III".to_string(), want: 3 },
-            Tt { roman: "LVIII".to_string(), want: 58 },
-            Tt { roman: "MCMXCIV".to_string(), want: 1994 },
+            Tt {
+                roman: "III".to_string(),
+                want: 3,
+            },
+            Tt {
+                roman: "LVIII".to_string(),
+                want: 58,
+            },
+            Tt {
+                roman: "MCMXCIV".to_string(),
+                want: 1994,
+            },
         ];
 
         for t in cases.iter() {
@@ -81,15 +105,48 @@ mod tests {
             want: String,
         }
 
-        #[rustfmt::skip]
         let cases: Vec<Tt> = vec![
-            Tt { strs: vec!["flower".to_string(), "flow".to_string(), "flight".to_string()], want: "fl".to_string() },
-            Tt { strs: vec!["dog".to_string(), "racecar".to_string(), "car".to_string()], want: "".to_string() },
+            Tt {
+                strs: vec!["flower".to_string(), "flow".to_string(), "flight".to_string()],
+                want: "fl".to_string(),
+            },
+            Tt {
+                strs: vec!["dog".to_string(), "racecar".to_string(), "car".to_string()],
+                want: "".to_string(),
+            },
         ];
 
         for t in cases.iter() {
-            let result = longest_common_prefix::Solution::longest_common_prefix(t.strs.clone());
+            let result: String = longest_common_prefix::Solution::longest_common_prefix(t.strs.clone());
             assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_20() {
+        struct Tt {
+            s: String,
+            want: bool,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                s: "()".to_string(),
+                want: true,
+            },
+            Tt {
+                s: "()[]{}".to_string(),
+                want: true,
+            },
+            Tt {
+                s: "(]".to_string(),
+                want: false,
+            },
+        ];
+
+        for t in cases.iter() {
+            let result = valid_parentheses::Solution::is_valid(t.s.clone());
+            assert_eq!(result, t.want)
         }
     }
 }
