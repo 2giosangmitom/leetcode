@@ -1,4 +1,7 @@
-use std::{collections::HashMap, vec};
+/**
+ * Runtime: 2ms (Beats 82.51%)
+ * Memory: 2.4MB (Beats 40.3%)
+ */
 
 pub struct Solution;
 
@@ -6,6 +9,7 @@ pub trait TwoSum {
     fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32>;
 }
 
+use std::collections::HashMap;
 impl TwoSum for Solution {
     fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut hash_map: HashMap<i32, i32> = HashMap::new();

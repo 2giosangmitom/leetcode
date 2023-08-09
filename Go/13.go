@@ -1,3 +1,8 @@
+/**
+ * Runtime: 3ms (Beats 92.19%)
+ * Memory: 3MB (Beats 14.22%)
+ */
+
 package main
 
 func romanToInt(s string) int {

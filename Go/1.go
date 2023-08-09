@@ -1,3 +1,8 @@
+/**
+ * Runtime: 7ms (Beats 70.84%)
+ * Memory: 4.3MB (Beats 13.87%)
+ */
+
 package main
 
 func twoSum(nums []int, target int) []int {

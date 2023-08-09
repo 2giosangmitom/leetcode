@@ -1,3 +1,8 @@
+/**
+ * Runtime: 4ms (Beats 88.11%)
+ * Memory: 2.1MB (Beats 58.78%)
+ */
+
 pub struct Solution;
 
 pub trait PalindromeNumber {
