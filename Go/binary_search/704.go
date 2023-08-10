@@ -3,7 +3,7 @@
  * Memory: 6.9MB (Beats 71.29%)
  */
 
-package main
+package binarysearch
 
 func search(nums []int, target int) int {
 	left := 0

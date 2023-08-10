@@ -3,7 +3,7 @@
  * Memory: 4.3MB (Beats 13.87%)
  */
 
-package main
+package twosum
 
 func twoSum(nums []int, target int) []int {
 	hashMap := make(map[int]int)

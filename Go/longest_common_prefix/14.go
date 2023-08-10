@@ -3,7 +3,7 @@
  * Memory: 2.4MB (Beats 31.26%)
  */
 
-package main
+package longestcommonprefix
 
 import "strings"
 

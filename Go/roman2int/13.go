@@ -3,7 +3,7 @@
  * Memory: 3MB (Beats 14.22%)
  */
 
-package main
+package roman2int
 
 func romanToInt(s string) int {
 	reverseString := func(str *string) {

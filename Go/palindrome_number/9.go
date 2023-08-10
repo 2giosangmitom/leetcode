@@ -3,7 +3,7 @@
  * Memory: 4.2MB (Beats 99.4%)
  */
 
-package main
+package palindromenumber
 
 func isPalindrome(x int) bool {
 	reverseNumber := func(n int) int {

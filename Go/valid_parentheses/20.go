@@ -3,7 +3,7 @@
  * Memory: 2.2MB (Beats 20.59%)
  */
 
-package main
+package validparentheses
 
 func isValid(s string) bool {
 	stack := []string{}
