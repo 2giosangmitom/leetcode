@@ -1,5 +1,6 @@
 mod binary_search;
 mod longest_common_prefix;
+mod missing_number;
 mod palindrome_num;
 mod roman2int;
 mod two_sum;
@@ -10,6 +11,7 @@ mod tests {
     use crate::{
         binary_search::{self, BinarySearch},
         longest_common_prefix::{self, LongestCommonPrefix},
+        missing_number::{self, MissingNumber},
         palindrome_num::{self, PalindromeNumber},
         roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
@@ -175,6 +177,34 @@ mod tests {
 
         for t in cases.iter() {
             let result = binary_search::Solution::search(t.nums.clone(), t.target);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_268() {
+        struct Tt {
+            nums: Vec<i32>,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                nums: vec![3, 0, 1],
+                want: 2,
+            },
+            Tt {
+                nums: vec![0, 1],
+                want: 2,
+            },
+            Tt {
+                nums: vec![9, 6, 4, 2, 3, 5, 7, 0, 1],
+                want: 8,
+            },
+        ];
+
+        for t in cases.iter() {
+            let result = missing_number::Solution::missing_number(t.nums.clone());
             assert_eq!(result, t.want);
         }
     }
