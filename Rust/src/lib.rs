@@ -1,3 +1,4 @@
+mod binary_search;
 mod longest_common_prefix;
 mod palindrome_num;
 mod roman2int;
@@ -7,6 +8,7 @@ mod valid_parentheses;
 #[cfg(test)]
 mod tests {
     use crate::{
+        binary_search::{self, BinarySearch},
         longest_common_prefix::{self, LongestCommonPrefix},
         palindrome_num::{self, PalindromeNumber},
         roman2int::{self, RomanToInt},
@@ -147,6 +149,33 @@ mod tests {
         for t in cases.iter() {
             let result = valid_parentheses::Solution::is_valid(t.s.clone());
             assert_eq!(result, t.want)
+        }
+    }
+
+    #[test]
+    fn test_704() {
+        struct Tt {
+            nums: Vec<i32>,
+            target: i32,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                nums: vec![-1, 0, 3, 5, 9, 12],
+                target: 9,
+                want: 4,
+            },
+            Tt {
+                nums: vec![-1, 0, 3, 5, 9, 12],
+                target: 2,
+                want: -1,
+            },
+        ];
+
+        for t in cases.iter() {
+            let result = binary_search::Solution::search(t.nums.clone(), t.target);
+            assert_eq!(result, t.want);
         }
     }
 }
