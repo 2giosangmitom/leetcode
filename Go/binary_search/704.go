@@ -21,8 +21,7 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-// NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
-/**
+/** NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
 import "cmp"
 
 func search(nums []int, target int) int {

@@ -1,3 +1,4 @@
+mod best_time2buy_n_sell_stock;
 mod binary_search;
 mod longest_common_prefix;
 mod missing_number;
@@ -9,6 +10,7 @@ mod valid_parentheses;
 #[cfg(test)]
 mod tests {
     use crate::{
+        best_time2buy_n_sell_stock::{self, BestTimeToBuyAndSellStock},
         binary_search::{self, BinarySearch},
         longest_common_prefix::{self, LongestCommonPrefix},
         missing_number::{self, MissingNumber},
@@ -205,6 +207,34 @@ mod tests {
 
         for t in cases.iter() {
             let result = missing_number::Solution::missing_number(t.nums.clone());
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_121() {
+        struct Tt {
+            prices: Vec<i32>,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                prices: vec![7, 1, 5, 3, 6, 4],
+                want: 5,
+            },
+            Tt {
+                prices: vec![7, 6, 4, 3, 1],
+                want: 0,
+            },
+            Tt {
+                prices: vec![2, 1, 4],
+                want: 3,
+            },
+        ];
+
+        for t in cases.iter() {
+            let result = best_time2buy_n_sell_stock::Solution::max_profit(t.prices.clone());
             assert_eq!(result, t.want);
         }
     }
