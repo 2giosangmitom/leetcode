@@ -5,6 +5,7 @@ mod missing_number;
 mod palindrome_num;
 mod roman2int;
 mod two_sum;
+mod unique_email_addresses;
 mod valid_parentheses;
 
 #[cfg(test)]
@@ -17,6 +18,7 @@ mod tests {
         palindrome_num::{self, PalindromeNumber},
         roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
+        unique_email_addresses::{self, UniqueEmailAddresses},
         valid_parentheses::{self, ValidParentheses},
     };
 
@@ -51,8 +53,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result: Vec<i32> = two_sum::Solution::two_sum(t.nums.clone(), t.target);
+        for t in cases.into_iter() {
+            let result: Vec<i32> = two_sum::Solution::two_sum(t.nums, t.target);
             assert_eq!(result, t.want);
         }
     }
@@ -70,7 +72,7 @@ mod tests {
             Tt { num: 121, want: true },
         ];
 
-        for t in cases.iter() {
+        for t in cases.into_iter() {
             let result: bool = palindrome_num::Solution::is_palindrome(t.num);
             assert_eq!(result, t.want);
         }
@@ -98,8 +100,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result: i32 = roman2int::Solution::roman_to_int(t.roman.clone());
+        for t in cases.into_iter() {
+            let result: i32 = roman2int::Solution::roman_to_int(t.roman);
             assert_eq!(result, t.want);
         }
     }
@@ -122,8 +124,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result: String = longest_common_prefix::Solution::longest_common_prefix(t.strs.clone());
+        for t in cases.into_iter() {
+            let result = longest_common_prefix::Solution::longest_common_prefix(t.strs);
             assert_eq!(result, t.want);
         }
     }
@@ -150,8 +152,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result = valid_parentheses::Solution::is_valid(t.s.clone());
+        for t in cases.into_iter() {
+            let result = valid_parentheses::Solution::is_valid(t.s);
             assert_eq!(result, t.want)
         }
     }
@@ -177,8 +179,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result = binary_search::Solution::search(t.nums.clone(), t.target);
+        for t in cases.into_iter() {
+            let result = binary_search::Solution::search(t.nums, t.target);
             assert_eq!(result, t.want);
         }
     }
@@ -205,8 +207,8 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result = missing_number::Solution::missing_number(t.nums.clone());
+        for t in cases.into_iter() {
+            let result = missing_number::Solution::missing_number(t.nums);
             assert_eq!(result, t.want);
         }
     }
@@ -233,8 +235,40 @@ mod tests {
             },
         ];
 
-        for t in cases.iter() {
-            let result = best_time2buy_n_sell_stock::Solution::max_profit(t.prices.clone());
+        for t in cases.into_iter() {
+            let result = best_time2buy_n_sell_stock::Solution::max_profit(t.prices);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_929() {
+        struct Tt {
+            emails: Vec<String>,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                emails: vec![
+                    "test.email+alex@leetcode.com".to_string(),
+                    "test.e.mail+bob.cathy@leetcode.com".to_string(),
+                    "testemail+david@lee.tcode.com".to_string(),
+                ],
+                want: 2,
+            },
+            Tt {
+                emails: vec![
+                    "a@leetcode.com".to_string(),
+                    "b@leetcode.com".to_string(),
+                    "c@leetcode.com".to_string(),
+                ],
+                want: 3,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = unique_email_addresses::Solution::num_unique_emails(t.emails);
             assert_eq!(result, t.want);
         }
     }

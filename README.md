@@ -10,3 +10,4 @@
 | [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Go](./Go/best_time2buy_n_sell_stock/121.go), [Rust](./Rust/src/best_time2buy_n_sell_stock.rs) | Easy       |
 | [268. Missing Number](https://leetcode.com/problems/missing-number/description/)                                   | [Go](./Go/missing_number/268.go), [Rust](./Rust/src/missing_number.rs)                         | Easy       |
 | [704. Binary Search](https://leetcode.com/problems/binary-search/description/)                                     | [Go](./Go/binary_search/704.go), [Rust](./Rust/src/binary_search.rs)                           | Easy       |
+| [929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)                               | [Go](./Go/unique_email_addresses/929.go), [Rust](./Rust/src/unique_email_addresses.rs)         | Easy       |
