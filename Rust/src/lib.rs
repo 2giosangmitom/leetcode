@@ -1,5 +1,6 @@
 mod best_time2buy_n_sell_stock;
 mod binary_search;
+mod len_of_last_word;
 mod longest_common_prefix;
 mod missing_number;
 mod palindrome_num;
@@ -13,6 +14,7 @@ mod tests {
     use crate::{
         best_time2buy_n_sell_stock::{self, BestTimeToBuyAndSellStock},
         binary_search::{self, BinarySearch},
+        len_of_last_word::{self, LenOfLastWord},
         longest_common_prefix::{self, LongestCommonPrefix},
         missing_number::{self, MissingNumber},
         palindrome_num::{self, PalindromeNumber},
@@ -269,6 +271,34 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = unique_email_addresses::Solution::num_unique_emails(t.emails);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_58() {
+        struct Tt {
+            s: String,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                s: "Hello World".to_string(),
+                want: 5,
+            },
+            Tt {
+                s: "   fly me   to   the moon  ".to_string(),
+                want: 4,
+            },
+            Tt {
+                s: "luffy is still joyboy".to_string(),
+                want: 6,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = len_of_last_word::Solution::length_of_last_word(t.s);
             assert_eq!(result, t.want);
         }
     }
