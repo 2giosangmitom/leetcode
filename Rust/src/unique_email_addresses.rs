@@ -16,8 +16,8 @@ impl UniqueEmailAddresses for Solution {
             let part = email.split('@').collect::<Vec<&str>>();
             let mut local_name = part[0].to_string();
             let domain_name = part[1];
-            local_name = local_name.replace(".", "");
-            if local_name.contains("+") {
+            local_name = local_name.replace('.', "");
+            if local_name.contains('+') {
                 local_name = local_name.split('+').collect::<Vec<&str>>()[0].to_string();
             }
             let clean_email = local_name + "@" + domain_name;
