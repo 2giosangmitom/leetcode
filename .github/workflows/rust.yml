@@ -17,4 +17,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run tests
-        run: make testrs
+        run: (cd Rust/ && cargo test --lib)
