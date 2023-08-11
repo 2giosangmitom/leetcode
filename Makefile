@@ -1,5 +1,5 @@
 testgo:
-	(cd Go/ && go test -v -cover ./...)
+	(cd Go/ && go test -cover ./...)
 
 testrs:
 	(cd Rust/ && cargo test --lib)

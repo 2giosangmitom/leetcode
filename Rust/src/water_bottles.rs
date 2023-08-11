@@ -1,0 +1,24 @@
+/**
+ * Runtime: 0ms (Beats 100%)
+ * Memory: 2MB (Beats 33.33%)
+ */
+
+pub struct Solution;
+
+pub trait WaterBottles {
+    fn num_water_bottles(num_bottles: i32, num_exchange: i32) -> i32;
+}
+
+impl WaterBottles for Solution {
+    fn num_water_bottles(mut num_bottles: i32, num_exchange: i32) -> i32 {
+        let mut drank = 0;
+
+        while num_bottles >= num_exchange {
+            let rem = num_bottles % num_exchange;
+            drank += num_bottles - rem;
+            num_bottles = (num_bottles / num_exchange) + rem;
+        }
+
+        drank + num_bottles
+    }
+}

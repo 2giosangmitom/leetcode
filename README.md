@@ -12,3 +12,4 @@
 | [268. Missing Number](https://leetcode.com/problems/missing-number/description/)                                   | [Go](./Go/missing_number/268.go), [Rust](./Rust/src/missing_number.rs)                         | Easy       |
 | [704. Binary Search](https://leetcode.com/problems/binary-search/description/)                                     | [Go](./Go/binary_search/704.go), [Rust](./Rust/src/binary_search.rs)                           | Easy       |
 | [929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)                               | [Go](./Go/unique_email_addresses/929.go), [Rust](./Rust/src/unique_email_addresses.rs)         | Easy       |
+| [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)                                    | [Go](./Go/water_bottles/1518.go), [Rust](./Rust/src/water_bottles.rs)                          | Easy       |

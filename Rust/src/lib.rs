@@ -8,6 +8,7 @@ mod roman2int;
 mod two_sum;
 mod unique_email_addresses;
 mod valid_parentheses;
+mod water_bottles;
 
 #[cfg(test)]
 mod tests {
@@ -22,6 +23,7 @@ mod tests {
         two_sum::{self, TwoSum},
         unique_email_addresses::{self, UniqueEmailAddresses},
         valid_parentheses::{self, ValidParentheses},
+        water_bottles::{self, WaterBottles},
     };
 
     #[test]
@@ -56,7 +58,7 @@ mod tests {
         ];
 
         for t in cases.into_iter() {
-            let result: Vec<i32> = two_sum::Solution::two_sum(t.nums, t.target);
+            let result = two_sum::Solution::two_sum(t.nums, t.target);
             assert_eq!(result, t.want);
         }
     }
@@ -75,7 +77,7 @@ mod tests {
         ];
 
         for t in cases.into_iter() {
-            let result: bool = palindrome_num::Solution::is_palindrome(t.num);
+            let result = palindrome_num::Solution::is_palindrome(t.num);
             assert_eq!(result, t.want);
         }
     }
@@ -299,6 +301,33 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = len_of_last_word::Solution::length_of_last_word(t.s);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_1518() {
+        struct Tt {
+            num_bottles: i32,
+            num_exchange: i32,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                num_bottles: 9,
+                num_exchange: 3,
+                want: 13,
+            },
+            Tt {
+                num_bottles: 15,
+                num_exchange: 4,
+                want: 19,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = water_bottles::Solution::num_water_bottles(t.num_bottles, t.num_exchange);
             assert_eq!(result, t.want);
         }
     }
