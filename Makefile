@@ -3,3 +3,6 @@ testgo:
 
 testrs:
 	(cd Rust/ && cargo test --lib)
+
+testrs2:
+	(cd Rust/ && cargo nextest run)

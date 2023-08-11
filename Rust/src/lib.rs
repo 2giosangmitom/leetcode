@@ -4,6 +4,7 @@ mod len_of_last_word;
 mod longest_common_prefix;
 mod missing_number;
 mod palindrome_num;
+mod parking_system;
 mod roman2int;
 mod two_sum;
 mod unique_email_addresses;
@@ -19,6 +20,7 @@ mod tests {
         longest_common_prefix::{self, LongestCommonPrefix},
         missing_number::{self, MissingNumber},
         palindrome_num::{self, PalindromeNumber},
+        parking_system::{self, DesignParkingSystem},
         roman2int::{self, RomanToInt},
         two_sum::{self, TwoSum},
         unique_email_addresses::{self, UniqueEmailAddresses},
@@ -328,6 +330,44 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = water_bottles::Solution::num_water_bottles(t.num_bottles, t.num_exchange);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_1603() {
+        struct Tt {
+            big: i32,
+            medium: i32,
+            small: i32,
+            add_car: Vec<i32>,
+            want: Vec<bool>,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                big: 1,
+                medium: 1,
+                small: 0,
+                add_car: vec![1, 2, 3, 1],
+                want: vec![true, true, false, false],
+            },
+            Tt {
+                big: 2,
+                medium: 15,
+                small: 44,
+                add_car: vec![1, 1, 2, 1, 3, 3, 1, 2, 2, 3, 1],
+                want: vec![true, true, true, false, true, true, false, true, true, true, false],
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let mut obj = parking_system::ParkingSystem::new(t.big, t.medium, t.small);
+            let mut result = vec![];
+            for v in t.add_car.into_iter() {
+                let add = obj.add_car(v);
+                result.push(add);
+            }
             assert_eq!(result, t.want);
         }
     }
