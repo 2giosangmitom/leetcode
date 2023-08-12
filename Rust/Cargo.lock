@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "rust"
+name = "leet_code"
 version = "0.1.0"
