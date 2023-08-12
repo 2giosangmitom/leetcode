@@ -13,4 +13,5 @@
 | [704. Binary Search](https://leetcode.com/problems/binary-search/description/)                                     | [Go](./Go/binary_search/704.go), [Rust](./Rust/src/binary_search.rs)                           | Easy       |
 | [929. Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/)                               | [Go](./Go/unique_email_addresses/929.go), [Rust](./Rust/src/unique_email_addresses.rs)         | Easy       |
 | [1518. Water Bottles](https://leetcode.com/problems/water-bottles/description/)                                    | [Go](./Go/water_bottles/1518.go), [Rust](./Rust/src/water_bottles.rs)                          | Easy       |
+| [1512. Number of Good Pairs](https://leetcode.com/problems/number-of-good-pairs/description/)                      | [Go](./Go/num_of_good_pairs/1512.go), [Rust](./Rust/src/num_of_good_pairs.rs)                  | Easy       |
 | [1603. Design Parking System](https://leetcode.com/problems/design-parking-system/description/)                    | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs)                        | Easy       |

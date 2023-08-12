@@ -3,6 +3,7 @@ mod binary_search;
 mod len_of_last_word;
 mod longest_common_prefix;
 mod missing_number;
+mod num_of_good_pairs;
 mod palindrome_num;
 mod parking_system;
 mod roman2int;
@@ -19,6 +20,7 @@ mod tests {
         len_of_last_word::{self, LenOfLastWord},
         longest_common_prefix::{self, LongestCommonPrefix},
         missing_number::{self, MissingNumber},
+        num_of_good_pairs::{self, NumOfGoodPairs},
         palindrome_num::{self, PalindromeNumber},
         parking_system::{self, DesignParkingSystem},
         roman2int::{self, RomanToInt},
@@ -368,6 +370,34 @@ mod tests {
                 let add = obj.add_car(v);
                 result.push(add);
             }
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_1512() {
+        struct Tt {
+            nums: Vec<i32>,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                nums: vec![1, 2, 3, 1, 1, 3],
+                want: 4,
+            },
+            Tt {
+                nums: vec![1, 1, 1, 1],
+                want: 6,
+            },
+            Tt {
+                nums: vec![1, 2, 3],
+                want: 0,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = num_of_good_pairs::Solution::num_identical_pairs(t.nums);
             assert_eq!(result, t.want);
         }
     }
