@@ -7,6 +7,7 @@ mod num_of_good_pairs;
 mod palindrome_num;
 mod parking_system;
 mod roman2int;
+mod sqrt;
 mod two_sum;
 mod unique_email_addresses;
 mod valid_parentheses;
@@ -24,6 +25,7 @@ mod tests {
         palindrome_num::{self, PalindromeNumber},
         parking_system::{self, DesignParkingSystem},
         roman2int::{self, RomanToInt},
+        sqrt::{self, Sqrt},
         two_sum::{self, TwoSum},
         unique_email_addresses::{self, UniqueEmailAddresses},
         valid_parentheses::{self, ValidParentheses},
@@ -398,6 +400,21 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = num_of_good_pairs::Solution::num_identical_pairs(t.nums);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_69() {
+        struct Tt {
+            x: i32,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![Tt { x: 4, want: 2 }, Tt { x: 8, want: 2 }];
+
+        for t in cases.into_iter() {
+            let result = sqrt::Solution::my_sqrt(t.x);
             assert_eq!(result, t.want);
         }
     }
