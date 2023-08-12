@@ -6,6 +6,7 @@ mod missing_number;
 mod num_of_good_pairs;
 mod palindrome_num;
 mod parking_system;
+mod reverse_integer;
 mod roman2int;
 mod sqrt;
 mod two_sum;
@@ -24,6 +25,7 @@ mod tests {
         num_of_good_pairs::{self, NumOfGoodPairs},
         palindrome_num::{self, PalindromeNumber},
         parking_system::{self, DesignParkingSystem},
+        reverse_integer::{self, ReverseInteger},
         roman2int::{self, RomanToInt},
         sqrt::{self, Sqrt},
         two_sum::{self, TwoSum},
@@ -415,6 +417,30 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = sqrt::Solution::my_sqrt(t.x);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_7() {
+        struct Tt {
+            x: i32,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt { x: 123, want: 321 },
+            Tt { x: -123, want: -321 },
+            Tt { x: 120, want: 21 },
+            Tt { x: 1534236469, want: 0 },
+            Tt {
+                x: -2147483648,
+                want: 0,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = reverse_integer::Solution::reverse(t.x);
             assert_eq!(result, t.want);
         }
     }
