@@ -2,6 +2,7 @@ mod best_time2buy_n_sell_stock;
 mod binary_search;
 mod len_of_last_word;
 mod longest_common_prefix;
+mod merge_2_sorted_lists;
 mod missing_number;
 mod num_of_good_pairs;
 mod palindrome_num;
@@ -21,6 +22,7 @@ mod tests {
         binary_search::{self, BinarySearch},
         len_of_last_word::{self, LenOfLastWord},
         longest_common_prefix::{self, LongestCommonPrefix},
+        merge_2_sorted_lists::{self, Merge2SortedLists},
         missing_number::{self, MissingNumber},
         num_of_good_pairs::{self, NumOfGoodPairs},
         palindrome_num::{self, PalindromeNumber},
@@ -443,5 +445,43 @@ mod tests {
             let result = reverse_integer::Solution::reverse(t.x);
             assert_eq!(result, t.want);
         }
+    }
+
+    #[test]
+    fn test_21() {
+        let list1 = Box::new(merge_2_sorted_lists::ListNode {
+            val: 1,
+            next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                val: 2,
+                next: Some(Box::new(merge_2_sorted_lists::ListNode { val: 4, next: None })),
+            })),
+        });
+
+        let list2 = Box::new(merge_2_sorted_lists::ListNode {
+            val: 1,
+            next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                val: 3,
+                next: Some(Box::new(merge_2_sorted_lists::ListNode { val: 4, next: None })),
+            })),
+        });
+
+        let result = merge_2_sorted_lists::Solution::merge_two_lists(Some(list1), Some(list2));
+        let want = Some(Box::new(merge_2_sorted_lists::ListNode {
+            val: 1,
+            next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                val: 1,
+                next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                    val: 2,
+                    next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                        val: 3,
+                        next: Some(Box::new(merge_2_sorted_lists::ListNode {
+                            val: 4,
+                            next: Some(Box::new(merge_2_sorted_lists::ListNode { val: 4, next: None })),
+                        })),
+                    })),
+                })),
+            })),
+        }));
+        assert_eq!(&result, &want);
     }
 }

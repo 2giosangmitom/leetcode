@@ -6,7 +6,7 @@ import (
 )
 
 func TestPalindromeNum(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		num  int
 		want bool
 	}{

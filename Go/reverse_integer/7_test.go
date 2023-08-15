@@ -6,7 +6,7 @@ import (
 )
 
 func TestReverse(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		x    int
 		want int
 	}{

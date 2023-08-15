@@ -6,7 +6,7 @@ import (
 )
 
 func TestBestTimeToBuyAndSellStock(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		prices []int
 		want   int
 	}{

@@ -6,7 +6,7 @@ import (
 )
 
 func TestMissingNumber(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		nums []int
 		want int
 	}{

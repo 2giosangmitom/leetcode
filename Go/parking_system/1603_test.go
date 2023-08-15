@@ -7,7 +7,7 @@ import (
 )
 
 func TestParkingSystem(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		big    int
 		medium int
 		small  int

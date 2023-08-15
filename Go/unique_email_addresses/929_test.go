@@ -6,7 +6,7 @@ import (
 )
 
 func TestUniqueEmailAddresses(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		emails []string
 		want   int
 	}{

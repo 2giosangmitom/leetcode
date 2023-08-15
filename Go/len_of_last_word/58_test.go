@@ -6,7 +6,7 @@ import (
 )
 
 func TestLenOfLastWord(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		s    string
 		want int
 	}{

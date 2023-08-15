@@ -6,7 +6,7 @@ import (
 )
 
 func TestBinarySearch(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		nums   []int
 		target int
 		want   int

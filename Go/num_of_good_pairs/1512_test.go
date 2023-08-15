@@ -6,7 +6,7 @@ import (
 )
 
 func TestNumOfGoodPairs(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		nums []int
 		want int
 	}{

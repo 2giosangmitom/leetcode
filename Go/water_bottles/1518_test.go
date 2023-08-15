@@ -6,7 +6,7 @@ import (
 )
 
 func TestWaterBottles(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		numBottles  int
 		numExchange int
 		want        int

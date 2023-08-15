@@ -6,7 +6,7 @@ import (
 )
 
 func TestValidParentheses(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		s    string
 		want bool
 	}{

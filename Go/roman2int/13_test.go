@@ -6,7 +6,7 @@ import (
 )
 
 func TestRoman2Int(t *testing.T) {
-	tt := []struct {
+	tt := [...]struct {
 		roman string
 		want  int
 	}{
