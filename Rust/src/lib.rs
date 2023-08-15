@@ -80,11 +80,7 @@ mod tests {
             want: bool,
         }
 
-        let cases: Vec<Tt> = vec![
-            Tt { num: -10, want: false },
-            Tt { num: 5, want: true },
-            Tt { num: 121, want: true },
-        ];
+        let cases: Vec<Tt> = vec![Tt { num: -10, want: false }, Tt { num: 5, want: true }, Tt { num: 121, want: true }];
 
         for t in cases.into_iter() {
             let result = palindrome_num::Solution::is_palindrome(t.num);
@@ -100,14 +96,8 @@ mod tests {
         }
 
         let cases: Vec<Tt> = vec![
-            Tt {
-                roman: "III".to_string(),
-                want: 3,
-            },
-            Tt {
-                roman: "LVIII".to_string(),
-                want: 58,
-            },
+            Tt { roman: "III".to_string(), want: 3 },
+            Tt { roman: "LVIII".to_string(), want: 58 },
             Tt {
                 roman: "MCMXCIV".to_string(),
                 want: 1994,
@@ -152,18 +142,9 @@ mod tests {
         }
 
         let cases: Vec<Tt> = vec![
-            Tt {
-                s: "()".to_string(),
-                want: true,
-            },
-            Tt {
-                s: "()[]{}".to_string(),
-                want: true,
-            },
-            Tt {
-                s: "(]".to_string(),
-                want: false,
-            },
+            Tt { s: "()".to_string(), want: true },
+            Tt { s: "()[]{}".to_string(), want: true },
+            Tt { s: "(]".to_string(), want: false },
         ];
 
         for t in cases.into_iter() {
@@ -207,14 +188,8 @@ mod tests {
         }
 
         let cases: Vec<Tt> = vec![
-            Tt {
-                nums: vec![3, 0, 1],
-                want: 2,
-            },
-            Tt {
-                nums: vec![0, 1],
-                want: 2,
-            },
+            Tt { nums: vec![3, 0, 1], want: 2 },
+            Tt { nums: vec![0, 1], want: 2 },
             Tt {
                 nums: vec![9, 6, 4, 2, 3, 5, 7, 0, 1],
                 want: 8,
@@ -239,14 +214,8 @@ mod tests {
                 prices: vec![7, 1, 5, 3, 6, 4],
                 want: 5,
             },
-            Tt {
-                prices: vec![7, 6, 4, 3, 1],
-                want: 0,
-            },
-            Tt {
-                prices: vec![2, 1, 4],
-                want: 3,
-            },
+            Tt { prices: vec![7, 6, 4, 3, 1], want: 0 },
+            Tt { prices: vec![2, 1, 4], want: 3 },
         ];
 
         for t in cases.into_iter() {
@@ -272,11 +241,7 @@ mod tests {
                 want: 2,
             },
             Tt {
-                emails: vec![
-                    "a@leetcode.com".to_string(),
-                    "b@leetcode.com".to_string(),
-                    "c@leetcode.com".to_string(),
-                ],
+                emails: vec!["a@leetcode.com".to_string(), "b@leetcode.com".to_string(), "c@leetcode.com".to_string()],
                 want: 3,
             },
         ];
@@ -392,14 +357,8 @@ mod tests {
                 nums: vec![1, 2, 3, 1, 1, 3],
                 want: 4,
             },
-            Tt {
-                nums: vec![1, 1, 1, 1],
-                want: 6,
-            },
-            Tt {
-                nums: vec![1, 2, 3],
-                want: 0,
-            },
+            Tt { nums: vec![1, 1, 1, 1], want: 6 },
+            Tt { nums: vec![1, 2, 3], want: 0 },
         ];
 
         for t in cases.into_iter() {
@@ -435,10 +394,7 @@ mod tests {
             Tt { x: -123, want: -321 },
             Tt { x: 120, want: 21 },
             Tt { x: 1534236469, want: 0 },
-            Tt {
-                x: -2147483648,
-                want: 0,
-            },
+            Tt { x: -2147483648, want: 0 },
         ];
 
         for t in cases.into_iter() {
