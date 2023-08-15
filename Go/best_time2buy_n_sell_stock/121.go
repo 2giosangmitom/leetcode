@@ -24,8 +24,8 @@ func maxProfit(prices []int) int {
 	return max_profit
 }
 
-/** NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
-func maxProfit(prices []int) int {
+// NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
+func maxProfit2(prices []int) int {
 	max_profit := 0
 	buy_day := 0
 	for sell_day := 1; sell_day < len(prices); sell_day++ {
@@ -38,4 +38,3 @@ func maxProfit(prices []int) int {
 	}
 	return max_profit
 }
-*/

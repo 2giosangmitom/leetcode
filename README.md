@@ -1,4 +1,9 @@
-# LeetCode
+<div align="center">
+    <img src="./assets/leetcode.png" alt="leetcode logo" width="680" height="256" />
+    <h3>Solution for LeetCode problems</h3>
+</div>
+
+# Reference
 
 | Problem title                                                                                                      | Solution 🐕 🦀                                                                                 | Difficulty |
 | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- | ---------- |

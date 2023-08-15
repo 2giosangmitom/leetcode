@@ -5,6 +5,8 @@
 
 package binarysearch
 
+import "cmp"
+
 func search(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
@@ -21,10 +23,8 @@ func search(nums []int, target int) int {
 	return -1
 }
 
-/**  NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
-import "cmp"
-
-func search(nums []int, target int) int {
+// NOTE: this is a cleaner way to solve but LeetCode doesn't support Go 1.21 right now
+func search2(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
 	for left <= right {
@@ -40,4 +40,3 @@ func search(nums []int, target int) int {
 	}
 	return -1
 }
-*/
