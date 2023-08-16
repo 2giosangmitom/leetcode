@@ -17,7 +17,7 @@ impl FindIndexOfTheFirstOccurInAString for Solution {
             return -1;
         } else {
             for i in 0..=haystack_length - needle_length {
-                if &haystack[i..i + needle_length] == needle {
+                if haystack[i..i + needle_length] == needle {
                     return i as i32;
                 }
             }
