@@ -27,22 +27,22 @@
 | [1518. Water Bottles][1518]                                  | [Go](./Go/water_bottles/1518.go), [Rust](./Rust/src/water_bottles.rs)                                                      | Easy       |
 | [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs)                                                    | Easy       |
 
-[1603]: https://leetcode.com/problems/design-parking-system/description/
-[1518]: https://leetcode.com/problems/water-bottles/description/
-[1512]: https://leetcode.com/problems/number-of-good-pairs/description/
-[28]: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/
+[1603]: https://leetcode.com/problems/design-parking-system/
+[1518]: https://leetcode.com/problems/water-bottles/
+[1512]: https://leetcode.com/problems/number-of-good-pairs/
+[28]: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 [1]: https://leetcode.com/problems/two-sum/
-[7]: https://leetcode.com/problems/reverse-integer/description/
+[7]: https://leetcode.com/problems/reverse-integer/
 [9]: https://leetcode.com/problems/palindrome-number/
 [13]: https://leetcode.com/problems/roman-to-integer/
 [14]: https://leetcode.com/problems/longest-common-prefix/
-[20]: https://leetcode.com/problems/valid-parentheses/description/
-[21]: https://leetcode.com/problems/merge-two-sorted-lists/description/
-[26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
-[27]: https://leetcode.com/problems/remove-element/description/
-[58]: https://leetcode.com/problems/length-of-last-word/description/
-[69]: https://leetcode.com/problems/sqrtx/description/
-[121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
-[268]: https://leetcode.com/problems/missing-number/description/
-[704]: https://leetcode.com/problems/binary-search/description/
+[20]: https://leetcode.com/problems/valid-parentheses/
+[21]: https://leetcode.com/problems/merge-two-sorted-lists/
+[26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+[27]: https://leetcode.com/problems/remove-element/
+[58]: https://leetcode.com/problems/length-of-last-word/
+[69]: https://leetcode.com/problems/sqrtx/
+[121]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+[268]: https://leetcode.com/problems/missing-number/
+[704]: https://leetcode.com/problems/binary-search/
 [929]: https://leetcode.com/problems/unique-email-addresses/
