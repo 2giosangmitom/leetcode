@@ -1,24 +1,25 @@
 package sqrt
 
 import (
-	"fmt"
 	"testing"
 )
 
-func TestSqrt(t *testing.T) {
-	tt := [...]struct {
-		x    int
+func Test_mySqrt(t *testing.T) {
+	type args struct {
+		x int
+	}
+	tests := []struct {
+		name string
+		args args
 		want int
 	}{
-		{x: 4, want: 2},
-		{x: 8, want: 2},
+		{name: "case 1", args: args{4}, want: 2},
+		{name: "case 2", args: args{8}, want: 2},
 	}
-
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := mySqrt(test.x)
-			if got != test.want {
-				t.Errorf("Got %d but want %d", got, test.want)
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := mySqrt(tt.args.x); got != tt.want {
+				t.Errorf("mySqrt() = %v, want %v", got, tt.want)
 			}
 		})
 	}

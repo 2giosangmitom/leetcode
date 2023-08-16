@@ -1,26 +1,26 @@
 package roman2int
 
 import (
-	"fmt"
 	"testing"
 )
 
-func TestRoman2Int(t *testing.T) {
-	tt := [...]struct {
-		roman string
-		want  int
-	}{
-		{roman: "III", want: 3},
-		{roman: "LVIII", want: 58},
-		{roman: "MCMXCIV", want: 1994},
+func Test_romanToInt(t *testing.T) {
+	type args struct {
+		s string
 	}
-
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := romanToInt(test.roman)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{name: "case 1", args: args{"III"}, want: 3},
+		{name: "case 2", args: args{"LVIII"}, want: 58},
+		{name: "case 3", args: args{"MCMXCIV"}, want: 1994},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := romanToInt(tt.args.s); got != tt.want {
+				t.Errorf("romanToInt() = %v, want %v", got, tt.want)
 			}
 		})
 	}

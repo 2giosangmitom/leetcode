@@ -1,25 +1,23 @@
 package uniqueemailaddresses
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
-func TestUniqueEmailAddresses(t *testing.T) {
-	tt := [...]struct {
+func Test_numUniqueEmails(t *testing.T) {
+	type args struct {
 		emails []string
-		want   int
-	}{
-		{emails: []string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"}, want: 2},
-		{emails: []string{"a@leetcode.com", "b@leetcode.com", "c@leetcode.com"}, want: 3},
 	}
-
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := numUniqueEmails(test.emails)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{name: "case 1", args: args{[]string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"}}, want: 2},
+		{name: "case 2", args: args{[]string{"a@leetcode.com", "b@leetcode.com", "c@leetcode.com"}}, want: 3},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := numUniqueEmails(tt.args.emails); got != tt.want {
+				t.Errorf("numUniqueEmails() = %v, want %v", got, tt.want)
 			}
 		})
 	}

@@ -1,26 +1,24 @@
 package waterbottles
 
-import (
-	"fmt"
-	"testing"
-)
+import "testing"
 
-func TestWaterBottles(t *testing.T) {
-	tt := [...]struct {
+func Test_numWaterBottles(t *testing.T) {
+	type args struct {
 		numBottles  int
 		numExchange int
-		want        int
-	}{
-		{numBottles: 9, numExchange: 3, want: 13},
-		{numBottles: 15, numExchange: 4, want: 19},
 	}
-
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := numWaterBottles(test.numBottles, test.numExchange)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
+	tests := []struct {
+		name string
+		args args
+		want int
+	}{
+		{name: "case 1", args: args{numBottles: 9, numExchange: 3}, want: 13},
+		{name: "case 2", args: args{numBottles: 15, numExchange: 4}, want: 19},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := numWaterBottles(tt.args.numBottles, tt.args.numExchange); got != tt.want {
+				t.Errorf("numWaterBottles() = %v, want %v", got, tt.want)
 			}
 		})
 	}
