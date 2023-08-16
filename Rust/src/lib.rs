@@ -7,6 +7,7 @@ mod missing_number;
 mod num_of_good_pairs;
 mod palindrome_num;
 mod parking_system;
+mod remove_duplicates_from_sorted_arr;
 mod remove_element;
 mod reverse_integer;
 mod roman2int;
@@ -28,6 +29,7 @@ mod tests {
         num_of_good_pairs::{self, NumOfGoodPairs},
         palindrome_num::{self, PalindromeNumber},
         parking_system::{self, DesignParkingSystem},
+        remove_duplicates_from_sorted_arr::{self, RemoveDuplicates},
         remove_element::{self, RemoveElement},
         reverse_integer::{self, ReverseInteger},
         roman2int::{self, RomanToInt},
@@ -466,7 +468,28 @@ mod tests {
 
         for mut t in cases.into_iter() {
             let result = remove_element::Solution::remove_element(&mut t.nums, t.val);
-            assert_eq!(result, t.want)
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_26() {
+        struct Tt {
+            nums: Vec<i32>,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt { nums: vec![1, 1, 2], want: 2 },
+            Tt {
+                nums: vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4],
+                want: 5,
+            },
+        ];
+
+        for mut t in cases.into_iter() {
+            let result = remove_duplicates_from_sorted_arr::Solution::remove_duplicates(&mut t.nums);
+            assert_eq!(result, t.want);
         }
     }
 }
