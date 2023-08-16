@@ -1,5 +1,6 @@
 mod best_time2buy_n_sell_stock;
 mod binary_search;
+mod find_index_of_the1st_occur_in_a_string;
 mod len_of_last_word;
 mod longest_common_prefix;
 mod merge_2_sorted_lists;
@@ -22,6 +23,7 @@ mod tests {
     use crate::{
         best_time2buy_n_sell_stock::{self, BestTimeToBuyAndSellStock},
         binary_search::{self, BinarySearch},
+        find_index_of_the1st_occur_in_a_string::{self, FindIndexOfTheFirstOccurInAString},
         len_of_last_word::{self, LenOfLastWord},
         longest_common_prefix::{self, LongestCommonPrefix},
         merge_2_sorted_lists::{self, Merge2SortedLists},
@@ -489,6 +491,38 @@ mod tests {
 
         for mut t in cases.into_iter() {
             let result = remove_duplicates_from_sorted_arr::Solution::remove_duplicates(&mut t.nums);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_28() {
+        struct Tt {
+            haystack: String,
+            needle: String,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                haystack: "sadbutsad".to_string(),
+                needle: "sad".to_string(),
+                want: 0,
+            },
+            Tt {
+                haystack: "leetcode".to_string(),
+                needle: "leeto".to_string(),
+                want: -1,
+            },
+            Tt {
+                haystack: "hello".to_string(),
+                needle: "ll".to_string(),
+                want: 2,
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = find_index_of_the1st_occur_in_a_string::Solution::str_str(t.haystack, t.needle);
             assert_eq!(result, t.want);
         }
     }
