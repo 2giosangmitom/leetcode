@@ -18,3 +18,5 @@ jobs:
 
       - name: Run tests
         run: (cd Rust/ && cargo test --lib)
+      - name: Check
+        run: (cd Rust/ && cargo clippy)
