@@ -3,7 +3,7 @@ name: typescript test
 on: push
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -11,5 +11,7 @@ jobs:
         with:
           deno-version: v1.x
       - run: (cd TypeScript/ && deno fmt --check)
-      - run: (cd TypeScript/ && deno lint)
-      - run: make testts
+  lint:
+    - run: (cd TypeScript/ && deno lint)
+  test:
+    - run: make testts
