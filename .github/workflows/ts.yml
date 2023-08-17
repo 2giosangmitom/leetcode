@@ -15,9 +15,9 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - run: (cd TypeScript/ && deno lint)
+      - run: deno lint
 
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: make testts
+      - run: deno test
