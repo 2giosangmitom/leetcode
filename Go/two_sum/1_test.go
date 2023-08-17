@@ -28,3 +28,18 @@ func Test_twoSum(t *testing.T) {
 		})
 	}
 }
+
+func Benchmark_twoSum(t *testing.B) {
+	tests := []struct {
+		nums   []int
+		target int
+	}{
+		{nums: []int{2, 7, 11, 15}, target: 9},
+		{nums: []int{3, 2, 4}, target: 6},
+		{nums: []int{3, 3}, target: 6},
+		{nums: []int{2, 3, 4, 1, 25, 8}, target: 30},
+	}
+	for _, tt := range tests {
+		twoSum(tt.nums, tt.target)
+	}
+}
