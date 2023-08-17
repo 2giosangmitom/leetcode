@@ -7,8 +7,5 @@ testrs:
 testts:
 	(cd TypeScript/ && deno test)
 
-benchgo:
-	(cd Go/ && go test -run=^$ -benchmem -bench . ./...)
-
 benchts:
 	(cd TypeScript/ && deno bench)
