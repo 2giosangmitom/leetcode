@@ -8,7 +8,7 @@
 | Problem title                                                | Solution 🐕 🦀 🦖                                                                                                          | Difficulty |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs), [TypeScript](./TypeScript/two_sum/1.ts)                            | Easy       |
-| [7. Reverse Integer][7]                                      | [Go](./Go/reverse_integer/7.go), [Rust](./Rust/src/reverse_integer.rs)                                                     | Medium     |
+| [7. Reverse Integer][7]                                      | [Go](./Go/reverse_integer/7.go), [Rust](./Rust/src/reverse_integer.rs), [TypeScript](./TypeScript/reverse_integer/7.ts)    | Medium     |
 | [9. Palindrome Number][9]                                    | [Go](./Go/palindrome_number/9.go), [Rust](./Rust/src/palindrome_num.rs)                                                    | Easy       |
 | [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs)                                                                | Easy       |
 | [14. Longest Common Prefix][14]                              | [Go](./Go/longest_common_prefix/14.go), [Rust](./Rust/src/longest_common_prefix.rs)                                        | Easy       |

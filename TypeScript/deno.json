@@ -6,15 +6,5 @@
       "include": ["ban-untagged-todo"],
       "exclude": ["no-unused-vars"]
     }
-  },
-
-  "fmt": {
-    "useTabs": true,
-    "lineWidth": 100,
-    "indentWidth": 4,
-    "semiColons": true,
-    "singleQuote": true,
-    "proseWrap": "preserve",
-    "include": ["./**/*.ts"]
   }
 }
