@@ -1,4 +1,4 @@
-import { assertEquals } from 'std/assert/mod.ts';
+import { assertEquals } from 'https://deno.land/std@0.198.0/assert/mod.ts';
 import twoSum from './1.ts';
 
 interface tt {

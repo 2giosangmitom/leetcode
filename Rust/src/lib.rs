@@ -401,6 +401,7 @@ mod tests {
             Tt { x: 120, want: 21 },
             Tt { x: 1534236469, want: 0 },
             Tt { x: -2147483648, want: 0 },
+            Tt { x: 900000, want: 9 },
         ];
 
         for t in cases.into_iter() {
