@@ -11,6 +11,7 @@ Deno.test("reverse integer", () => {
     { num: 123, want: 321 },
     { num: 900000, want: 9 },
     { num: -123, want: -321 },
+    { num: 553126124224, want: 0 },
   ];
 
   for (const t of tests) {

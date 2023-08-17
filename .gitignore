@@ -1,3 +1,4 @@
 target/
 cov/
+cov_profile/
 cov.lcov
