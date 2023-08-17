@@ -11,7 +11,13 @@ jobs:
         with:
           deno-version: v1.x
       - run: (cd TypeScript/ && deno fmt --check)
+
   lint:
-    - run: (cd TypeScript/ && deno lint)
+    runs-on: ubuntu-latest
+    steps:
+      - run: (cd TypeScript/ && deno lint)
+
   test:
-    - run: make testts
+    runs-on: ubuntu-latest
+    steps:
+      - run: make testts
