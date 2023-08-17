@@ -7,7 +7,7 @@
 
 | Problem title                                                | Solution 🐕 🦀                                                                                                             | Difficulty |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs)                                                                     | Easy       |
+| [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs), [TypeScript](./TypeScript/two_sum/1.ts)                            | Easy       |
 | [7. Reverse Integer][7]                                      | [Go](./Go/reverse_integer/7.go), [Rust](./Rust/src/reverse_integer.rs)                                                     | Medium     |
 | [9. Palindrome Number][9]                                    | [Go](./Go/palindrome_number/9.go), [Rust](./Rust/src/palindrome_num.rs)                                                    | Easy       |
 | [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs)                                                                | Easy       |

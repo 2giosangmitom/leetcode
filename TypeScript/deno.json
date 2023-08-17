@@ -1,0 +1,24 @@
+{
+  "lint": {
+    "include": ["./**/*.ts"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 100,
+    "indentWidth": 4,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["./**/*.ts"]
+  },
+
+  "imports": {
+    "std/": "https://deno.land/std@0.198.0/"
+  }
+}
