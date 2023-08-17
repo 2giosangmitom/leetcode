@@ -19,6 +19,4 @@ function isPalindrome(x: number): boolean {
   return reverve(x) === x;
 }
 
-isPalindrome(121);
-
 export default isPalindrome;
