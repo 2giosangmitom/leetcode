@@ -12,7 +12,7 @@
 | [9. Palindrome Number][9]                                    | [Go](./Go/palindrome_number/9.go), [Rust](./Rust/src/palindrome_num.rs), [TypeScript](./TypeScript/palindrome_number/9.ts)                  | Easy       |
 | [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs), [TypeScript](./TypeScript/roman2int/13.ts)                                     | Easy       |
 | [14. Longest Common Prefix][14]                              | [Go](./Go/longest_common_prefix/14.go), [Rust](./Rust/src/longest_common_prefix.rs), [TypeScript](./TypeScript/longest_common_prefix/14.ts) | Easy       |
-| [20. Valid Parentheses][20]                                  | [Go](./Go/valid_parentheses/20.go), [Rust](./Rust/src/valid_parentheses.rs)                                                                 | Easy       |
+| [20. Valid Parentheses][20]                                  | [Go](./Go/valid_parentheses/20.go), [Rust](./Rust/src/valid_parentheses.rs), [TypeScript](./TypeScript/valid_parentheses/20.ts)             | Easy       |
 | [21. Merge Two Sorted Lists][21]                             | [Go](./Go/merge_2_sorted_lists/21.go), [Rust](./Rust/src/merge_2_sorted_lists.rs)                                                           | Easy       |
 | [26. Remove Duplicates from Sorted Array][26]                | [Go](./Go/remove_duplicates_from_sorted_arr/26.go), [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs)                                 | Easy       |
 | [27. Remove Element][27]                                     | [Go](./Go/remove_element/27.go), [Rust](./Rust/src/remove_element.rs)                                                                       | Easy       |

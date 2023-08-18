@@ -1,0 +1,29 @@
+/**
+ * Runtime: 68ms (Beats 43.74%)
+ * Memory: 44.8MB (Beats 41.10%)
+ */
+
+function isValid(s: string): boolean {
+  if (s.length % 2 !== 0) {
+    return false;
+  }
+  const stack: string[] = [];
+  for (const char of s) {
+    if (char === "(" || char === "{" || char === "[") {
+      stack.push(char);
+    } else {
+      if (char === ")" && stack[stack.length - 1] === "(") {
+        stack.pop();
+      } else if (char === "}" && stack[stack.length - 1] === "{") {
+        stack.pop();
+      } else if (char === "]" && stack[stack.length - 1] === "[") {
+        stack.pop();
+      } else {
+        return false;
+      }
+    }
+  }
+  return stack.length === 0;
+}
+
+export default isValid;
