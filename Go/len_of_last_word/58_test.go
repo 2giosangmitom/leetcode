@@ -23,3 +23,15 @@ func TestLenOfLastWord(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkLenOfLastWord(t *testing.B) {
+	tt := []struct {
+		s string
+	}{
+		{s: "Hello World"},
+	}
+
+	for _, test := range tt {
+		lengthOfLastWord(test.s)
+	}
+}
