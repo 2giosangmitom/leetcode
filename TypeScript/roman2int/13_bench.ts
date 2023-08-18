@@ -4,13 +4,13 @@ interface tt {
   s: string;
 }
 
-const benchs: tt[] = [
+const cases: tt[] = [
   { s: "III" },
   { s: "LVIII" },
   { s: "MCMXCIV" },
 ];
 
-for (const t of benchs) {
+for (const t of cases) {
   Deno.bench(`romanToInt("${t.s}")`, () => {
     romanToInt(t.s);
   });

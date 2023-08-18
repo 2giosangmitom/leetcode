@@ -5,7 +5,7 @@ interface tt {
   target: number;
 }
 
-const benchs: tt[] = [
+const cases: tt[] = [
   {
     nums: [2, 7, 11, 15],
     target: 9,
@@ -20,7 +20,7 @@ const benchs: tt[] = [
   },
 ];
 
-for (const t of benchs) {
+for (const t of cases) {
   Deno.bench(`twoSum([${t.nums}], ${t.target})`, () => {
     twoSum(t.nums, t.target);
   });

@@ -4,13 +4,13 @@ interface tt {
   num: number;
 }
 
-const benchs: tt[] = [
+const cases: tt[] = [
   { num: 121 },
   { num: -321 },
   { num: 10 },
 ];
 
-for (const t of benchs) {
+for (const t of cases) {
   Deno.bench(`isPalindrome(${t.num})`, () => {
     isPalindrome(t.num);
   });
