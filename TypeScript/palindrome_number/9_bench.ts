@@ -11,7 +11,7 @@ const benchs: tt[] = [
 ];
 
 for (const t of benchs) {
-  Deno.bench(`9. isPalindrome(${t.num})`, () => {
+  Deno.bench(`isPalindrome(${t.num})`, () => {
     isPalindrome(t.num);
   });
 }

@@ -12,7 +12,7 @@ const benchs: tt[] = [
 ];
 
 for (const t of benchs) {
-  Deno.bench(`7. reverse(${t.num})`, () => {
+  Deno.bench(`reverse(${t.num})`, () => {
     reverse(t.num);
   });
 }
