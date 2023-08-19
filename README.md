@@ -21,6 +21,7 @@
 | [58. Length of Last Word][58]                                | [Go](./Go/len_of_last_word/58.go), [Rust](./Rust/src/len_of_last_word.rs)                                                                      | Easy       |
 | [69. Sqrt(x)][69]                                            | [Go](./Go/sqrt/69.go), [Rust](./Rust/src/sqrt.rs)                                                                                              | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Go](./Go/best_time2buy_n_sell_stock/121.go), [Rust](./Rust/src/best_time2buy_n_sell_stock.rs)                                                 | Easy       |
+| [182. Duplicate Emails][182]                                 | [MySQL](./SQL/182.sql)                                                                                                                         | Easy       |
 | [195. Tenth Line][195]                                       | [Bash](./Bash/tenth_line/195.sh)                                                                                                               | Easy       |
 | [268. Missing Number][268]                                   | [Go](./Go/missing_number/268.go), [Rust](./Rust/src/missing_number.rs)                                                                         | Easy       |
 | [704. Binary Search][704]                                    | [Go](./Go/binary_search/704.go), [Rust](./Rust/src/binary_search.rs)                                                                           | Easy       |
@@ -50,3 +51,4 @@
 [704]: https://leetcode.com/problems/binary-search/
 [929]: https://leetcode.com/problems/unique-email-addresses/
 [35]: https://leetcode.com/problems/search-insert-position/description/
+[182]: https://leetcode.com/problems/duplicate-emails/description/
