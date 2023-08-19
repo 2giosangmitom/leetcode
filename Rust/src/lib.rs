@@ -12,6 +12,7 @@ mod remove_duplicates_from_sorted_arr;
 mod remove_element;
 mod reverse_integer;
 mod roman2int;
+mod search_insert_position;
 mod sqrt;
 mod two_sum;
 mod unique_email_addresses;
@@ -35,6 +36,7 @@ mod tests {
         remove_element::{self, RemoveElement},
         reverse_integer::{self, ReverseInteger},
         roman2int::{self, RomanToInt},
+        search_insert_position::{self, SearchInsertPosition},
         sqrt::{self, Sqrt},
         two_sum::{self, TwoSum},
         unique_email_addresses::{self, UniqueEmailAddresses},
@@ -524,6 +526,43 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = find_index_of_the1st_occur_in_a_string::Solution::str_str(t.haystack, t.needle);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_35() {
+        struct Tt {
+            nums: Vec<i32>,
+            target: i32,
+            want: i32,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                nums: vec![1, 3, 5, 6],
+                target: 5,
+                want: 2,
+            },
+            Tt {
+                nums: vec![1, 3, 5, 6],
+                target: 2,
+                want: 1,
+            },
+            Tt {
+                nums: vec![1, 3, 5, 6],
+                target: 7,
+                want: 4,
+            },
+            Tt {
+                nums: vec![1, 3, 5, 6],
+                target: 0,
+                want: 0,
+            },
+        ];
+
+        for t in cases.into_iter().skip(3) {
+            let result = search_insert_position::Solution::search_insert(t.nums, t.target);
             assert_eq!(result, t.want);
         }
     }
