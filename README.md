@@ -13,7 +13,7 @@
 | [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs), [TypeScript](./TypeScript/roman2int/13.ts)                                     | Easy       |
 | [14. Longest Common Prefix][14]                              | [Go](./Go/longest_common_prefix/14.go), [Rust](./Rust/src/longest_common_prefix.rs), [TypeScript](./TypeScript/longest_common_prefix/14.ts) | Easy       |
 | [20. Valid Parentheses][20]                                  | [Go](./Go/valid_parentheses/20.go), [Rust](./Rust/src/valid_parentheses.rs), [TypeScript](./TypeScript/valid_parentheses/20.ts)             | Easy       |
-| [21. Merge Two Sorted Lists][21]                             | [Go](./Go/merge_2_sorted_lists/21.go), [Rust](./Rust/src/merge_2_sorted_lists.rs)                                                           | Easy       |
+| [21. Merge Two Sorted Lists][21]                             | [Go](./Go/merge_2_sorted_lists/21.go), [Rust](./Rust/src/merge_2_sorted_lists.rs), [TypeScript](./TypeScript/merge_two_sorted_lists/21.ts)  | Easy       |
 | [26. Remove Duplicates from Sorted Array][26]                | [Go](./Go/remove_duplicates_from_sorted_arr/26.go), [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs)                                 | Easy       |
 | [27. Remove Element][27]                                     | [Go](./Go/remove_element/27.go), [Rust](./Rust/src/remove_element.rs)                                                                       | Easy       |
 | [28. Find the Index of the First Occurrence in a String][28] | [Go](./Go/find_index_of_the1st_occurrence_in_a_string/28.go), [Rust](./Rust/src/find_index_of_the1st_occur_in_a_string.rs)                  | Easy       |
