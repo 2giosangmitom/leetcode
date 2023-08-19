@@ -26,7 +26,7 @@
 | [929. Unique Email Addresses][929]                           | [Go](./Go/unique_email_addresses/929.go), [Rust](./Rust/src/unique_email_addresses.rs)                                                      | Easy       |
 | [1512. Number of Good Pairs][1512]                           | [Go](./Go/num_of_good_pairs/1512.go), [Rust](./Rust/src/num_of_good_pairs.rs)                                                               | Easy       |
 | [1518. Water Bottles][1518]                                  | [Go](./Go/water_bottles/1518.go), [Rust](./Rust/src/water_bottles.rs)                                                                       | Easy       |
-| [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs)                                                                     | Easy       |
+| [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs), [TypeScript](./TypeScript/design_parking_system/1603.ts)           | Easy       |
 
 [1603]: https://leetcode.com/problems/design-parking-system/
 [195]: https://leetcode.com/problems/tenth-line/description/
