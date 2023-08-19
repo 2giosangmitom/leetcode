@@ -561,7 +561,7 @@ mod tests {
             },
         ];
 
-        for t in cases.into_iter().skip(3) {
+        for t in cases.into_iter() {
             let result = search_insert_position::Solution::search_insert(t.nums, t.target);
             assert_eq!(result, t.want);
         }
