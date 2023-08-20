@@ -8,10 +8,7 @@ function strStr(haystack: string, needle: string): number {
   const needleLen = needle.length;
   if (needleLen > haystackLen) return -1;
   for (let i = 0; i < haystackLen; i++) {
-    if (
-      haystack[i] === needle[0] &&
-      haystack.substring(i, i + needleLen) === needle
-    ) {
+    if (haystack.substring(i, i + needleLen) === needle) {
       return i;
     }
   }
