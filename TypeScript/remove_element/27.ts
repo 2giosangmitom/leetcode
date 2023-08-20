@@ -1,3 +1,8 @@
+/**
+ * Runtime: 55ms (Beats 79.49%)
+ * Memory: 44.2MB (Beats 39.10%)
+ */
+
 function removeElement(nums: number[], val: number): number {
   let k = 0;
   for (let i = 0; i < nums.length; ++i) {
