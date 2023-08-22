@@ -21,6 +21,7 @@
 | [58. Length of Last Word][58]                                | [Go](./Go/len_of_last_word/58.go), [Rust](./Rust/src/len_of_last_word.rs)                                                                                                              | Easy       |
 | [69. Sqrt(x)][69]                                            | [Go](./Go/sqrt/69.go), [Rust](./Rust/src/sqrt.rs)                                                                                                                                      | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Go](./Go/best_time2buy_n_sell_stock/121.go), [Rust](./Rust/src/best_time2buy_n_sell_stock.rs)                                                                                         | Easy       |
+| [168. Excel Sheet Column Title][168]                         | [Go](./Go/excel_sheet_column_title/168.go), [Rust](./Rust/src/excel_sheet_column_title.rs), [TypeScript](./TypeScript/excel_column_title/168.ts)                                       | Easy       |
 | [182. Duplicate Emails][182]                                 | [MySQL](./SQL/182.sql)                                                                                                                                                                 | Easy       |
 | [195. Tenth Line][195]                                       | [Bash](./Bash/tenth_line/195.sh)                                                                                                                                                       | Easy       |
 | [268. Missing Number][268]                                   | [Go](./Go/missing_number/268.go), [Rust](./Rust/src/missing_number.rs)                                                                                                                 | Easy       |
@@ -31,6 +32,7 @@
 | [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs), [TypeScript](./TypeScript/design_parking_system/1603.ts)                                                      | Easy       |
 
 [1603]: https://leetcode.com/problems/design-parking-system/
+[168]: https://leetcode.com/problems/excel-sheet-column-title/description/
 [195]: https://leetcode.com/problems/tenth-line/description/
 [1518]: https://leetcode.com/problems/water-bottles/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/

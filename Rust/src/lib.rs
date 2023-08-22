@@ -1,5 +1,6 @@
 mod best_time2buy_n_sell_stock;
 mod binary_search;
+mod excel_sheet_column_title;
 mod find_index_of_the1st_occur_in_a_string;
 mod len_of_last_word;
 mod longest_common_prefix;
@@ -24,6 +25,7 @@ mod tests {
     use crate::{
         best_time2buy_n_sell_stock::{self, BestTimeToBuyAndSellStock},
         binary_search::{self, BinarySearch},
+        excel_sheet_column_title::{self, ExcelSheetColumnTitle},
         find_index_of_the1st_occur_in_a_string::{self, FindIndexOfTheFirstOccurInAString},
         len_of_last_word::{self, LenOfLastWord},
         longest_common_prefix::{self, LongestCommonPrefix},
@@ -563,6 +565,34 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = search_insert_position::Solution::search_insert(t.nums, t.target);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_168() {
+        struct Tt {
+            column_number: i32,
+            want: String,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                column_number: 1,
+                want: "A".to_string(),
+            },
+            Tt {
+                column_number: 28,
+                want: "AB".to_string(),
+            },
+            Tt {
+                column_number: 701,
+                want: "ZY".to_string(),
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = excel_sheet_column_title::Solution::convert_to_title(t.column_number);
             assert_eq!(result, t.want);
         }
     }
