@@ -6,11 +6,13 @@
 package missingnumber
 
 func missingNumber(nums []int) int {
-	l := len(nums)
-	sum := 0
-	total := (l * (l + 1)) / 2
-	for _, num := range nums {
-		sum += num
-	}
+	sum := func(n []int) int {
+		result := 0
+		for _, v := range n {
+			result += v
+		}
+		return result
+	}(nums)
+	total := (len(nums) * (len(nums) + 1)) / 2
 	return total - sum
 }

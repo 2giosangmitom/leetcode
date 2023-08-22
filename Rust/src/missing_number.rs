@@ -11,12 +11,8 @@ pub trait MissingNumber {
 
 impl MissingNumber for Solution {
     fn missing_number(nums: Vec<i32>) -> i32 {
-        let l = nums.len();
-        let mut sum = 0;
-        let total = (l * (l + 1)) / 2;
-        for num in nums.iter() {
-            sum += num;
-        }
-        total as i32 - sum
+        let sum: i32 = nums.iter().sum();
+        let total = ((nums.len() * (nums.len() + 1)) / 2) as i32;
+        total - sum
     }
 }
