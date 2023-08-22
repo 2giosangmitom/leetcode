@@ -1,3 +1,8 @@
+/**
+ * Runtime: 137ms (Beats 40.43%)
+ * Memory: 50.7MB (Beats 36.88%)
+ */
+
 class ParkingSystem {
   big: number;
   medium: number;
