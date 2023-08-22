@@ -1,5 +1,5 @@
 testgo:
-	(cd Go/ && go test -v -json -cover ./... | gotestfmt)
+	(cd Go/ && gotestsum)
 
 testrs:
 	(cd Rust/ && cargo nextest run)
