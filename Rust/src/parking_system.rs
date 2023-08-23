@@ -1,8 +1,3 @@
-/**
- * Runtime: 13ms (Beats 87.93%)
- * Memory: 2.6MB (Beats 18.97%)
- */
-
 pub struct ParkingSystem {
     small: i32,
     medium: i32,

@@ -1,8 +1,3 @@
-/**
- * Runtime: 9ms (Beats 52.57%)
- * Memory: 5.6MB (Beats 75.43%)
- */
-
 package uniqueemailaddresses
 
 import (

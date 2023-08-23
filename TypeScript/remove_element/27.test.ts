@@ -12,9 +12,9 @@ const tests: tt[] = [
   { nums: [0, 1, 2, 2, 3, 0, 4, 2], val: 2, want: 5 },
 ];
 
-Deno.test("remove element", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("remove element", () => {
     const result = removeElement(t.nums, t.val);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

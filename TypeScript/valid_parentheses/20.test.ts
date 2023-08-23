@@ -6,15 +6,15 @@ interface tt {
   want: boolean;
 }
 
-Deno.test("valid parentheses", () => {
-  const tests: tt[] = [
-    { s: "()", want: true },
-    { s: "()[]{}", want: true },
-    { s: "(]", want: false },
-  ];
+const tests: tt[] = [
+  { s: "()", want: true },
+  { s: "()[]{}", want: true },
+  { s: "(]", want: false },
+];
 
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("valid parentheses", () => {
     const result = isValid(t.s);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

@@ -12,9 +12,9 @@ const tests: tt[] = [
   { nums: [-1, 0, 3, 5, 9, 12], target: 2, want: -1 },
 ];
 
-Deno.test("binary search", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("binary search", () => {
     const result = search(t.nums, t.target);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

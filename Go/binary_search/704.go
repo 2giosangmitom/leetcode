@@ -1,8 +1,3 @@
-/**
- * Runtime: 28ms (Beats 93.1%)
- * Memory: 6.9MB (Beats 71.29%)
- */
-
 package binarysearch
 
 import "cmp"

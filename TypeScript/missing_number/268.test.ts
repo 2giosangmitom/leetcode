@@ -12,9 +12,9 @@ const cases: tt[] = [
   { nums: [9, 6, 4, 2, 3, 5, 7, 0, 1], want: 8 },
 ];
 
-Deno.test("missing number", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("missing number", () => {
     const result = missingNumber(t.nums);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

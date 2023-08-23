@@ -1,8 +1,3 @@
-/**
- * Runtime: 1ms (Beats 71.23%)
- * Memory: 2.2MB (Beats 20.59%)
- */
-
 package validparentheses
 
 func isValid(s string) bool {

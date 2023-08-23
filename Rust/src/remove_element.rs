@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.2MB (Beats 27.21%)
- */
-
 pub struct Solution;
 
 pub trait RemoveElement {

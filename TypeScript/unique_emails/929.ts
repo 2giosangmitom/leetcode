@@ -1,8 +1,3 @@
-/**
- * Runtime: 65ms (Beats 92.86%)
- * Memory: 47.7MB (Beats 59.9%)
- */
-
 function numUniqueEmails(emails: string[]): number {
   const uniqueEmails: string[] = [];
   for (const e of emails) {

@@ -1,8 +1,3 @@
-/**
- * Runtime: 35ms (Beats 87.33%)
- * Memory: 7.8MB (Beats 32.67%)
- */
-
 package parkingsystem
 
 type ParkingSystem struct {

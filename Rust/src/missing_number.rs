@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 83.51%)
- * Memory: 2.1MB (Beats 97.94%)
- */
-
 pub struct Solution;
 
 pub trait MissingNumber {

@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.3MB (Beats 13.85%)
- */
-
 pub struct Solution;
 
 pub trait ValidParentheses {

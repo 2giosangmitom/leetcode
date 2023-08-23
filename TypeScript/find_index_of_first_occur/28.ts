@@ -1,8 +1,3 @@
-/**
- * Runtime: 58ms (Beats 63.9%)
- * Memory: 42.8MB (Beats 64.89%)
- */
-
 function strStr(haystack: string, needle: string): number {
   const haystackLen = haystack.length;
   const needleLen = needle.length;

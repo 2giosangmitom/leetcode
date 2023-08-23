@@ -1,8 +1,3 @@
-/**
- * Runtime: 68ms (Beats 43.74%)
- * Memory: 44.8MB (Beats 41.10%)
- */
-
 function isValid(s: string): boolean {
   if (s.length % 2 !== 0) {
     return false;

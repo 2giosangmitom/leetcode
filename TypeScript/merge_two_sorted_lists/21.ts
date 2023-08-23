@@ -1,8 +1,3 @@
-/**
- * Runtime: 55ms (Beats 95.47%)
- * Memory: 44.5MB (Beats 81.62%)
- */
-
 class ListNode {
   val: number;
   next: ListNode | null;

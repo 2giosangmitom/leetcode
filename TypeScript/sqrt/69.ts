@@ -1,8 +1,3 @@
-/**
- * Runtime: 74ms (Beats 57.66%)
- * Memory: 44.69MB (Beats 59.86%)
- */
-
 function mySqrt(x: number): number {
   let left = 1;
   let right = x;

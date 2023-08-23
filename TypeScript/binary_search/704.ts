@@ -1,8 +1,3 @@
-/**
- * Runtime: 61ms (Beats 70.45%)
- * Memory: 45.3MB (Beats 93.10%)
- */
-
 function search(nums: number[], target: number): number {
   let left = 0;
   let right = nums.length - 1;

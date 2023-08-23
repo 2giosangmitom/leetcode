@@ -11,9 +11,9 @@ const tests: tt[] = [
   { nums: [0, 0, 1, 1, 1, 2, 2, 3, 3, 4], want: 5 },
 ];
 
-Deno.test("remove duplicates from sorted array", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("remove duplicates from sorted array", () => {
     const result = removeDuplicates(t.nums);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

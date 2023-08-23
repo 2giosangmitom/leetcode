@@ -11,9 +11,9 @@ const cases: tt[] = [
   { prices: [7, 6, 4, 3, 1], want: 0 },
 ];
 
-Deno.test("best time to buy and sell stock", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("best time to buy and sell stock", () => {
     const result = maxProfit(t.prices);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

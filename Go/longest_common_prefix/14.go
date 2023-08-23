@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 63.36%)
- * Memory: 2.4MB (Beats 31.26%)
- */
-
 package longestcommonprefix
 
 import "strings"

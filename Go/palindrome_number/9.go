@@ -1,8 +1,3 @@
-/**
- * Runtime: 12ms (Beats 86.4%)
- * Memory: 4.2MB (Beats 99.4%)
- */
-
 package palindromenumber
 
 func isPalindrome(x int) bool {

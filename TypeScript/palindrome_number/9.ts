@@ -1,8 +1,3 @@
-/**
- * Runtime: 122ms (Beats 98.85%)
- * Memory: 50.9MB (Beats 96.45%)
- */
-
 function isPalindrome(x: number): boolean {
   if (x < 0) return false;
 

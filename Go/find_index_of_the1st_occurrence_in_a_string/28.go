@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 1.94MB (Beats 51.21%)
- */
-
 package findindexofthe1stoccurrenceinastring
 
 func strStr(haystack string, needle string) int {

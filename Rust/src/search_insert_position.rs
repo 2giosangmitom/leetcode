@@ -1,8 +1,3 @@
-/**
- * Runtime: 1ms (Beats 81.45%)
- * Memory: 2.4MB (Beats 22.65%)
- */
-
 pub struct Solution;
 
 pub trait SearchInsertPosition {

@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2MB (Beats 53.45%)
- */
-
 pub struct Solution;
 
 pub trait NumOfGoodPairs {

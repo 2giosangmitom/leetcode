@@ -12,9 +12,9 @@ const tests: tt[] = [
   { haystack: "leetcode", needle: "leeto", want: -1 },
 ];
 
-Deno.test("strStr", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("strStr", () => {
     const result = strStr(t.haystack, t.needle);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

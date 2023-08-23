@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.2MB (Beats 26.79%)
- */
-
 pub struct Solution;
 
 pub trait ReverseInteger {

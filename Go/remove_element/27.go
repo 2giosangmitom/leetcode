@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 63.46%)
- * Memory: 2.14MB (Beats 9.66%)
- */
-
 package remove_element
 
 func removeElement(nums []int, val int) int {

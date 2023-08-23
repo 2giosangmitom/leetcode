@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.1MB (Beats 33.99%)
- */
-
 package lenoflastword
 
 import (

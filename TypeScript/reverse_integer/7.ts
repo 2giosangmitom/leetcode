@@ -1,8 +1,3 @@
-/**
- * Runtime: 73ms (Beats 51.37%)
- * Memory: 45.14MB (Beats 29.38%)
- */
-
 function reverse(x: number): number {
   const MAX = 2147483647;
   let result = 0;

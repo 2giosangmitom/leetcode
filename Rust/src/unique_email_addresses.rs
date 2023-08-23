@@ -1,8 +1,3 @@
-/**
- * Runtime: 3ms (Beats 91.30%)
- * Memory: 2.2MB (Beats 17.39%)
- */
-
 pub struct Solution;
 
 pub trait UniqueEmailAddresses {

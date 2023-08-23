@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.1MB (Beats 57.30%)
- */
-
 pub struct Solution;
 
 pub trait LenOfLastWord {

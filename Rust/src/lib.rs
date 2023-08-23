@@ -1,3 +1,4 @@
+mod add_two_numbers;
 mod best_time2buy_n_sell_stock;
 mod binary_search;
 mod excel_sheet_column_title;
@@ -23,6 +24,7 @@ mod water_bottles;
 #[cfg(test)]
 mod tests {
     use crate::{
+        add_two_numbers::{self, AddTwoNumbers},
         best_time2buy_n_sell_stock::{self, BestTimeToBuyAndSellStock},
         binary_search::{self, BinarySearch},
         excel_sheet_column_title::{self, ExcelSheetColumnTitle},
@@ -593,6 +595,105 @@ mod tests {
 
         for t in cases.into_iter() {
             let result = excel_sheet_column_title::Solution::convert_to_title(t.column_number);
+            assert_eq!(result, t.want);
+        }
+    }
+
+    #[test]
+    fn test_2() {
+        use crate::add_two_numbers::ListNode;
+        struct Tt {
+            l1: Option<Box<ListNode>>,
+            l2: Option<Box<ListNode>>,
+            want: Option<Box<ListNode>>,
+        }
+
+        let cases: Vec<Tt> = vec![
+            Tt {
+                l1: Some(Box::new(ListNode {
+                    val: 2,
+                    next: Some(Box::new(ListNode {
+                        val: 4,
+                        next: Some(Box::new(ListNode { val: 3, next: None })),
+                    })),
+                })),
+                l2: Some(Box::new(ListNode {
+                    val: 5,
+                    next: Some(Box::new(ListNode {
+                        val: 6,
+                        next: Some(Box::new(ListNode { val: 4, next: None })),
+                    })),
+                })),
+                want: Some(Box::new(ListNode {
+                    val: 7,
+                    next: Some(Box::new(ListNode {
+                        val: 0,
+                        next: Some(Box::new(ListNode { val: 8, next: None })),
+                    })),
+                })),
+            },
+            Tt {
+                l1: Some(Box::new(ListNode { val: 0, next: None })),
+                l2: Some(Box::new(ListNode { val: 0, next: None })),
+                want: Some(Box::new(ListNode { val: 0, next: None })),
+            },
+            Tt {
+                l1: Some(Box::new(ListNode {
+                    val: 9,
+                    next: Some(Box::new(ListNode {
+                        val: 9,
+                        next: Some(Box::new(ListNode {
+                            val: 9,
+                            next: Some(Box::new(ListNode {
+                                val: 9,
+                                next: Some(Box::new(ListNode {
+                                    val: 9,
+                                    next: Some(Box::new(ListNode {
+                                        val: 9,
+                                        next: Some(Box::new(ListNode { val: 9, next: None })),
+                                    })),
+                                })),
+                            })),
+                        })),
+                    })),
+                })),
+                l2: Some(Box::new(ListNode {
+                    val: 9,
+                    next: Some(Box::new(ListNode {
+                        val: 9,
+                        next: Some(Box::new(ListNode {
+                            val: 9,
+                            next: Some(Box::new(ListNode { val: 9, next: None })),
+                        })),
+                    })),
+                })),
+                want: Some(Box::new(ListNode {
+                    val: 8,
+                    next: Some(Box::new(ListNode {
+                        val: 9,
+                        next: Some(Box::new(ListNode {
+                            val: 9,
+                            next: Some(Box::new(ListNode {
+                                val: 9,
+                                next: Some(Box::new(ListNode {
+                                    val: 0,
+                                    next: Some(Box::new(ListNode {
+                                        val: 0,
+                                        next: Some(Box::new(ListNode {
+                                            val: 0,
+                                            next: Some(Box::new(ListNode { val: 1, next: None })),
+                                        })),
+                                    })),
+                                })),
+                            })),
+                        })),
+                    })),
+                })),
+            },
+        ];
+
+        for t in cases.into_iter() {
+            let result = add_two_numbers::Solution::add_two_numbers(t.l1, t.l2);
             assert_eq!(result, t.want);
         }
     }

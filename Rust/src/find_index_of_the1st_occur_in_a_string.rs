@@ -1,8 +1,3 @@
-/**
- * Runtime: 1ms (Beats 62.77%)
- * Memory: 1.99MB (Beats 93.57%)
- */
-
 pub struct Solution;
 
 pub trait FindIndexOfTheFirstOccurInAString {

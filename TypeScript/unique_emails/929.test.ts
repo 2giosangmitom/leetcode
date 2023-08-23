@@ -25,9 +25,9 @@ const tests: tt[] = [
   },
 ];
 
-Deno.test("unique email address", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("unique email address", () => {
     const result = numUniqueEmails(t.emails);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

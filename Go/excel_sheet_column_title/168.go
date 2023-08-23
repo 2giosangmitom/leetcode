@@ -1,8 +1,3 @@
-/**
- * Runtime: 1ms (Beats 74.84%)
- * Memory: 1.87MB (Beats 94.34%)
- */
-
 package excelsheetcolumntitle
 
 func convertToTitle(columnNumber int) string {

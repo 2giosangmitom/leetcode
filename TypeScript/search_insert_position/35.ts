@@ -1,8 +1,3 @@
-/**
- * Runtime: 61ms (Beats 51.64%)
- * Memory: 44.3MB (Beats 55.93%)
- */
-
 function searchInsert(nums: number[], target: number): number {
   let left = 0;
   let right = nums.length - 1;

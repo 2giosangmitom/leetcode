@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 82.51%)
- * Memory: 2.4MB (Beats 40.3%)
- */
-
 pub struct Solution;
 
 pub trait TwoSum {

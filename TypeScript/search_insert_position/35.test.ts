@@ -13,9 +13,9 @@ const tests: tt[] = [
   { nums: [1, 3, 5, 6], target: 7, want: 4 },
 ];
 
-Deno.test("search insert position", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("search insert position", () => {
     const result = searchInsert(t.nums, t.target);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

@@ -6,20 +6,20 @@ interface tt {
   want: string;
 }
 
-Deno.test("longest common prefix", () => {
-  const tests: tt[] = [
-    {
-      strs: ["flower", "flow", "flight"],
-      want: "fl",
-    },
-    {
-      strs: ["dog", "racecar", "car"],
-      want: "",
-    },
-  ];
+const tests: tt[] = [
+  {
+    strs: ["flower", "flow", "flight"],
+    want: "fl",
+  },
+  {
+    strs: ["dog", "racecar", "car"],
+    want: "",
+  },
+];
 
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("longest common prefix", () => {
     const result = longestCommonPrefix(t.strs);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

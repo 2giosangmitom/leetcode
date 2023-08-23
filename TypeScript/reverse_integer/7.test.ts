@@ -6,16 +6,16 @@ interface tt {
   want: number;
 }
 
-Deno.test("reverse integer", () => {
-  const tests: tt[] = [
-    { num: 123, want: 321 },
-    { num: 900000, want: 9 },
-    { num: -123, want: -321 },
-    { num: 553126124224, want: 0 },
-  ];
+const tests: tt[] = [
+  { num: 123, want: 321 },
+  { num: 900000, want: 9 },
+  { num: -123, want: -321 },
+  { num: 553126124224, want: 0 },
+];
 
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("reverse integer", () => {
     const result = reverse(t.num);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2MB (Beats 93.25%)
- */
-
 pub struct Solution;
 
 pub trait RomanToInt {

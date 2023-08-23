@@ -8,6 +8,7 @@
 | Problem title                                                | Solution 🐕 🦀 🦖                                                                                                                                                                      | Difficulty |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs), [TypeScript](./TypeScript/two_sum/1.ts)                                                                                        | Easy       |
+| [2. Add Two Numbers][2]                                      | [Go](./Go/add_two_numbers/2.go), [Rust](./Rust/src/add_two_numbers.rs), [TypeScript](./TypeScript/add_two_numbers/2.ts)                                                                | Medium     |
 | [7. Reverse Integer][7]                                      | [Go](./Go/reverse_integer/7.go), [Rust](./Rust/src/reverse_integer.rs), [TypeScript](./TypeScript/reverse_integer/7.ts)                                                                | Medium     |
 | [9. Palindrome Number][9]                                    | [Go](./Go/palindrome_number/9.go), [Rust](./Rust/src/palindrome_num.rs), [TypeScript](./TypeScript/palindrome_number/9.ts)                                                             | Easy       |
 | [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs), [TypeScript](./TypeScript/roman2int/13.ts)                                                                                | Easy       |
@@ -32,6 +33,7 @@
 | [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs), [TypeScript](./TypeScript/design_parking_system/1603.ts)                                                      | Easy       |
 
 [1603]: https://leetcode.com/problems/design-parking-system/
+[2]: https://leetcode.com/problems/add-two-numbers/description/
 [168]: https://leetcode.com/problems/excel-sheet-column-title/description/
 [195]: https://leetcode.com/problems/tenth-line/description/
 [1518]: https://leetcode.com/problems/water-bottles/

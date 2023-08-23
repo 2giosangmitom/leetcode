@@ -1,8 +1,3 @@
-/**
- * Runtime: 4ms (Beats 72.32%)
- * Memory: 2.1MB (Beats 96.43%)
- */
-
 pub struct Solution;
 
 pub trait BinarySearch {

@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 1.96MB (Beats 86.84%)
- */
-
 pub struct Solution;
 
 pub trait ExcelSheetColumnTitle {

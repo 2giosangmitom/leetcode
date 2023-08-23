@@ -12,9 +12,9 @@ const cases: tt[] = [
   { s: "luffy is still joyboy", want: 6 },
 ];
 
-Deno.test("length of last word", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("length of last word", () => {
     const result = lengthOfLastWord(t.s);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

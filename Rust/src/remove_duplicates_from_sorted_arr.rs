@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 66.28%)
- * Memory: 2.4MB (Beats 24.82%)
- */
-
 pub struct Solution;
 
 pub trait RemoveDuplicates {

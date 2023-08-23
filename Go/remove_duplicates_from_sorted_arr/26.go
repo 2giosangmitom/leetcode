@@ -1,8 +1,3 @@
-/**
- * Runtime: 6ms (Beats 83.61%)
- * Memory: 4.4MB (Beats 98.13%)
- */
-
 package removeduplicatesfromsortedarr
 
 func removeDuplicates(nums []int) int {

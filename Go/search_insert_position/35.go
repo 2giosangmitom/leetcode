@@ -1,8 +1,3 @@
-/**
- * Runtime: 4ms (Beats 64.69%)
- * Memory: 2.98MB (Beats 98.23%)
- */
-
 package searchinsertposition
 
 func searchInsert(nums []int, target int) int {

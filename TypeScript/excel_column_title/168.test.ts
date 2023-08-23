@@ -12,9 +12,9 @@ const cases: tt[] = [
   { columnNumber: 701, want: "ZY" },
 ];
 
-Deno.test("excel column title", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("excel column title", () => {
     const result = convertToTitle(t.columnNumber);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

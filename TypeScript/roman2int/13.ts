@@ -1,8 +1,3 @@
-/**
- * Runtime: 108ms (Beats 90.62%)
- * Memory: 46.1MB (Beats 99.92%)
- */
-
 function romanToInt(s: string): number {
   let result = 0;
   let number = 0;

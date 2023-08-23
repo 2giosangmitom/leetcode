@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2.05MB (Beats 80.42%)
- */
-
 pub struct Solution;
 
 pub trait LongestCommonPrefix {

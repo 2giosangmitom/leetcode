@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 1.9MB (Beats 90.71%)
- */
-
 pub struct Solution;
 
 pub trait Sqrt {

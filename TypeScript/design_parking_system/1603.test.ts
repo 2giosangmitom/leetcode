@@ -19,13 +19,13 @@ const tests: tt[] = [
   },
 ];
 
-Deno.test("design parking system", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("design parking system", () => {
     const result: boolean[] = [];
     const obj = new ParkingSystem(t.big, t.medium, t.small);
     for (const type of t.addCar) {
       result.push(obj.addCar(type));
     }
     assertEquals(result, t.want);
-  }
-});
+  });
+}

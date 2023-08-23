@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2MB (Beats 18.87%)
- */
-
 package numofgoodpairs
 
 func numIdenticalPairs(nums []int) int {

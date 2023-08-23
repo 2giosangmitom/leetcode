@@ -6,15 +6,15 @@ interface tt {
   want: number;
 }
 
-Deno.test("roman to integer", () => {
-  const tests: tt[] = [
-    { s: "III", want: 3 },
-    { s: "LVIII", want: 58 },
-    { s: "MCMXCIV", want: 1994 },
-  ];
+const tests: tt[] = [
+  { s: "III", want: 3 },
+  { s: "LVIII", want: 58 },
+  { s: "MCMXCIV", want: 1994 },
+];
 
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("roman to integer", () => {
     const result = romanToInt(t.s);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

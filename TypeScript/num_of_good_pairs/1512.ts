@@ -1,8 +1,3 @@
-/**
- * Runtime: 62ms (Beats 51.8%)
- * Memory: 43MB (Beats 41.44%)
- */
-
 function numIdenticalPairs(nums: number[]): number {
   let result = 0;
   const hashMap = new Map<number, number>();

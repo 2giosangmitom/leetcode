@@ -1,8 +1,3 @@
-/**
- * Runtime: 112ms (Beats 94.92%)
- * Memory: 8.3MB (Beats 55.96%)
- */
-
 package besttime2buynsellstock
 
 func maxProfit(prices []int) int {

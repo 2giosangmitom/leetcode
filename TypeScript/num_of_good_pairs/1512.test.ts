@@ -12,9 +12,9 @@ const cases: tt[] = [
   { nums: [1, 2, 3], want: 0 },
 ];
 
-Deno.test("number of good pairs", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("number of good pairs", () => {
     const result = numIdenticalPairs(t.nums);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

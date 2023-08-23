@@ -1,8 +1,3 @@
-/**
- * Runtime: 2ms (Beats 64.77%)
- * Memory: 2.1MB (Beats 98.61%)
- */
-
 package sqrt
 
 func mySqrt(x int) int {

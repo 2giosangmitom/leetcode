@@ -1,8 +1,3 @@
-/**
- * Runtime: 59ms (Beats 89.87%)
- * Memory: 44.9MB (Beats 56.21%)
- */
-
 function twoSum(nums: number[], target: number): number[] {
   const hashMap = new Map<number, number>();
   for (let i = 0; i < nums.length; i++) {

@@ -1,8 +1,3 @@
-/**
- * Runtime: 0ms (Beats 100%)
- * Memory: 2MB (Beats 33.33%)
- */
-
 pub struct Solution;
 
 pub trait WaterBottles {

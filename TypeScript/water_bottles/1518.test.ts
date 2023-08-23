@@ -12,9 +12,9 @@ const tests: tt[] = [
   { numBottles: 15, numExchange: 4, want: 19 },
 ];
 
-Deno.test("water bottles", () => {
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("water bottles", () => {
     const result = numWaterBottles(t.numBottles, t.numExchange);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

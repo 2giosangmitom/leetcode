@@ -1,8 +1,3 @@
-/**
- * Runtime: 3ms (Beats 54.79%)
- * Memory: 2.5MB (Beats 43.6%)
- */
-
 package merge2sortedlists
 
 type ListNode struct {

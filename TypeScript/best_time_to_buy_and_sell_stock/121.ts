@@ -1,8 +1,3 @@
-/**
- * Runtime: 77ms (Beats 76.18%)
- * Memory: 51.95MB (Beats 44.33%)
- */
-
 function maxProfit(prices: number[]): number {
   let maxProfit = 0;
   let buyDay = 0;

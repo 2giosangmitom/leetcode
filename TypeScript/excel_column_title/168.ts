@@ -1,8 +1,3 @@
-/**
- * Runtime: 63ms (Beats 25.47%)
- * Memory: 43MB (Beats 22.64%)
- */
-
 function convertToTitle(columnNumber: number): string {
   const result: number[] = [];
   while (columnNumber > 0) {

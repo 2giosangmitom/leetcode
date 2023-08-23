@@ -6,15 +6,15 @@ interface tt {
   want: boolean;
 }
 
-Deno.test("palindrome number", () => {
-  const tests: tt[] = [
-    { num: 121, want: true },
-    { num: -321, want: false },
-    { num: 10, want: false },
-  ];
+const tests: tt[] = [
+  { num: 121, want: true },
+  { num: -321, want: false },
+  { num: 10, want: false },
+];
 
-  for (const t of tests) {
+for (const t of tests) {
+  Deno.test("palindrome number", () => {
     const result = isPalindrome(t.num);
     assertEquals(result, t.want);
-  }
-});
+  });
+}

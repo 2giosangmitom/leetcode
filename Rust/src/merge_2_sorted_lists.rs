@@ -1,8 +1,3 @@
-/**
- * Runtime: 1ms (Beats 73.15%)
- * Memory: 2.1MB (Beats 56.94%)
- */
-
 // Definition for singly-linked list.
 #[derive(PartialEq, Eq, Debug)]
 pub struct ListNode {

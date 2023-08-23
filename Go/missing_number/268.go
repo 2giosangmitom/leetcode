@@ -1,8 +1,3 @@
-/**
- * Runtime: 14ms (Beats 82.73%)
- * Memory: 6.2MB (Beats 94.24%)
- */
-
 package missingnumber
 
 func missingNumber(nums []int) int {

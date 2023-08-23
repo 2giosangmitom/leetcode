@@ -11,9 +11,9 @@ const cases: tt[] = [
   { x: 8, want: 2 },
 ];
 
-Deno.test("sqrt", () => {
-  for (const t of cases) {
+for (const t of cases) {
+  Deno.test("sqrt", () => {
     const result = mySqrt(t.x);
     assertEquals(result, t.want);
-  }
-});
+  });
+}
