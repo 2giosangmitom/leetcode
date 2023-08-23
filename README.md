@@ -33,9 +33,9 @@
 | [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs), [TypeScript](./TypeScript/design_parking_system/1603.ts)                                                      | Easy       |
 
 [1603]: https://leetcode.com/problems/design-parking-system/
-[2]: https://leetcode.com/problems/add-two-numbers/description/
-[168]: https://leetcode.com/problems/excel-sheet-column-title/description/
-[195]: https://leetcode.com/problems/tenth-line/description/
+[2]: https://leetcode.com/problems/add-two-numbers/
+[168]: https://leetcode.com/problems/excel-sheet-column-title/
+[195]: https://leetcode.com/problems/tenth-line/
 [1518]: https://leetcode.com/problems/water-bottles/
 [1512]: https://leetcode.com/problems/number-of-good-pairs/
 [28]: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
@@ -54,5 +54,5 @@
 [268]: https://leetcode.com/problems/missing-number/
 [704]: https://leetcode.com/problems/binary-search/
 [929]: https://leetcode.com/problems/unique-email-addresses/
-[35]: https://leetcode.com/problems/search-insert-position/description/
-[182]: https://leetcode.com/problems/duplicate-emails/description/
+[35]: https://leetcode.com/problems/search-insert-position/
+[182]: https://leetcode.com/problems/duplicate-emails/
