@@ -1,26 +1,25 @@
 package sqrt
 
 import (
+	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_mySqrt(t *testing.T) {
-	type args struct {
-		x int
-	}
 	tests := []struct {
-		name string
-		args args
+		x    int
 		want int
 	}{
-		{name: "case 1", args: args{4}, want: 2},
-		{name: "case 2", args: args{8}, want: 2},
+		{x: 4, want: 2},
+		{x: 8, want: 2},
 	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := mySqrt(tt.args.x); got != tt.want {
-				t.Errorf("mySqrt() = %v, want %v", got, tt.want)
-			}
+
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := mySqrt(tt.x)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

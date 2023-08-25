@@ -1,31 +1,29 @@
 package merge2sortedlists
 
 import (
-	"reflect"
+	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_mergeTwoLists(t *testing.T) {
-	list1 := &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4}}}
-	list2 := &ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4}}}
-	want := &ListNode{Val: 1, Next: &ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: &ListNode{Val: 4}}}}}}
-
-	type args struct {
+	tests := []struct {
 		list1 *ListNode
 		list2 *ListNode
-	}
-	tests := []struct {
-		name string
-		args args
-		want *ListNode
+		want  *ListNode
 	}{
-		{name: "case 1", args: args{list1, list2}, want: want},
+		{
+			list1: &ListNode{1, &ListNode{2, &ListNode{4, nil}}},
+			list2: &ListNode{1, &ListNode{3, &ListNode{4, nil}}},
+			want:  &ListNode{1, &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{4, nil}}}}}},
+		},
 	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := mergeTwoLists(tt.args.list1, tt.args.list2); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("mergeTwoLists() = %v, want %v", got, tt.want)
-			}
+
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := mergeTwoLists(tt.list1, tt.list2)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

@@ -27,6 +27,8 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	for l1 != nil || l2 != nil || carry != 0 {
 		digit1 := getVal(l1)
 		digit2 := getVal(l2)
+		l1 = getNext(l1)
+		l2 = getNext(l2)
 
 		sum := digit1 + digit2 + carry
 		digit := sum % 10
@@ -36,8 +38,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		tail.Next = newNode
 		tail = tail.Next
 
-		l1 = getNext(l1)
-		l2 = getNext(l2)
 	}
 
 	return dummyHead.Next

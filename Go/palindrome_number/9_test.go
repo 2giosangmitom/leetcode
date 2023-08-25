@@ -3,10 +3,12 @@ package palindromenumber
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestPalindromeNum(t *testing.T) {
-	tt := [...]struct {
+	tests := []struct {
 		num  int
 		want bool
 	}{
@@ -15,13 +17,10 @@ func TestPalindromeNum(t *testing.T) {
 		{num: 121, want: true},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := isPalindrome(test.num)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %v but want %v", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := isPalindrome(tt.num)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

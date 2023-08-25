@@ -3,10 +3,12 @@ package missingnumber
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMissingNumber(t *testing.T) {
-	tt := [...]struct {
+	tests := []struct {
 		nums []int
 		want int
 	}{
@@ -15,13 +17,10 @@ func TestMissingNumber(t *testing.T) {
 		{nums: []int{9, 6, 4, 2, 3, 5, 7, 0, 1}, want: 8},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := missingNumber(test.nums)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := missingNumber(tt.nums)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

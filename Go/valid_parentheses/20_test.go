@@ -1,27 +1,26 @@
 package validparentheses
 
 import (
+	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_isValid(t *testing.T) {
-	type args struct {
-		s string
-	}
 	tests := []struct {
-		name string
-		args args
+		s    string
 		want bool
 	}{
-		{name: "case 1", args: args{"()"}, want: true},
-		{name: "case 2", args: args{"()[]{}"}, want: true},
-		{name: "case 3", args: args{"(]"}, want: false},
+		{s: "()", want: true},
+		{s: "()[]{}", want: true},
+		{s: "(]", want: false},
 	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			if got := isValid(tt.args.s); got != tt.want {
-				t.Errorf("isValid() = %v, want %v", got, tt.want)
-			}
+
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := isValid(tt.s)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

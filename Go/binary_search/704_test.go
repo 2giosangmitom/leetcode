@@ -3,10 +3,12 @@ package binarysearch
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestBinarySearch(t *testing.T) {
-	tt := [...]struct {
+	tests := []struct {
 		nums   []int
 		target int
 		want   int
@@ -15,19 +17,16 @@ func TestBinarySearch(t *testing.T) {
 		{nums: []int{-1, 0, 3, 5, 9, 12}, target: 2, want: -1},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := search(test.nums, test.target)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := search(tt.nums, tt.target)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }
 
 func TestBinarySearch2(t *testing.T) {
-	tt := [...]struct {
+	tests := [...]struct {
 		nums   []int
 		target int
 		want   int
@@ -36,13 +35,10 @@ func TestBinarySearch2(t *testing.T) {
 		{nums: []int{-1, 0, 3, 5, 9, 12}, target: 2, want: -1},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := search2(test.nums, test.target)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := search2(tt.nums, tt.target)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

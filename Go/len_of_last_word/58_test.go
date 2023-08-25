@@ -3,35 +3,22 @@ package lenoflastword
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLenOfLastWord(t *testing.T) {
-	tt := [...]struct {
+	tests := [...]struct {
 		s    string
 		want int
 	}{
 		{s: "Hello World", want: 5},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := lengthOfLastWord(test.s)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := lengthOfLastWord(tt.s)
+			assert.Equal(t, tt.want, got)
 		})
-	}
-}
-
-func BenchmarkLenOfLastWord(t *testing.B) {
-	tt := []struct {
-		s string
-	}{
-		{s: "Hello World"},
-	}
-
-	for _, test := range tt {
-		lengthOfLastWord(test.s)
 	}
 }

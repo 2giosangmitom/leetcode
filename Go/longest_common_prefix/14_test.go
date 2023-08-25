@@ -3,10 +3,12 @@ package longestcommonprefix
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLongestCommonPrefix(t *testing.T) {
-	tt := [...]struct {
+	tests := [...]struct {
 		want string
 		strs []string
 	}{
@@ -14,13 +16,10 @@ func TestLongestCommonPrefix(t *testing.T) {
 		{strs: []string{"dog", "racecar", "car"}, want: ""},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := longestCommonPrefix(test.strs)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %s but want %s", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := longestCommonPrefix(tt.strs)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

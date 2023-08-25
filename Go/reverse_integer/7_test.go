@@ -3,10 +3,12 @@ package reverseinteger
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestReverse(t *testing.T) {
-	tt := [...]struct {
+	tests := []struct {
 		x    int
 		want int
 	}{
@@ -18,12 +20,10 @@ func TestReverse(t *testing.T) {
 		{x: 900000, want: 9},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := reverse(test.x)
-			if got != test.want {
-				t.Errorf("Got %d but want %d", got, test.want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := reverse(tt.x)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }

@@ -6,6 +6,3 @@ testrs:
 
 testts:
 	(cd TypeScript/ && deno test)
-
-benchts:
-	(cd TypeScript/ && deno bench)

@@ -3,10 +3,12 @@ package numofgoodpairs
 import (
 	"fmt"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestNumOfGoodPairs(t *testing.T) {
-	tt := [...]struct {
+	tests := []struct {
 		nums []int
 		want int
 	}{
@@ -15,13 +17,10 @@ func TestNumOfGoodPairs(t *testing.T) {
 		{nums: []int{1, 2, 3}, want: 0},
 	}
 
-	for i, test := range tt {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
-			got := numIdenticalPairs(test.nums)
-			want := test.want
-			if got != want {
-				t.Errorf("Got %d but want %d", got, want)
-			}
+	for i, tt := range tests {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
+			got := numIdenticalPairs(tt.nums)
+			assert.Equal(t, tt.want, got)
 		})
 	}
 }
