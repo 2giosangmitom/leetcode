@@ -8,5 +8,14 @@ namespace add_two_numbers {
             var result = Solution.AddTwoNumbers(l1, l2);
             Assert.Equivalent(want, result);
         }
+
+        [Fact]
+        public void Test2() {
+            var l1 = new ListNode(0);
+            var l2 = new ListNode(0);
+            var want = new ListNode(0);
+            var result = Solution.AddTwoNumbers(l1, l2);
+            Assert.Equivalent(want, result);
+        }
     }
 }
