@@ -17,6 +17,9 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run tests
-        run: (cd Rust/ && cargo test --lib)
+        run: cargo test --lib
+        working-directory: Rust
+
       - name: Check
-        run: (cd Rust/ && cargo clippy)
+        run: cargo clippy
+        working-directory: Rust

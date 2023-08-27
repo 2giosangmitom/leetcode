@@ -4,5 +4,6 @@
   "deno.unstable": false,
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "dotnet.defaultSolution": "CSharp/CSharp.sln"
 }
