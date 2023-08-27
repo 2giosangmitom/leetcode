@@ -6,8 +6,7 @@ namespace reverse_integer {
                 int lastNumber = x % 10;
                 try {
                     result = checked(result * 10 + lastNumber);
-                }
-                catch (OverflowException) {
+                } catch (OverflowException) {
                     return 0;
                 }
                 x /= 10;
