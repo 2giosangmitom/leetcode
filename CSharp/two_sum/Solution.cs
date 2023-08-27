@@ -7,7 +7,7 @@ namespace two_sum {
                 if (hashMap.ContainsKey(needNumber)) {
                     return new int[] { hashMap[needNumber], i };
                 } else {
-                    hashMap.Add(nums[i], i);
+                    hashMap[nums[i]] = i;
                 }
             }
             return new int[] { -1 };
