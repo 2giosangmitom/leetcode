@@ -1,4 +1,4 @@
-name: Rust test
+name: Rust
 
 on:
   push:
@@ -14,11 +14,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Run tests
+      - name: Test
         run: cargo test --lib
         working-directory: Rust
+
+  check:
+    runs-on: ubuntu-latest
+
+    step:
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Check
         run: cargo clippy

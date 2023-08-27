@@ -1,4 +1,4 @@
-name: TypeScript test
+name: TypeScript
 
 on: push
 
@@ -6,29 +6,38 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+
       - run: deno fmt --check
         working-directory: TypeScript
 
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+
       - run: deno lint
         working-directory: TypeScript
 
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
+
       - run: deno test
         working-directory: TypeScript
