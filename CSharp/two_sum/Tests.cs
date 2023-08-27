@@ -10,7 +10,6 @@ namespace two_sum {
         public void Test2() {
             int[] got = Solution.TwoSum(new int[] { 3, 2, 4 }, 6);
             Assert.Equal(new int[] { 1, 2 }, got);
-
         }
     }
 }

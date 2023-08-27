@@ -37,7 +37,6 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		newNode := &ListNode{digit, nil}
 		tail.Next = newNode
 		tail = tail.Next
-
 	}
 
 	return dummyHead.Next

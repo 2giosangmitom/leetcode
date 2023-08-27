@@ -1,3 +1,4 @@
+// Definition for singly linked list
 #[derive(PartialEq, Eq, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -17,6 +18,7 @@ pub trait AddTwoNumbers {
     fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>>;
 }
 
+// Solution start here
 impl AddTwoNumbers for Solution {
     fn add_two_numbers(mut l1: Option<Box<ListNode>>, mut l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         let mut dummy_head = Box::new(ListNode::new(0));
