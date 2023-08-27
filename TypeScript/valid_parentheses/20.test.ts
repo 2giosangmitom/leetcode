@@ -10,6 +10,7 @@ const tests: tt[] = [
   { s: "()", want: true },
   { s: "()[]{}", want: true },
   { s: "(]", want: false },
+  { s: "}}()", want: false },
 ];
 
 for (const t of tests) {
