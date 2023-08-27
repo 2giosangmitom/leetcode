@@ -18,6 +18,6 @@ jobs:
         with:
           dotnet-version: "7.0.x"
 
-      - name: Run test
+      - name: Test
         run: dotnet test
         working-directory: CSharp
