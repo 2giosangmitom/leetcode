@@ -9,8 +9,7 @@ namespace valid_parenthese {
                 } else {
                     if (stack.Count == 0) {
                         return false;
-                    }
-                    if (s[i].Equals('}') && stack.Peek().Equals('{')) {
+                    } else if (s[i].Equals('}') && stack.Peek().Equals('{')) {
                         stack.Pop();
                     } else if (s[i].Equals(']') && stack.Peek().Equals('[')) {
                         stack.Pop();

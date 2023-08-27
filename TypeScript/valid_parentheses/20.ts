@@ -7,7 +7,9 @@ function isValid(s: string): boolean {
     if (char === "(" || char === "{" || char === "[") {
       stack.push(char);
     } else {
-      if (char === ")" && stack[stack.length - 1] === "(") {
+      if (stack.length === 0) {
+        return false;
+      } else if (char === ")" && stack[stack.length - 1] === "(") {
         stack.pop();
       } else if (char === "}" && stack[stack.length - 1] === "{") {
         stack.pop();
