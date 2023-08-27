@@ -9,7 +9,6 @@ on:
 jobs:
   golangci:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
