@@ -6,3 +6,6 @@ testrs:
 
 testts:
 	(cd TypeScript/ && deno test)
+
+testcs:
+	(cd CSharp/ && dotnet test)
