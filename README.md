@@ -5,7 +5,7 @@
 
 # Reference
 
-| Problem title                                                | Solution 🐕 🦀 🦖                                                                                                                                                                                                              | Difficulty |
+| Problem title                                                | Solution 🐕 🦀 🦖 🐍                                                                                                                                                                                                           | Difficulty |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
 | [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs), [TypeScript](./TypeScript/two_sum/1.ts), [C#](./CSharp/two_sum/Solution.cs)                                                                                            | Easy       |
 | [2. Add Two Numbers][2]                                      | [Go](./Go/add_two_numbers/2.go), [Rust](./Rust/src/add_two_numbers.rs), [TypeScript](./TypeScript/add_two_numbers/2.ts), [C#](./CSharp/add_two_numbers/Solution.cs)                                                            | Medium     |
