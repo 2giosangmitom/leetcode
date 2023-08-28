@@ -486,19 +486,26 @@ mod tests {
         struct Tt {
             nums: Vec<i32>,
             want: i32,
+            want_nums: Vec<i32>,
         }
 
         let cases: Vec<Tt> = vec![
-            Tt { nums: vec![1, 1, 2], want: 2 },
+            Tt {
+                nums: vec![1, 1, 2],
+                want: 2,
+                want_nums: vec![1, 2],
+            },
             Tt {
                 nums: vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4],
                 want: 5,
+                want_nums: vec![0, 1, 2, 3, 4],
             },
         ];
 
         for mut t in cases.into_iter() {
             let result = remove_duplicates_from_sorted_arr::Solution::remove_duplicates(&mut t.nums);
             assert_eq!(result, t.want);
+            assert_eq!(t.nums[..t.want as usize], t.want_nums);
         }
     }
 
