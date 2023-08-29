@@ -460,6 +460,7 @@ mod tests {
             nums: Vec<i32>,
             val: i32,
             want: i32,
+            want_nums: Vec<i32>,
         }
 
         let cases: Vec<Tt> = vec![
@@ -467,17 +468,20 @@ mod tests {
                 nums: vec![3, 2, 2, 3],
                 val: 3,
                 want: 2,
+                want_nums: vec![2, 2],
             },
             Tt {
                 nums: vec![0, 1, 2, 2, 3, 0, 4, 2],
                 val: 2,
                 want: 5,
+                want_nums: vec![0, 1, 3, 0, 4],
             },
         ];
 
         for mut t in cases.into_iter() {
             let result = remove_element::Solution::remove_element(&mut t.nums, t.val);
             assert_eq!(result, t.want);
+            assert_eq!(t.nums[..t.want as usize], t.want_nums);
         }
     }
 
