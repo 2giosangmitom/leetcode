@@ -18,3 +18,27 @@ impl LongestCommonPrefix for Solution {
         prefix.to_string()
     }
 }
+
+#[test]
+fn test_longest_common_prefix() {
+    struct Tt {
+        strs: Vec<String>,
+        want: String,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt {
+            strs: vec!["flower".to_string(), "flow".to_string(), "flight".to_string()],
+            want: "fl".to_string(),
+        },
+        Tt {
+            strs: vec!["dog".to_string(), "racecar".to_string(), "car".to_string()],
+            want: "".to_string(),
+        },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::longest_common_prefix(t.strs);
+        assert_eq!(result, t.want);
+    }
+}

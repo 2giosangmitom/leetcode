@@ -15,6 +15,9 @@ func Test_strStr(t *testing.T) {
 	}{
 		{haystack: "sadbutsad", needle: "sad", want: 0},
 		{haystack: "leetcode", needle: "leeto", want: -1},
+		{haystack: "a", needle: "a", want: 0},
+		{haystack: "hello", needle: "ll", want: 2},
+		{haystack: "abbb", needle: "aaaa", want: -1},
 	}
 
 	for i, tt := range tests {

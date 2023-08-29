@@ -26,3 +26,24 @@ impl PalindromeNumber for Solution {
         x == reversed_number
     }
 }
+
+#[test]
+fn test_palindrome_number() {
+    struct Tt {
+        num: i32,
+        want: bool,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt { num: -10, want: false },
+        Tt { num: 5, want: true },
+        Tt { num: 121, want: true },
+        Tt { num: 321, want: false },
+        Tt { num: 111, want: true },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::is_palindrome(t.num);
+        assert_eq!(result, t.want);
+    }
+}

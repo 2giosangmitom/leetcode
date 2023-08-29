@@ -21,3 +21,25 @@ impl NumOfGoodPairs for Solution {
         result
     }
 }
+
+#[test]
+fn test_number_of_good_pairs() {
+    struct Tt {
+        nums: Vec<i32>,
+        want: i32,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt {
+            nums: vec![1, 2, 3, 1, 1, 3],
+            want: 4,
+        },
+        Tt { nums: vec![1, 1, 1, 1], want: 6 },
+        Tt { nums: vec![1, 2, 3], want: 0 },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::num_identical_pairs(t.nums);
+        assert_eq!(result, t.want);
+    }
+}

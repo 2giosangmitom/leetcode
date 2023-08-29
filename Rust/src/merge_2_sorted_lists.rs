@@ -1,4 +1,3 @@
-// Definition for singly linked list.
 #[derive(PartialEq, Eq, Debug)]
 pub struct ListNode {
     pub val: i32,
@@ -15,7 +14,6 @@ impl ListNodeTrait for ListNode {
     }
 }
 
-// Solution start here
 pub struct Solution;
 
 pub trait Merge2SortedLists {
@@ -42,4 +40,42 @@ impl Merge2SortedLists for Solution {
         current_node.next = list1.or(list2);
         head.next
     }
+}
+
+#[test]
+fn test_merge_two_sorted_lists() {
+    let list1 = Box::new(ListNode {
+        val: 1,
+        next: Some(Box::new(ListNode {
+            val: 2,
+            next: Some(Box::new(ListNode { val: 4, next: None })),
+        })),
+    });
+
+    let list2 = Box::new(ListNode {
+        val: 1,
+        next: Some(Box::new(ListNode {
+            val: 3,
+            next: Some(Box::new(ListNode { val: 4, next: None })),
+        })),
+    });
+
+    let result = Solution::merge_two_lists(Some(list1), Some(list2));
+    let want = Some(Box::new(ListNode {
+        val: 1,
+        next: Some(Box::new(ListNode {
+            val: 1,
+            next: Some(Box::new(ListNode {
+                val: 2,
+                next: Some(Box::new(ListNode {
+                    val: 3,
+                    next: Some(Box::new(ListNode {
+                        val: 4,
+                        next: Some(Box::new(ListNode { val: 4, next: None })),
+                    })),
+                })),
+            })),
+        })),
+    }));
+    assert_eq!(&result, &want);
 }

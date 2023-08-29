@@ -24,3 +24,25 @@ impl ReverseInteger for Solution {
         result
     }
 }
+
+#[test]
+fn test_reverse_integer() {
+    struct Tt {
+        x: i32,
+        want: i32,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt { x: 123, want: 321 },
+        Tt { x: -123, want: -321 },
+        Tt { x: 120, want: 21 },
+        Tt { x: 1534236469, want: 0 },
+        Tt { x: -2147483648, want: 0 },
+        Tt { x: 900000, want: 9 },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::reverse(t.x);
+        assert_eq!(result, t.want);
+    }
+}

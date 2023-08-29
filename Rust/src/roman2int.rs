@@ -28,3 +28,26 @@ impl RomanToInt for Solution {
         result
     }
 }
+
+#[test]
+fn test_roman_to_integer() {
+    struct Tt {
+        roman: String,
+        want: i32,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt { roman: "III".to_string(), want: 3 },
+        Tt { roman: "LVIII".to_string(), want: 58 },
+        Tt {
+            roman: "MCMXCIV".to_string(),
+            want: 1994,
+        },
+        Tt { roman: "XXIV".to_string(), want: 24 },
+    ];
+
+    for t in cases.into_iter() {
+        let result: i32 = Solution::roman_to_int(t.roman);
+        assert_eq!(result, t.want);
+    }
+}

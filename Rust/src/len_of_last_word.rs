@@ -16,3 +16,31 @@ impl LenOfLastWord for Solution {
         count
     }
 }
+
+#[test]
+fn test_length_of_last_word() {
+    struct Tt {
+        s: String,
+        want: i32,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt {
+            s: "Hello World".to_string(),
+            want: 5,
+        },
+        Tt {
+            s: "   fly me   to   the moon  ".to_string(),
+            want: 4,
+        },
+        Tt {
+            s: "luffy is still joyboy".to_string(),
+            want: 6,
+        },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::length_of_last_word(t.s);
+        assert_eq!(result, t.want);
+    }
+}

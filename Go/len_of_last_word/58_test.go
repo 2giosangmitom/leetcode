@@ -13,6 +13,8 @@ func TestLenOfLastWord(t *testing.T) {
 		want int
 	}{
 		{s: "Hello World", want: 5},
+		{s: "   fly me   to   the moon  ", want: 4},
+		{s: "luffy is still joyboy", want: 6},
 	}
 
 	for i, tt := range tests {

@@ -23,3 +23,31 @@ impl UniqueEmailAddresses for Solution {
         unique_emails.len() as i32
     }
 }
+
+#[test]
+fn test_unique_emails_address() {
+    struct Tt {
+        emails: Vec<String>,
+        want: i32,
+    }
+
+    let cases: Vec<Tt> = vec![
+        Tt {
+            emails: vec![
+                "test.email+alex@leetcode.com".to_string(),
+                "test.e.mail+bob.cathy@leetcode.com".to_string(),
+                "testemail+david@lee.tcode.com".to_string(),
+            ],
+            want: 2,
+        },
+        Tt {
+            emails: vec!["a@leetcode.com".to_string(), "b@leetcode.com".to_string(), "c@leetcode.com".to_string()],
+            want: 3,
+        },
+    ];
+
+    for t in cases.into_iter() {
+        let result = Solution::num_unique_emails(t.emails);
+        assert_eq!(result, t.want);
+    }
+}

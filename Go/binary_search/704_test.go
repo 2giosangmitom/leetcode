@@ -33,6 +33,7 @@ func TestBinarySearch2(t *testing.T) {
 	}{
 		{nums: []int{-1, 0, 3, 5, 9, 12}, target: 9, want: 4},
 		{nums: []int{-1, 0, 3, 5, 9, 12}, target: 2, want: -1},
+		{nums: []int{3, 4, 14, 51, 66, 102}, target: 66, want: 4},
 	}
 
 	for i, tt := range tests {
