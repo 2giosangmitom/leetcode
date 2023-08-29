@@ -11,5 +11,17 @@ namespace two_sum {
             int[] got = Solution.TwoSum(new int[] { 3, 2, 4 }, 6);
             Assert.Equal(new int[] { 1, 2 }, got);
         }
+
+        [Fact]
+        public void Test3() {
+            int[] got = Solution.TwoSum(new int[] { 3, 3 }, 6);
+            Assert.Equal(new int[] { 0, 1 }, got);
+        }
+
+        [Fact]
+        public void Test4() {
+            int[] got = Solution.TwoSum(new int[] { 1, 1, 3, 4, 2, 15 }, 10);
+            Assert.Equal(new int[] { -1 }, got);
+        }
     }
 }

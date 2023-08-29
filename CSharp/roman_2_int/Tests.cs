@@ -17,5 +17,11 @@ namespace roman_2_int {
             int got = Solution.RomanToInt("MCMXCIV");
             Assert.Equal(1994, got);
         }
+
+        [Fact]
+        public void Test4() {
+            int got = Solution.RomanToInt("XXIV");
+            Assert.Equal(24, got);
+        }
     }
 }
