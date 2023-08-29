@@ -10,6 +10,10 @@ interface tt {
 const tests: tt[] = [
   { haystack: "sadbutsad", needle: "sad", want: 0 },
   { haystack: "leetcode", needle: "leeto", want: -1 },
+  { haystack: "hello", needle: "ll", want: 2 },
+  { haystack: "a", needle: "a", want: 0 },
+  { haystack: "abc", needle: "c", want: 2 },
+  { haystack: "baaa", needle: "aaaa", want: -1 },
 ];
 
 for (const t of tests) {
