@@ -1,7 +1,6 @@
 mod add_two_numbers;
 mod best_time2buy_n_sell_stock;
 mod binary_search;
-mod excel_sheet_column_title;
 mod find_index_of_the1st_occur_in_a_string;
 mod len_of_last_word;
 mod longest_common_prefix;
