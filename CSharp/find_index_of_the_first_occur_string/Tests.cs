@@ -29,5 +29,10 @@ namespace find_index_of_the_first_occur_string {
             int got = Solution.StrStr("abc", "c");
             Assert.Equal(2, got);
         }
+
+        [Fact]
+        public void Test6() {
+            int got = Solution.StrStr("abbb", "aaaa");
+            Assert.Equal(-1, got);
     }
 }
