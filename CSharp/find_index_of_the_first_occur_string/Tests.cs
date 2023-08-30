@@ -34,5 +34,6 @@ namespace find_index_of_the_first_occur_string {
         public void Test6() {
             int got = Solution.StrStr("abbb", "aaaa");
             Assert.Equal(-1, got);
+        }
     }
 }
