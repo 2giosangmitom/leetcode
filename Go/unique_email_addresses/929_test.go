@@ -24,7 +24,9 @@ func Test_numUniqueEmails(t *testing.T) {
 	for i, tt := range tests {
 		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			got := numUniqueEmails(tt.emails)
+			got2 := numUniqueEmails2(tt.emails)
 			assert.Equal(t, tt.want, got)
+			assert.Equal(t, tt.want, got2)
 		})
 	}
 }

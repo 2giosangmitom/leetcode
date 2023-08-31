@@ -28,3 +28,22 @@ func numUniqueEmails(emails []string) int {
 	}
 	return len(uniqueEmails)
 }
+
+// Second solution
+func numUniqueEmails2(emails []string) int {
+	hashSet := map[string]bool{}
+	for _, email := range emails {
+		cleanEmail := strings.Builder{}
+		part := strings.Split(email, "@")
+		localName := part[0]
+		domainName := part[1]
+		for i := 0; i < len(localName) && localName[i] != '+'; i++ {
+			if localName[i] == '.' {
+				continue
+			}
+			cleanEmail.WriteString(string(localName[i]))
+		}
+		hashSet[cleanEmail.String()+"@"+domainName] = true
+	}
+	return len(hashSet)
+}
