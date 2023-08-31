@@ -1,5 +1,5 @@
 import { assertEquals } from "../deps.ts";
-import numUniqueEmails from "./929.ts";
+import { numUniqueEmails, numUniqueEmails2 } from "./929.ts";
 
 interface tt {
   emails: string[];
@@ -28,6 +28,8 @@ const tests: tt[] = [
 for (const t of tests) {
   Deno.test("unique email address", () => {
     const result = numUniqueEmails(t.emails);
+    const result2 = numUniqueEmails2(t.emails);
     assertEquals(result, t.want);
+    assertEquals(result2, t.want);
   });
 }

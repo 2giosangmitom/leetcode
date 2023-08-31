@@ -17,4 +17,23 @@ function numUniqueEmails(emails: string[]): number {
   return uniqueEmails.length;
 }
 
-export default numUniqueEmails;
+// Second solution
+function numUniqueEmails2(emails: string[]): number {
+  const hashSet = new Set<string>();
+  for (const email of emails) {
+    let cleanEmail = "";
+    const part = email.split("@");
+    const localName = part[0];
+    const domainName = part[1];
+    for (let i = 0; i < localName.length && localName[i] !== "+"; ++i) {
+      if (localName[i] === ".") {
+        continue;
+      }
+      cleanEmail += localName[i];
+    }
+    hashSet.add(cleanEmail + "@" + domainName);
+  }
+  return hashSet.size;
+}
+
+export { numUniqueEmails, numUniqueEmails2 };
