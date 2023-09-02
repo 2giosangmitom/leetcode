@@ -7,7 +7,7 @@ function plusOne(digits: number[]): number[] {
       return digits;
     }
   }
-  return [1].concat(digits);
+  return [1, ...digits];
 }
 
 export default plusOne;
