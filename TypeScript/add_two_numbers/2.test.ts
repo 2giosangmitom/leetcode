@@ -1,5 +1,4 @@
-import { assertEquals } from "../deps.ts";
-import { addTwoNumbers, ListNode } from "./2.ts";
+import { addTwoNumbers, ListNode } from "./2";
 
 interface tt {
   l1: ListNode | null;
@@ -25,9 +24,9 @@ const tests: tt[] = [
         9,
         new ListNode(
           9,
-          new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))),
-        ),
-      ),
+          new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))
+        )
+      )
     ),
     l2: new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))),
     want: new ListNode(
@@ -38,17 +37,19 @@ const tests: tt[] = [
           9,
           new ListNode(
             9,
-            new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1)))),
-          ),
-        ),
-      ),
+            new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1))))
+          )
+        )
+      )
     ),
   },
 ];
 
-for (const t of tests) {
-  Deno.test("add two numbers", () => {
-    const result = addTwoNumbers(t.l1, t.l2);
-    assertEquals(result, t.want);
+describe("add two numbers", () => {
+  tests.forEach((v, i) => {
+    test(`case ${i + 1}`, () => {
+      const result = addTwoNumbers(v.l1, v.l2);
+      expect(result).toEqual(v.want);
+    });
   });
-}
+});

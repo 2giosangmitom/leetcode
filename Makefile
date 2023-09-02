@@ -5,7 +5,7 @@ testrs:
 	(cd Rust/ && cargo nextest run)
 
 testts:
-	(cd TypeScript/ && deno test)
+	(cd TypeScript/ && pnpm test)
 
 testcs:
 	(cd CSharp/ && dotnet test)
