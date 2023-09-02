@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: latest
 
-      - name: Install packages
+      - name: Install dependencies
         run: pnpm install
         working-directory: TypeScript
 
