@@ -24,9 +24,9 @@ const tests: tt[] = [
         9,
         new ListNode(
           9,
-          new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))
-        )
-      )
+          new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))),
+        ),
+      ),
     ),
     l2: new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))),
     want: new ListNode(
@@ -37,10 +37,10 @@ const tests: tt[] = [
           9,
           new ListNode(
             9,
-            new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1))))
-          )
-        )
-      )
+            new ListNode(0, new ListNode(0, new ListNode(0, new ListNode(1)))),
+          ),
+        ),
+      ),
     ),
   },
 ];

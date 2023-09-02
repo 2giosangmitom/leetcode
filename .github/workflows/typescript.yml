@@ -7,32 +7,27 @@ on:
     branches: ["master"]
 
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Set up Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Check
-        run: deno lint
-        working-directory: TypeScript
-
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Deno
-        uses: denoland/setup-deno@v1
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
         with:
-          deno-version: v1.x
+          version: latest
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: pnpm
+
+      - name: Install packages
+        run: pnpm install
+        working-directory: TypeScript
 
       - name: Test
-        run: deno test
+        run: pnpm test
         working-directory: TypeScript
