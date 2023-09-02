@@ -22,8 +22,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-          cache: pnpm
-          working-directory: TypeScript
 
       - name: Install packages
         run: pnpm install
