@@ -19,3 +19,4 @@ mod two_sum;
 mod unique_email_addresses;
 mod valid_parentheses;
 mod water_bottles;
+mod plus_one;

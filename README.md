@@ -20,6 +20,7 @@
 | [28. Find the Index of the First Occurrence in a String][28] | [Go](./Go/find_index_of_the1st_occurrence_in_a_string/28.go), [Rust](./Rust/src/find_index_of_the1st_occur_in_a_string.rs), [TypeScript](./TypeScript/find_index_of_first_occur/28.ts), [C#](./CSharp/find_index_of_the_first_occur_string/Solution.cs) | Easy       |
 | [35. Search Insert Position][35]                             | [Go](./Go/search_insert_position/35.go), [Rust](./Rust/src/search_insert_position.rs), [TypeScript](./TypeScript/search_insert_position/35.ts), [C#](./CSharp/search_insert_pos/Solution.cs)                                                            | Easy       |
 | [58. Length of Last Word][58]                                | [Go](./Go/len_of_last_word/58.go), [Rust](./Rust/src/len_of_last_word.rs), [TypeScript](./TypeScript/len_of_last_word/58.ts), [C#](./CSharp/len_of_last_word/Solution.cs)                                                                               | Easy       |
+| [66. Plus one][66]                                           | [Go](./Go/plus_one/66.go), [Rust](./Rust/src/plus_one.rs), [TypeScript](./TypeScript/plus_one/66.ts), [C#](./CSharp/plus_one/Solution.cs)                                                                                                               | Easy       |
 | [69. Sqrt(x)][69]                                            | [Go](./Go/sqrt/69.go), [Rust](./Rust/src/sqrt.rs), [TypeScript](./TypeScript/sqrt/69.ts), [C#](./CSharp/sqrt/Solution.cs)                                                                                                                               | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Go](./Go/best_time2buy_n_sell_stock/121.go), [Rust](./Rust/src/best_time2buy_n_sell_stock.rs), [TypeScript](./TypeScript/best_time_to_buy_and_sell_stock/121.ts), [C#](./CSharp/best_time_to_buy_and_sell_stock/Solution.cs)                           | Easy       |
 | [182. Duplicate Emails][182]                                 | [MySQL](./SQL/182.sql)                                                                                                                                                                                                                                  | Easy       |
@@ -52,5 +53,6 @@
 [268]: https://leetcode.com/problems/missing-number/
 [704]: https://leetcode.com/problems/binary-search/
 [929]: https://leetcode.com/problems/unique-email-addresses/
+[66]: https://leetcode.com/problems/plus-one/
 [35]: https://leetcode.com/problems/search-insert-position/
 [182]: https://leetcode.com/problems/duplicate-emails/
