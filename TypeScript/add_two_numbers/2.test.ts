@@ -46,10 +46,10 @@ const tests: tt[] = [
 ];
 
 describe("add two numbers", () => {
-  tests.forEach((v, i) => {
+  tests.forEach((t, i) => {
     test(`case ${i + 1}`, () => {
-      const result = addTwoNumbers(v.l1, v.l2);
-      expect(result).toEqual(v.want);
+      const result = addTwoNumbers(t.l1, t.l2);
+      expect(result).toEqual(t.want);
     });
   });
 });
