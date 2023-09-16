@@ -16,15 +16,15 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: 1.21.1
+          go-version: stable
           check-latest: true
-          working-directory: Go
+        working-directory: Go
 
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
         with:
           version: latest
-          working-directory: Go
+        working-directory: Go
 
   test:
     runs-on: ubuntu-latest
@@ -35,7 +35,9 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: 1.21
+          go-version: stable
+          check-latest: true
+        working-directory: Go
 
       - name: Test
         run: go test ./... -cover
