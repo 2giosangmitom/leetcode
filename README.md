@@ -5,34 +5,32 @@
 
 # Summary table
 
-| Problem title                                                | Solution 🐕🦀🍞                                                                                                                                                                             | Difficulty |
-| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Go](./Go/two_sum/1.go), [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/two_sum/Solution.cs)                                                                                                  | Easy       |
-| [2. Add Two Numbers][2]                                      | [Go](./Go/add_two_numbers/2.go), [Rust](./Rust/src/add_two_numbers.rs), [C#](./CSharp/add_two_numbers/Solution.cs)                                                                          | Medium     |
-| [7. Reverse Integer][7]                                      | [Go](./Go/reverse_integer/7.go), [Rust](./Rust/src/reverse_integer.rs), [C#](./CSharp/reverse_integer/Solution.cs)                                                                          | Medium     |
-| [9. Palindrome Number][9]                                    | [Go](./Go/palindrome_number/9.go), [Rust](./Rust/src/palindrome_num.rs), [C#](./CSharp/palindrome_number/Solution.cs)                                                                       | Easy       |
-| [13. Roman to Integer][13]                                   | [Go](./Go/roman2int/13.go), [Rust](./Rust/src/roman2int.rs), [C#](./CSharp/roman_2_int/Solution.cs)                                                                                         | Easy       |
-| [14. Longest Common Prefix][14]                              | [Go](./Go/longest_common_prefix/14.go), [Rust](./Rust/src/longest_common_prefix.rs), [C#](./CSharp/longest_common_prefix/Solution.cs)                                                       | Easy       |
-| [20. Valid Parentheses][20]                                  | [Go](./Go/valid_parentheses/20.go), [Rust](./Rust/src/valid_parentheses.rs), [C#](./CSharp/valid_parentheses/Solution.cs)                                                                   | Easy       |
-| [21. Merge Two Sorted Lists][21]                             | [Go](./Go/merge_2_sorted_lists/21.go), [Rust](./Rust/src/merge_2_sorted_lists.rs), [C#](./CSharp/merge_two_sorted_lists/Solution.cs)                                                        | Easy       |
-| [26. Remove Duplicates from Sorted Array][26]                | [Go](./Go/remove_duplicates_from_sorted_arr/26.go), [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs), [C#](./CSharp/rm_duplicates_from_sorted_arr/Solution.cs)                       | Easy       |
-| [27. Remove Element][27]                                     | [Go](./Go/remove_element/27.go), [Rust](./Rust/src/remove_element.rs), [C#](./CSharp/remove_element/Solution.cs)                                                                            | Easy       |
-| [28. Find the Index of the First Occurrence in a String][28] | [Go](./Go/find_index_of_the1st_occurrence_in_a_string/28.go), [Rust](./Rust/src/find_index_of_the1st_occur_in_a_string.rs), [C#](./CSharp/find_index_of_the_first_occur_string/Solution.cs) | Easy       |
-| [35. Search Insert Position][35]                             | [Go](./Go/search_insert_position/35.go), [Rust](./Rust/src/search_insert_position.rs), [C#](./CSharp/search_insert_pos/Solution.cs)                                                         | Easy       |
-| [58. Length of Last Word][58]                                | [Go](./Go/len_of_last_word/58.go), [Rust](./Rust/src/len_of_last_word.rs), [C#](./CSharp/len_of_last_word/Solution.cs)                                                                      | Easy       |
-| [66. Plus one][66]                                           | [Go](./Go/plus_one/66.go), [Rust](./Rust/src/plus_one.rs), [C#](./CSharp/plus_one/Solution.cs)                                                                                              | Easy       |
-| [69. Sqrt(x)][69]                                            | [Go](./Go/sqrt/69.go), [Rust](./Rust/src/sqrt.rs), [C#](./CSharp/sqrt/Solution.cs)                                                                                                          | Easy       |
-| [70. Climbing Stairs][70]                                    | [Go](./Go/climbing_stairs/70.go), [Rust](./Rust/src/climbing_stairs.rs), [C#](./CSharp/climbing_stairs/Solution.cs)                                                                         | Easy       |
-| [121. Best Time to Buy and Sell Stock][121]                  | [Go](./Go/best_time2buy_n_sell_stock/121.go), [Rust](./Rust/src/best_time2buy_n_sell_stock.rs), [C#](./CSharp/best_time_to_buy_and_sell_stock/Solution.cs)                                  | Easy       |
-| [182. Duplicate Emails][182]                                 | [MySQL](./SQL/182.sql)                                                                                                                                                                      | Easy       |
-| [195. Tenth Line][195]                                       | [Bash](./Bash/tenth_line/195.sh)                                                                                                                                                            | Easy       |
-| [268. Missing Number][268]                                   | [Go](./Go/missing_number/268.go), [Rust](./Rust/src/missing_number.rs), [C#](./CSharp/missing_number/Solution.cs)                                                                           | Easy       |
-| [704. Binary Search][704]                                    | [Go](./Go/binary_search/704.go), [Rust](./Rust/src/binary_search.rs), [C#](./CSharp/binary_search/Solution.cs)                                                                              | Easy       |
-| [929. Unique Email Addresses][929]                           | [Go](./Go/unique_email_addresses/929.go), [Rust](./Rust/src/unique_email_addresses.rs), [C#](./CSharp/unique_email_address/Solution.cs)                                                     | Easy       |
-| [1512. Number of Good Pairs][1512]                           | [Go](./Go/num_of_good_pairs/1512.go), [Rust](./Rust/src/num_of_good_pairs.rs), [C#](./CSharp/num_of_good_pairs/Solution.cs)                                                                 | Easy       |
-| [1518. Water Bottles][1518]                                  | [Go](./Go/water_bottles/1518.go), [Rust](./Rust/src/water_bottles.rs), [C#](./CSharp/water_bottles/Solution.cs)                                                                             | Easy       |
-| [1523. Count Odd Numbers in an Interval Range][1523]         | [Go](./Go/count_odd_number/1523.go), [Rust](./Rust/src/count_odd_number.rs), [C#](./CSharp/count_odd_num/Solution.cs)                                                                       | Easy       |
-| [1603. Design Parking System][1603]                          | [Go](./Go/parking_system/1603.go), [Rust](./Rust/src/parking_system.rs), [C#](./CSharp/parking_system/Solution.cs)                                                                          | Easy       |
+| Problem title                                                | Solution 🦀                                             | Difficulty |
+| ------------------------------------------------------------ | ------------------------------------------------------- | ---------- |
+| [1. Two Sum][1]                                              | [Rust](./src/two_sum.rs)                                | Easy       |
+| [2. Add Two Numbers][2]                                      | [Rust](./src/add_two_numbers.rs)                        | Medium     |
+| [7. Reverse Integer][7]                                      | [Rust](./src/reverse_integer.rs)                        | Medium     |
+| [9. Palindrome Number][9]                                    | [Rust](./src/palindrome_num.rs)                         | Easy       |
+| [13. Roman to Integer][13]                                   | [Rust](./src/roman2int.rs)                              | Easy       |
+| [14. Longest Common Prefix][14]                              | [Rust](./src/longest_common_prefix.rs)                  | Easy       |
+| [20. Valid Parentheses][20]                                  | [Rust](./src/valid_parentheses.rs)                      | Easy       |
+| [21. Merge Two Sorted Lists][21]                             | [Rust](./src/merge_2_sorted_lists.rs)                   | Easy       |
+| [26. Remove Duplicates from Sorted Array][26]                | [Rust](./src/remove_duplicates_from_sorted_arr.rs)      | Easy       |
+| [27. Remove Element][27]                                     | [Rust](./src/remove_element.rs)                         | Easy       |
+| [28. Find the Index of the First Occurrence in a String][28] | [Rust](./src/find_index_of_the1st_occur_in_a_string.rs) | Easy       |
+| [35. Search Insert Position][35]                             | [Rust](./src/search_insert_position.rs)                 | Easy       |
+| [58. Length of Last Word][58]                                | [Rust](./src/len_of_last_word.rs)                       | Easy       |
+| [66. Plus one][66]                                           | [Rust](./src/plus_one.rs)                               | Easy       |
+| [69. Sqrt(x)][69]                                            | [Rust](./src/sqrt.rs)                                   | Easy       |
+| [70. Climbing Stairs][70]                                    | [Rust](./src/climbing_stairs.rs)                        | Easy       |
+| [121. Best Time to Buy and Sell Stock][121]                  | [Rust](./src/best_time2buy_n_sell_stock.rs)             | Easy       |
+| [268. Missing Number][268]                                   | [Rust](./src/missing_number.rs)                         | Easy       |
+| [704. Binary Search][704]                                    | [Rust](./src/binary_search.rs)                          | Easy       |
+| [929. Unique Email Addresses][929]                           | [Rust](./src/unique_email_addresses.rs)                 | Easy       |
+| [1512. Number of Good Pairs][1512]                           | [Rust](./src/num_of_good_pairs.rs)                      | Easy       |
+| [1518. Water Bottles][1518]                                  | [Rust](./src/water_bottles.rs)                          | Easy       |
+| [1523. Count Odd Numbers in an Interval Range][1523]         | [Rust](./src/count_odd_number.rs)                       | Easy       |
+| [1603. Design Parking System][1603]                          | [Rust](./src/parking_system.rs)                         | Easy       |
 
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1523]: https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
