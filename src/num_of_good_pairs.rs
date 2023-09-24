@@ -30,10 +30,7 @@ fn test_number_of_good_pairs() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt {
-            nums: vec![1, 2, 3, 1, 1, 3],
-            want: 4,
-        },
+        Tt { nums: vec![1, 2, 3, 1, 1, 3], want: 4 },
         Tt { nums: vec![1, 1, 1, 1], want: 6 },
         Tt { nums: vec![1, 2, 3], want: 0 },
     ];

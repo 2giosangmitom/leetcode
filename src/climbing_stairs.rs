@@ -35,7 +35,12 @@ fn test_climbing_stairs() {
         want: i32,
     }
 
-    let cases: Vec<Tt> = vec![Tt { n: 1, want: 1 }, Tt { n: 2, want: 2 }, Tt { n: 3, want: 3 }, Tt { n: 4, want: 5 }];
+    let cases: Vec<Tt> = vec![
+        Tt { n: 1, want: 1 },
+        Tt { n: 2, want: 2 },
+        Tt { n: 3, want: 3 },
+        Tt { n: 4, want: 5 },
+    ];
 
     for t in cases.into_iter() {
         let result = Solution::climb_stairs(t.n);

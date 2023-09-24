@@ -25,18 +25,9 @@ fn test_length_of_last_word() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt {
-            s: "Hello World".to_string(),
-            want: 5,
-        },
-        Tt {
-            s: "   fly me   to   the moon  ".to_string(),
-            want: 4,
-        },
-        Tt {
-            s: "luffy is still joyboy".to_string(),
-            want: 6,
-        },
+        Tt { s: "Hello World".to_string(), want: 5 },
+        Tt { s: "   fly me   to   the moon  ".to_string(), want: 4 },
+        Tt { s: "luffy is still joyboy".to_string(), want: 6 },
     ];
 
     for t in cases.into_iter() {

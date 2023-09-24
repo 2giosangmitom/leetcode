@@ -39,10 +39,7 @@ fn test_roman_to_integer() {
     let cases: Vec<Tt> = vec![
         Tt { roman: "III".to_string(), want: 3 },
         Tt { roman: "LVIII".to_string(), want: 58 },
-        Tt {
-            roman: "MCMXCIV".to_string(),
-            want: 1994,
-        },
+        Tt { roman: "MCMXCIV".to_string(), want: 1994 },
         Tt { roman: "XXIV".to_string(), want: 24 },
     ];
 

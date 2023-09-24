@@ -29,26 +29,10 @@ fn test_two_sum() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt {
-            nums: vec![2, 7, 11, 15],
-            target: 9,
-            want: vec![0, 1],
-        },
-        Tt {
-            nums: vec![3, 2, 4],
-            target: 6,
-            want: vec![1, 2],
-        },
-        Tt {
-            nums: vec![3, 3],
-            target: 6,
-            want: vec![0, 1],
-        },
-        Tt {
-            nums: vec![2, 3, 4, 1, 25, 8],
-            target: 30,
-            want: vec![-1],
-        },
+        Tt { nums: vec![2, 7, 11, 15], target: 9, want: vec![0, 1] },
+        Tt { nums: vec![3, 2, 4], target: 6, want: vec![1, 2] },
+        Tt { nums: vec![3, 3], target: 6, want: vec![0, 1] },
+        Tt { nums: vec![2, 3, 4, 1, 25, 8], target: 30, want: vec![-1] },
     ];
 
     for t in cases.into_iter() {

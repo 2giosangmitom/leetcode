@@ -27,16 +27,8 @@ fn test_water_bottles() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt {
-            num_bottles: 9,
-            num_exchange: 3,
-            want: 13,
-        },
-        Tt {
-            num_bottles: 15,
-            num_exchange: 4,
-            want: 19,
-        },
+        Tt { num_bottles: 9, num_exchange: 3, want: 13 },
+        Tt { num_bottles: 15, num_exchange: 4, want: 19 },
     ];
 
     for t in cases.into_iter() {

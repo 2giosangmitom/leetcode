@@ -63,7 +63,11 @@ fn test_unique_emails_address() {
             want: 2,
         },
         Tt {
-            emails: vec!["a@leetcode.com".to_string(), "b@leetcode.com".to_string(), "c@leetcode.com".to_string()],
+            emails: vec![
+                "a@leetcode.com".to_string(),
+                "b@leetcode.com".to_string(),
+                "c@leetcode.com".to_string(),
+            ],
             want: 3,
         },
     ];
