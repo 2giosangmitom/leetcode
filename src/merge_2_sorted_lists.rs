@@ -17,11 +17,17 @@ impl ListNodeTrait for ListNode {
 struct Solution;
 
 trait Merge2SortedLists {
-    fn merge_two_lists(list1: Option<Box<ListNode>>, list2: Option<Box<ListNode>>) -> Option<Box<ListNode>>;
+    fn merge_two_lists(
+        list1: Option<Box<ListNode>>,
+        list2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>>;
 }
 
 impl Merge2SortedLists for Solution {
-    fn merge_two_lists(mut list1: Option<Box<ListNode>>, mut list2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    fn merge_two_lists(
+        mut list1: Option<Box<ListNode>>,
+        mut list2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut head = ListNode::new(0);
         let mut current_node = &mut head;
 

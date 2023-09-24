@@ -28,12 +28,10 @@ fn test_best_time_to_buy_and_sell_stock() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt {
-            prices: vec![7, 1, 5, 3, 6, 4],
-            want: 5,
-        },
+        Tt { prices: vec![7, 1, 5, 3, 6, 4], want: 5 },
         Tt { prices: vec![7, 6, 4, 3, 1], want: 0 },
         Tt { prices: vec![2, 1, 4], want: 3 },
+        Tt { prices: vec![1, 5, 2], want: 4 },
     ];
 
     for t in cases.into_iter() {
