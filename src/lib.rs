@@ -6,6 +6,7 @@ mod count_odd_number;
 mod find_index_of_the1st_occur_in_a_string;
 mod len_of_last_word;
 mod longest_common_prefix;
+mod maximum_subarray;
 mod merge_2_sorted_lists;
 mod missing_number;
 mod num_of_good_pairs;

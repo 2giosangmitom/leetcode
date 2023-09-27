@@ -19,6 +19,7 @@
 | [27. Remove Element][27]                                     | [Rust](./src/remove_element.rs)                         | Easy       |
 | [28. Find the Index of the First Occurrence in a String][28] | [Rust](./src/find_index_of_the1st_occur_in_a_string.rs) | Easy       |
 | [35. Search Insert Position][35]                             | [Rust](./src/search_insert_position.rs)                 | Easy       |
+| [53. Maximum Subarray][53]                                   | [Rust](./src/maximum_subarray.rs)                       | Medium     |
 | [58. Length of Last Word][58]                                | [Rust](./src/len_of_last_word.rs)                       | Easy       |
 | [66. Plus one][66]                                           | [Rust](./src/plus_one.rs)                               | Easy       |
 | [69. Sqrt(x)][69]                                            | [Rust](./src/sqrt.rs)                                   | Easy       |
@@ -32,6 +33,7 @@
 | [1523. Count Odd Numbers in an Interval Range][1523]         | [Rust](./src/count_odd_number.rs)                       | Easy       |
 | [1603. Design Parking System][1603]                          | [Rust](./src/parking_system.rs)                         | Easy       |
 
+[53]: https://leetcode.com/problems/maximum-subarray/description/
 [1603]: https://leetcode.com/problems/design-parking-system/
 [1523]: https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/
 [2]: https://leetcode.com/problems/add-two-numbers/
