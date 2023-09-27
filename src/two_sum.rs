@@ -2,6 +2,7 @@ struct Solution;
 
 trait TwoSum {
     fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32>;
+    fn two_sum2(nums: Vec<i32>, target: i32) -> Vec<i32>;
 }
 
 impl TwoSum for Solution {
@@ -9,11 +10,23 @@ impl TwoSum for Solution {
         use std::collections::HashMap;
         let mut hash_map: HashMap<i32, i32> = HashMap::new();
         for (i, v) in nums.iter().enumerate() {
-            let need_number: i32 = target - *v;
+            let need_number = target - v;
             if let Some(&value) = hash_map.get(&need_number) {
                 return vec![value, i as i32];
             } else {
                 hash_map.insert(*v, i as i32);
+            }
+        }
+        vec![-1]
+    }
+
+    fn two_sum2(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        for (i, v) in nums.iter().enumerate() {
+            let need_number = target - v;
+            for (j, n) in nums.iter().enumerate() {
+                if need_number == *n && i != j {
+                    return vec![i as i32, j as i32];
+                }
             }
         }
         vec![-1]
@@ -36,7 +49,9 @@ fn test_two_sum() {
     ];
 
     for t in cases.into_iter() {
-        let result = Solution::two_sum(t.nums, t.target);
+        let result = Solution::two_sum(t.nums.clone(), t.target);
+        let result2 = Solution::two_sum2(t.nums, t.target);
         assert_eq!(result, t.want);
+        assert_eq!(result2, t.want);
     }
 }
