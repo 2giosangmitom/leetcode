@@ -12,14 +12,14 @@ impl ReverseInteger for Solution {
                 Some(num) => {
                     let last_number = x % 10;
                     if let Some(ok) = num.checked_add(last_number) {
-                        result = ok
+                        result = ok;
                     } else {
                         return 0;
                     }
                 }
                 None => return 0,
             }
-            x /= 10;
+            x /= 10; // remove the last number
         }
         result
     }
