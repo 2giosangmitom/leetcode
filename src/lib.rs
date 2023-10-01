@@ -8,6 +8,7 @@ mod len_of_last_word;
 mod longest_common_prefix;
 mod maximum_subarray;
 mod merge_2_sorted_lists;
+mod merge_sorted_arr;
 mod missing_number;
 mod num_of_good_pairs;
 mod palindrome_num;
