@@ -24,11 +24,31 @@ fn test_count_odd_numbers() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { low: 8, high: 10, want: 1 },
-        Tt { low: 3, high: 6, want: 2 },
-        Tt { low: 8, high: 13, want: 3 },
-        Tt { low: 3, high: 7, want: 3 },
-        Tt { low: 2, high: 6, want: 2 },
+        Tt {
+            low: 8,
+            high: 10,
+            want: 1,
+        },
+        Tt {
+            low: 3,
+            high: 6,
+            want: 2,
+        },
+        Tt {
+            low: 8,
+            high: 13,
+            want: 3,
+        },
+        Tt {
+            low: 3,
+            high: 7,
+            want: 3,
+        },
+        Tt {
+            low: 2,
+            high: 6,
+            want: 2,
+        },
     ];
 
     for t in cases.into_iter() {

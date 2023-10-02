@@ -28,9 +28,18 @@ fn test_plus_one() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { digits: vec![1, 2, 3], want: vec![1, 2, 4] },
-        Tt { digits: vec![4, 3, 2, 1], want: vec![4, 3, 2, 2] },
-        Tt { digits: vec![9], want: vec![1, 0] },
+        Tt {
+            digits: vec![1, 2, 3],
+            want: vec![1, 2, 4],
+        },
+        Tt {
+            digits: vec![4, 3, 2, 1],
+            want: vec![4, 3, 2, 2],
+        },
+        Tt {
+            digits: vec![9],
+            want: vec![1, 0],
+        },
     ];
 
     for t in cases.into_iter() {

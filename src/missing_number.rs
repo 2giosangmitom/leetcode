@@ -20,9 +20,18 @@ fn test_missing_number() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { nums: vec![3, 0, 1], want: 2 },
-        Tt { nums: vec![0, 1], want: 2 },
-        Tt { nums: vec![9, 6, 4, 2, 3, 5, 7, 0, 1], want: 8 },
+        Tt {
+            nums: vec![3, 0, 1],
+            want: 2,
+        },
+        Tt {
+            nums: vec![0, 1],
+            want: 2,
+        },
+        Tt {
+            nums: vec![9, 6, 4, 2, 3, 5, 7, 0, 1],
+            want: 8,
+        },
     ];
 
     for t in cases.into_iter() {

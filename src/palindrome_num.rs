@@ -8,10 +8,10 @@ trait PalindromeNumber {
 
 impl PalindromeNumber for Solution {
     fn reverse_number(n: &i32) -> i32 {
-        let mut num: i32 = 0;
-        let mut temp_num: i32 = *n;
+        let mut num = 0;
+        let mut temp_num = *n;
         while temp_num != 0 {
-            let last_num: i32 = temp_num % 10;
+            let last_num = temp_num % 10;
             num = num * 10 + last_num;
             temp_num /= 10;
         }
@@ -22,7 +22,7 @@ impl PalindromeNumber for Solution {
         if x < 0 {
             return false;
         }
-        let reversed_number: i32 = Self::reverse_number(&x);
+        let reversed_number = Self::reverse_number(&x);
         x == reversed_number
     }
 }
@@ -35,11 +35,23 @@ fn test_palindrome_number() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { num: -10, want: false },
+        Tt {
+            num: -10,
+            want: false,
+        },
         Tt { num: 5, want: true },
-        Tt { num: 121, want: true },
-        Tt { num: 321, want: false },
-        Tt { num: 111, want: true },
+        Tt {
+            num: 121,
+            want: true,
+        },
+        Tt {
+            num: 321,
+            want: false,
+        },
+        Tt {
+            num: 111,
+            want: true,
+        },
     ];
 
     for t in cases.into_iter() {

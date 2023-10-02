@@ -29,9 +29,18 @@ fn test_maximum_subarray() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { nums: vec![-2, 1, -3, 4, -1, 2, 1, -5, 4], want: 6 },
-        Tt { nums: vec![0], want: 0 },
-        Tt { nums: vec![5, 4, -1, 7, 8], want: 23 },
+        Tt {
+            nums: vec![-2, 1, -3, 4, -1, 2, 1, -5, 4],
+            want: 6,
+        },
+        Tt {
+            nums: vec![0],
+            want: 0,
+        },
+        Tt {
+            nums: vec![5, 4, -1, 7, 8],
+            want: 23,
+        },
     ];
 
     for t in cases.into_iter() {

@@ -6,7 +6,6 @@ struct ParkingSystem {
 
 trait DesignParkingSystem {
     fn new(big: i32, medium: i32, small: i32) -> Self;
-
     fn add_car(&mut self, car_type: i32) -> bool;
 }
 
@@ -55,7 +54,9 @@ fn test_parking_system() {
             medium: 15,
             small: 44,
             add_car: vec![1, 1, 2, 1, 3, 3, 1, 2, 2, 3, 1],
-            want: vec![true, true, true, false, true, true, false, true, true, true, false],
+            want: vec![
+                true, true, true, false, true, true, false, true, true, true, false,
+            ],
         },
     ];
 

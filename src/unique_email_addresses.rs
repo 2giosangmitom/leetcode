@@ -7,7 +7,7 @@ trait UniqueEmailAddresses {
 
 impl UniqueEmailAddresses for Solution {
     fn num_unique_emails(emails: Vec<String>) -> i32 {
-        let mut unique_emails: Vec<String> = vec![];
+        let mut unique_emails = Vec::<String>::new();
         for email in emails.into_iter() {
             let part = email.split('@').collect::<Vec<&str>>();
             let mut local_name = part[0].to_string();
@@ -27,7 +27,7 @@ impl UniqueEmailAddresses for Solution {
     // Second solution
     fn num_unique_emails2(emails: Vec<String>) -> i32 {
         use std::collections::HashSet;
-        let mut hash_set: HashSet<String> = HashSet::new();
+        let mut hash_set = HashSet::<String>::new();
         for email in emails.into_iter() {
             let mut clean_email = String::new();
             let part = email.split('@').collect::<Vec<&str>>();

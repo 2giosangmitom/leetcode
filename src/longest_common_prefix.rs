@@ -28,7 +28,11 @@ fn test_longest_common_prefix() {
 
     let cases: Vec<Tt> = vec![
         Tt {
-            strs: vec!["flower".to_string(), "flow".to_string(), "flight".to_string()],
+            strs: vec![
+                "flower".to_string(),
+                "flow".to_string(),
+                "flight".to_string(),
+            ],
             want: "fl".to_string(),
         },
         Tt {
