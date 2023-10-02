@@ -6,7 +6,7 @@ trait RomanToInt {
 
 impl RomanToInt for Solution {
     fn roman_to_int(s: String) -> i32 {
-        let mut result: i32 = 0;
+        let mut result = 0;
         let mut number: i32;
         for char in s.chars().rev() {
             match char {
@@ -18,7 +18,7 @@ impl RomanToInt for Solution {
                 'D' => number = 500,
                 'M' => number = 1000,
                 _ => panic!("Invalid roman number"),
-            }
+            };
             if number * 4 < result {
                 result -= number;
             } else {
@@ -37,10 +37,22 @@ fn test_roman_to_integer() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { roman: "III".to_string(), want: 3 },
-        Tt { roman: "LVIII".to_string(), want: 58 },
-        Tt { roman: "MCMXCIV".to_string(), want: 1994 },
-        Tt { roman: "XXIV".to_string(), want: 24 },
+        Tt {
+            roman: "III".to_string(),
+            want: 3,
+        },
+        Tt {
+            roman: "LVIII".to_string(),
+            want: 58,
+        },
+        Tt {
+            roman: "MCMXCIV".to_string(),
+            want: 1994,
+        },
+        Tt {
+            roman: "XXIV".to_string(),
+            want: 24,
+        },
     ];
 
     for t in cases.into_iter() {

@@ -6,7 +6,7 @@ trait ValidParentheses {
 
 impl ValidParentheses for Solution {
     fn is_valid(s: String) -> bool {
-        let mut stack: Vec<char> = vec![];
+        let mut stack = Vec::<char>::new();
         for char in s.chars() {
             match char {
                 '{' | '(' | '[' => stack.push(char),
@@ -34,9 +34,18 @@ fn test_valid_parentheses() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { s: "()".to_string(), want: true },
-        Tt { s: "()[]{}".to_string(), want: true },
-        Tt { s: "(]".to_string(), want: false },
+        Tt {
+            s: "()".to_string(),
+            want: true,
+        },
+        Tt {
+            s: "()[]{}".to_string(),
+            want: true,
+        },
+        Tt {
+            s: "(]".to_string(),
+            want: false,
+        },
     ];
 
     for t in cases.into_iter() {

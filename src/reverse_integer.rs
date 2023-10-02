@@ -34,10 +34,19 @@ fn test_reverse_integer() {
 
     let cases: Vec<Tt> = vec![
         Tt { x: 123, want: 321 },
-        Tt { x: -123, want: -321 },
+        Tt {
+            x: -123,
+            want: -321,
+        },
         Tt { x: 120, want: 21 },
-        Tt { x: 1534236469, want: 0 },
-        Tt { x: -2147483648, want: 0 },
+        Tt {
+            x: 1534236469,
+            want: 0,
+        },
+        Tt {
+            x: -2147483648,
+            want: 0,
+        },
         Tt { x: 900000, want: 9 },
     ];
 

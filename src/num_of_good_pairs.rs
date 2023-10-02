@@ -9,7 +9,7 @@ impl NumOfGoodPairs for Solution {
         use std::collections::hash_map;
         use std::collections::HashMap;
         let mut result = 0;
-        let mut hash_map: HashMap<i32, i32> = HashMap::new();
+        let mut hash_map = HashMap::<i32, i32>::new();
         for num in nums.into_iter() {
             if let hash_map::Entry::Vacant(e) = hash_map.entry(num) {
                 e.insert(1);
@@ -30,9 +30,18 @@ fn test_number_of_good_pairs() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { nums: vec![1, 2, 3, 1, 1, 3], want: 4 },
-        Tt { nums: vec![1, 1, 1, 1], want: 6 },
-        Tt { nums: vec![1, 2, 3], want: 0 },
+        Tt {
+            nums: vec![1, 2, 3, 1, 1, 3],
+            want: 4,
+        },
+        Tt {
+            nums: vec![1, 1, 1, 1],
+            want: 6,
+        },
+        Tt {
+            nums: vec![1, 2, 3],
+            want: 0,
+        },
     ];
 
     for t in cases.into_iter() {

@@ -27,8 +27,18 @@ fn test_remove_element() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { nums: vec![3, 2, 2, 3], val: 3, want: 2, want_nums: vec![2, 2] },
-        Tt { nums: vec![0, 1, 2, 2, 3, 0, 4, 2], val: 2, want: 5, want_nums: vec![0, 1, 3, 0, 4] },
+        Tt {
+            nums: vec![3, 2, 2, 3],
+            val: 3,
+            want: 2,
+            want_nums: vec![2, 2],
+        },
+        Tt {
+            nums: vec![0, 1, 2, 2, 3, 0, 4, 2],
+            val: 2,
+            want: 5,
+            want_nums: vec![0, 1, 3, 0, 4],
+        },
     ];
 
     for mut t in cases.into_iter() {

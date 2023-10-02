@@ -29,8 +29,16 @@ fn test_binary_search() {
     }
 
     let cases: Vec<Tt> = vec![
-        Tt { nums: vec![-1, 0, 3, 5, 9, 12], target: 9, want: 4 },
-        Tt { nums: vec![-1, 0, 3, 5, 9, 12], target: 2, want: -1 },
+        Tt {
+            nums: vec![-1, 0, 3, 5, 9, 12],
+            target: 9,
+            want: 4,
+        },
+        Tt {
+            nums: vec![-1, 0, 3, 5, 9, 12],
+            target: 2,
+            want: -1,
+        },
     ];
 
     for t in cases.into_iter() {
