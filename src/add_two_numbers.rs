@@ -27,7 +27,7 @@ impl AddTwoNumbers for Solution {
     ) -> Option<Box<ListNode>> {
         let mut dummy_head = Box::new(ListNode::new(0));
         let mut tail = &mut dummy_head;
-        let mut carry: i32 = 0;
+        let mut carry = 0;
 
         while l1.is_some() || l2.is_some() || carry != 0 {
             let digit1 = match l1 {
