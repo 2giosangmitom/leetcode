@@ -4,6 +4,6 @@
 
 The essence of **LeetCode** is to provide IT knowledge and this knowledge is often used at **Google, Amazon, Microsoft, Meta, Netflix**...
 
-**LeetCode** is a good address for coders to test their algorithm skills. It should be noted that the purpose of using **LeetCode** is not to memorize solutions just to pass the interview round.
+**LeetCode** is a good place for programmers to test their algorithm skills. It's a tool to support knowledge improvement, not really a tool to help you with "tricks" to pass the interview round.
 
 This repository contains several solutions to **LeetCode** problems written in [Rust](https://www.rust-lang.org/). You can refer to it if you haven't found a solution yet.
