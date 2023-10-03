@@ -1,0 +1,19 @@
+[book]
+authors = ["Vo Quang Chien"]
+language = "en"
+multilingual = false
+src = "src"
+title = "leetcode-rust"
+
+[output.html]
+git-repository-url = "https://github.com/2giosangmitom/leetcode-rust"
+git-repository-icon = "fa-github"
+default-theme = "dark"
+no-section-label = true
+preferred-dark-theme = "ayu"
+
+[output.html.playground]
+editable = false
+copyable = true
+line-numbers = true
+runnable = false
