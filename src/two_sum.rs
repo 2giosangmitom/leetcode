@@ -10,8 +10,8 @@ impl TwoSum for Solution {
         use std::collections::HashMap;
         let mut hash_map = HashMap::<i32, i32>::new();
         for (i, v) in nums.iter().enumerate() {
-            let need_number = target - v;
-            if let Some(&value) = hash_map.get(&need_number) {
+            let complement = target - v;
+            if let Some(&value) = hash_map.get(&complement) {
                 return vec![value, i as i32];
             } else {
                 hash_map.insert(*v, i as i32);
@@ -22,9 +22,9 @@ impl TwoSum for Solution {
 
     fn two_sum2(nums: Vec<i32>, target: i32) -> Vec<i32> {
         for (i, v) in nums.iter().enumerate() {
-            let need_number = target - v;
+            let complement = target - v;
             for (j, n) in nums.iter().enumerate() {
-                if need_number == *n && i != j {
+                if complement == *n && i != j {
                     return vec![i as i32, j as i32];
                 }
             }
