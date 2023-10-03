@@ -25,6 +25,7 @@
 | [69. Sqrt(x)][69]                                            | [Rust](./src/sqrt.rs)                                   | Easy       |
 | [70. Climbing Stairs][70]                                    | [Rust](./src/climbing_stairs.rs)                        | Easy       |
 | [88. Merge Sorted Array][88]                                 | [Rust](./src/merge_sorted_arr.rs)                       | Easy       |
+| [ 100. Same Tree ][100]                                      | [Rust](./src/same_tree.rs)                              | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Rust](./src/best_time2buy_n_sell_stock.rs)             | Easy       |
 | [268. Missing Number][268]                                   | [Rust](./src/missing_number.rs)                         | Easy       |
 | [704. Binary Search][704]                                    | [Rust](./src/binary_search.rs)                          | Easy       |
@@ -34,6 +35,7 @@
 | [1523. Count Odd Numbers in an Interval Range][1523]         | [Rust](./src/count_odd_number.rs)                       | Easy       |
 | [1603. Design Parking System][1603]                          | [Rust](./src/parking_system.rs)                         | Easy       |
 
+[100]: https://leetcode.com/problems/same-tree/description/
 [53]: https://leetcode.com/problems/maximum-subarray/description/
 [88]: https://leetcode.com/problems/merge-sorted-array/description/
 [1603]: https://leetcode.com/problems/design-parking-system/
