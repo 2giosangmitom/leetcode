@@ -10,6 +10,9 @@
 6. Repeat steps 3-5 until we find a solution or reach the end of the `nums`.
 7. If no solution is found, return an appropriate indicator.
 
+- _Time complexity:_ \\( O(n) \\)
+- _Space complexity:_ \\( O(n) \\)
+
 > **Second solution: using 2 nested loops**
 
 1. Iterate through the `nums` from left to right.
@@ -18,6 +21,9 @@
 4. For each element `nums[j]`, check if the `complement = nums[j]` and the `i != j`. If it does, return `i` and `j`.
 5. Repeat step 1-4 until condition is _true_ or reach the end of the `nums`
 6. If no solution is found, return an appropriate indicator.
+
+- _Time complexity:_ \\( O({n^2}) \\)
+- _Space complexity:_ \\( O(1) \\)
 
 ```rust
 {{#include ../../src/two_sum.rs}}
