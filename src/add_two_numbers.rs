@@ -5,7 +5,6 @@ struct ListNode {
 }
 
 impl ListNode {
-    #[inline]
     fn new(val: i32) -> Self {
         ListNode { val, next: None }
     }
@@ -52,7 +51,7 @@ impl AddTwoNumbers for Solution {
 
             let new_node = Some(Box::new(ListNode::new(digit)));
             tail.next = new_node;
-            tail = tail.next.as_mut()?;
+            tail = tail.next.as_mut().unwrap();
         }
         dummy_head.next
     }
