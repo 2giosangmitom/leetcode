@@ -11,6 +11,7 @@ git-repository-icon = "fa-github"
 default-theme = "dark"
 no-section-label = true
 preferred-dark-theme = "ayu"
+mathjax-support = true
 
 [output.html.playground]
 editable = false
