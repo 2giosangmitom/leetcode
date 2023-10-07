@@ -10,8 +10,8 @@
    - If not:
      - Calculate the last digit (`last_digit`) of `x` by dividing `x` by `10` and getting the remainder (`%`).
      - Check for integer overflow when adding `num` to `last_digit` (using `checked_add` method).
-     - Return `0` when the integer overflow occurred, else assign the returned value of `checked_add` method to `result`.
-   - Remove the unit digit of `x` by dividing `x` by `10`.
+     - Return `0` if the integer overflow occurred, else assign the returned value of `checked_add` method to `result`.
+   - Remove the last digit of `x` by dividing `x` by `10`.
 4. Repeat step **3** until the condition in `while` loop equal to `false`.
 5. Return `result`.
 
