@@ -10,8 +10,8 @@ impl ReverseInteger for Solution {
         while x != 0 {
             match result.checked_mul(10) {
                 Some(num) => {
-                    let last_number = x % 10;
-                    if let Some(ok) = num.checked_add(last_number) {
+                    let unit_digit = x % 10;
+                    if let Some(ok) = num.checked_add(unit_digit) {
                         result = ok;
                     } else {
                         return 0;
@@ -19,7 +19,7 @@ impl ReverseInteger for Solution {
                 }
                 None => return 0,
             }
-            x /= 10; // remove the last number
+            x /= 10;
         }
         result
     }
