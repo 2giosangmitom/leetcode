@@ -8,8 +8,8 @@
    - Check for integer overflow when multiplying `result` by `10` (using `checked_mul` method).
    - If integer overflow occur (`checked_mul` returning `None`), return `0`.
    - If not:
-     - Calculate the unit digit (`unit_digit`) of `x` by dividing `x` by `10` and getting the remainder (`%`).
-     - Check for integer overflow when adding `num` to `unit_digit` (using `checked_add` method).
+     - Calculate the last digit (`last_digit`) of `x` by dividing `x` by `10` and getting the remainder (`%`).
+     - Check for integer overflow when adding `num` to `last_digit` (using `checked_add` method).
      - Return `0` when the integer overflow occurred, else assign the returned value of `checked_add` method to `result`.
    - Remove the unit digit of `x` by dividing `x` by `10`.
 4. Repeat step **3** until the condition in `while` loop equal to `false`.
