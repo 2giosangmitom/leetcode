@@ -1,6 +1,6 @@
 # [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 
-> **Solution**
+> **Solution description**
 
 1. Create a placeholder node named `dummyHead`. This node will hold the result.
 2. Initialize a variable named `tail` and assign it to `&mut dummyHead`. This variable will keep track of the last node in the `dummyHead`.
