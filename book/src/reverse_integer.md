@@ -1,6 +1,6 @@
 # [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)
 
-> **Solution**
+> **Solution description**
 
 1. Declare a variable of type `i32` named `result` and value `0`.
 2. Start a `while` loop with the condition `x != 0`.

@@ -1,6 +1,6 @@
 # [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
 
-> **First solution: using hash map**
+> **First solution description: using hash map**
 
 1. Create an empty **hash table** (`hash_map`) to store elements and their indexes.
 2. Iterate through the `nums` from left to right.
@@ -14,7 +14,7 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(n) \\)
 
-> **Second solution: using nested loops**
+> **Second solution description: using nested loops**
 
 1. Iterate through the `nums` from left to right.
 2. Inside the loop:
