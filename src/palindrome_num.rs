@@ -1,28 +1,26 @@
 struct Solution;
 
 trait PalindromeNumber {
-    fn reverse_number(n: &i32) -> i32;
-
     fn is_palindrome(x: i32) -> bool;
 }
 
 impl PalindromeNumber for Solution {
-    fn reverse_number(n: &i32) -> i32 {
-        let mut num = 0;
-        let mut temp_num = *n;
-        while temp_num != 0 {
-            let last_num = temp_num % 10;
-            num = num * 10 + last_num;
-            temp_num /= 10;
-        }
-        num
-    }
-
     fn is_palindrome(x: i32) -> bool {
+        let reverse_number = |n: &i32| -> i32 {
+            let mut result = 0;
+            let mut temp = *n;
+            while temp != 0 {
+                let last_digit = temp % 10;
+                result = result * 10 + last_digit;
+                temp /= 10;
+            }
+            result
+        };
+
         if x < 0 {
             return false;
         }
-        let reversed_number = Self::reverse_number(&x);
+        let reversed_number = reverse_number(&x);
         x == reversed_number
     }
 }
