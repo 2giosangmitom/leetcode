@@ -10,3 +10,4 @@
 - [Longest Common Prefix](longest_common_prefix.md)
 - [Valid Parentheses](valid_parentheses.md)
 - [Merge Two Sorted Lists](merge_2_sorted_lists.md)
+- [Remove Duplicates from Sorted Array](remove_duplicates_from_sorted_array.md)
