@@ -18,7 +18,7 @@ jobs:
 
       - name: Test
         run: go test -cover ./...
-        working-directory: Go
+        working-directory: Golang
 
   check:
     runs-on: ubuntu-latest
@@ -35,4 +35,4 @@ jobs:
         uses: golangci/golangci-lint-action@v3
         with:
           version: latest
-          working-directory: Go
+          working-directory: Golang
