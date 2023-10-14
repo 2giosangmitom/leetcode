@@ -16,6 +16,7 @@ jobs:
         with:
           go-version: stable
           cache-dependency-path: Golang/go.sum
+          go-version-file: Golang/go.mod
 
       - name: Test
         run: go test -cover ./...
@@ -32,6 +33,7 @@ jobs:
         with:
           go-version: stable
           cache-dependency-path: Golang/go.sum
+          go-version-file: Golang/go.mod
 
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v3
