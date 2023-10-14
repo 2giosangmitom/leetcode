@@ -27,3 +27,7 @@
 ```go
 {{#include ../../Golang/two_sum/1.go}}
 ```
+
+```go
+{{#include ../../Golang/two_sum/1_test.go}}
+```
