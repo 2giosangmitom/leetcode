@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(n) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/valid_parentheses.rs}}
+{{#include ../../Rust/src/valid_parentheses.rs}}
 ```

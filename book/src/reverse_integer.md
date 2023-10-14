@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/reverse_integer.rs}}
+{{#include ../../Rust/src/reverse_integer.rs}}
 ```

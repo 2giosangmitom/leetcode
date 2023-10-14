@@ -1,15 +1,23 @@
 # [1. Two Sum](https://leetcode.com/problems/two-sum/description/)
 
-> **First solution description: using hash map**
+#### First solution description: using hash map
 
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(n) \\)
 
-> **Second solution description: using nested loops**
+#### Second solution description: using nested loops
 
 - _Time complexity:_ \\( O({n^2}) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/two_sum.rs}}
+{{#include ../../Rust/src/two_sum.rs}}
+```
+
+> **C#**
+
+```csharp
+{{#include ../../CSharp/Src/two_sum.cs}}
 ```

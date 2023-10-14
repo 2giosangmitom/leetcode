@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n - 1) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/longest_common_prefix.rs}}
+{{#include ../../Rust/src/longest_common_prefix.rs}}
 ```
