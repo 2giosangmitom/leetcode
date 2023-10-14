@@ -21,3 +21,9 @@
 ```csharp
 {{#include ../../CSharp/Src/two_sum.cs}}
 ```
+
+> **Go**
+
+```go
+{{#include ../../Golang/two_sum/1.go}}
+```
