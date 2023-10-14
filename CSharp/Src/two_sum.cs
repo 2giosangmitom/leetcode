@@ -32,8 +32,10 @@ public class Solution {
         List<(int[] nums, int target, int[] want)> TestCases =
             new()
             {
-                (new int[] { 2, 7, 11, 15 }, 9, new int[] { 0, 1 }),
-                (new int[] { 3, 2, 4 }, 6, new int[] { 1, 2 }),
+                (nums: new int[] { 2, 7, 11, 15 }, target: 9, want: new int[] { 0, 1 }),
+                (nums: new int[] { 3, 2, 4 }, target: 6, want: new int[] { 1, 2 }),
+                (nums: new int[] { 3, 3 }, target: 6, want: new int[] { 0, 1 }),
+                (nums: new int[] { 2, 3, 4, 1, 25, 8 }, target: 30, want: new int[] { -1 }),
             };
 
         foreach ((int[] nums, int target, int[] want) in TestCases) {
