@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/palindrome_num.rs}}
+{{#include ../../Rust/src/palindrome_num.rs}}
 ```

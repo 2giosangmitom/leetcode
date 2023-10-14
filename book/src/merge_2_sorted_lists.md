@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/merge_2_sorted_lists.rs}}
+{{#include ../../Rust/src/merge_2_sorted_lists.rs}}
 ```

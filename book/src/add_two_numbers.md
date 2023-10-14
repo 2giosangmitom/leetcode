@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/add_two_numbers.rs}}
+{{#include ../../Rust/src/add_two_numbers.rs}}
 ```

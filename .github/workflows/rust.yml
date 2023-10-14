@@ -16,6 +16,7 @@ jobs:
 
       - name: Test
         run: cargo test --lib
+        working-directory: Rust
 
   check:
     runs-on: ubuntu-latest
@@ -25,3 +26,4 @@ jobs:
 
       - name: Check
         run: cargo clippy
+        working-directory: Rust

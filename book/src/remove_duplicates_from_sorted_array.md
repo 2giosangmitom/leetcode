@@ -3,6 +3,8 @@
 - _Time complexity:_ \\( O(n - 1) \\)
 - _Space complexity:_ \\( O(1) \\)
 
+> **Rust**
+
 ```rust
-{{#include ../../src/remove_duplicates_from_sorted_arr.rs}}
+{{#include ../../Rust/src/remove_duplicates_from_sorted_arr.rs}}
 ```
