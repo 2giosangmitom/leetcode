@@ -37,3 +37,7 @@
 ```js
 {{#include ../../JavaScript/src/two_sum.js}}
 ```
+
+```js
+{{#include ../../JavaScript/test/two_sum.test.js}}
+```
