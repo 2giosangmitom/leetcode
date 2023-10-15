@@ -12,5 +12,8 @@ test_cs:
 test_go:
 	(cd ./Golang/ && go test -cover ./...)
 
+test_js:
+	(cd ./JavaScript/ && npm run test)
+
 serve:
 	(cd ./book/ && mdbook serve --open)
