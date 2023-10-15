@@ -23,7 +23,7 @@ impl TwoSum for Solution {
     fn two_sum2(nums: Vec<i32>, target: i32) -> Vec<i32> {
         for (i, v) in nums.iter().enumerate() {
             let complement = target - v;
-            for (j, n) in nums.iter().enumerate() {
+            for (j, n) in nums.iter().enumerate().skip(i + 1) {
                 if complement == *n && i != j {
                     return vec![i as i32, j as i32];
                 }
