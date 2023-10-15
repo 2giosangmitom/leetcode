@@ -32,6 +32,8 @@
 {{#include ../../Golang/two_sum/1_test.go}}
 ```
 
+> **JavaScript**
+
 ```js
 {{#include ../../JavaScript/src/two_sum.js}}
 ```
