@@ -2,6 +2,6 @@
   "name": "leetcode",
   "type": "module",
   "scripts": {
-    "test": "node --test src/*"
+    "test": "node src/*"
   }
 }
