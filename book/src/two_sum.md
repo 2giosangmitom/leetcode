@@ -31,13 +31,3 @@
 ```go
 {{#include ../../Golang/two_sum/1_test.go}}
 ```
-
-> **Ruby**
-
-```ruby
-{{#include ../../Ruby/lib/two_sum.rb}}
-```
-
-```ruby
-{{#include ../../Ruby/spec/two_sum_spec.rb}}
-```
