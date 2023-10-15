@@ -17,6 +17,7 @@ jobs:
         with:
           ruby-version: 3.2.2
           bundler-cache: true
+          working-directory: Ruby
 
       - name: Test
         run: bundle exec rspec
