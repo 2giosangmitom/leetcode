@@ -1,0 +1,6 @@
+name: leetcode
+environment:
+  sdk: ^3.0.0
+
+dependencies:
+  test: ^1.24.8
