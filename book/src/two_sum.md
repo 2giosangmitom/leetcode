@@ -18,7 +18,7 @@
 
 > **C#**
 
-```csharp
+```c#
 {{#include ../../CSharp/Src/two_sum.cs}}
 ```
 
@@ -30,4 +30,10 @@
 
 ```go
 {{#include ../../Golang/two_sum/1_test.go}}
+```
+
+> **Ruby**
+
+```ruby
+{{#include ../../Ruby/lib/two_sum.rb}}
 ```
