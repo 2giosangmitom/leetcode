@@ -1,4 +1,4 @@
-test_all: test_rust test_go test_cs
+test_all: test_rust test_go test_cs test_js
 
 format:
 	dotnet format ./CSharp/CSharp.csproj && (cd Rust && cargo fmt) && (cd Golang && go fmt ./...)
