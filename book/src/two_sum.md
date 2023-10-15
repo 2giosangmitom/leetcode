@@ -37,3 +37,7 @@
 ```ruby
 {{#include ../../Ruby/lib/two_sum.rb}}
 ```
+
+```ruby
+{{#include ../../Ruby/spec/two_sum_spec.rb}}
+```
