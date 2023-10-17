@@ -1,4 +1,4 @@
-import { it, describe } from "node:test";
+import { test, describe } from "node:test";
 import assert from "node:assert";
 import { twoSum, twoSum2 } from "../src/two_sum.js";
 
@@ -27,7 +27,7 @@ describe("two sum", () => {
   ];
 
   for (const tt of cases) {
-    it(JSON.stringify(tt), () => {
+    test(JSON.stringify(tt), () => {
       assert.deepStrictEqual(twoSum(tt.nums, tt.target), tt.want);
       assert.deepStrictEqual(twoSum2(tt.nums, tt.target), tt.want);
     });
