@@ -7,6 +7,7 @@
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
 [![JavaScript](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
+[![Ruby](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml)
 
 # Summary table
 
