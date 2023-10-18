@@ -37,6 +37,7 @@ jobs:
       - name: Build Book
         run: |
           cd book
+          npm i
           npm run build
 
       - name: Setup Pages
