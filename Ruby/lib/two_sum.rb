@@ -18,11 +18,11 @@ end
 # @param {Integer} target
 # @return {Integer[]}
 def two_sum2(nums, target)
-  for i in 0...nums.length do
-    complement = target - nums[i]
+  nums.each_with_index do |num, i|
+    complement = target - num
     for j in i + 1...nums.length do
       return [i, j] if complement == nums[j]
-    end
+      end
   end
   [-1]
 end
