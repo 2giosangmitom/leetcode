@@ -1,4 +1,4 @@
-name: Deploy static content to Pages
+name: Deploy Docusaurus to GitHub Pages
 
 on:
   push:
@@ -26,23 +26,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install latest mdbook
-        run: |
-          tag=$(curl 'https://api.github.com/repos/rust-lang/mdbook/releases/latest' | jq -r '.tag_name')
-          url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-${tag}-x86_64-unknown-linux-gnu.tar.gz"
-          mkdir mdbook
-          curl -sSL $url | tar -xz --directory=./mdbook
-          echo `pwd`/mdbook >> $GITHUB_PATH
+
+      - name: Setup nodejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+          cache: "npm"
+          cache-dependency-path: book/package-lock.json
+
       - name: Build Book
         run: |
           cd book
-          mdbook build
+          npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: "./book/book"
+          path: "./book/build"
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
