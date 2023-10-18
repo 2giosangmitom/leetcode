@@ -3,6 +3,11 @@
     <h3>Solution for LeetCode problems</h3>
 </div>
 
+[![C#](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml)[![Dart](https://github.com/2giosangmitom/leetcode/actions/workflows/dart.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/dart.yml)
+[![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
+[![JavaScript](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml)
+[![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
+
 # Summary table
 
 | Problem title                                                | Solution                                                                                                                                                              | Difficulty |
