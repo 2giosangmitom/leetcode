@@ -1,4 +1,4 @@
-test_all: test_rust test_go test_cs test_js test_dart
+test_all: test_rust test_go test_cs test_js test_dart test_ruby
 
 test_rust:
 	(cd ./Rust/ && cargo test --lib )
@@ -14,3 +14,6 @@ test_js:
 
 test_dart:
 	(cd ./Dart/ && dart test)
+
+test_ruby:
+	(cd ./Ruby/ && bundle exec rspec)
