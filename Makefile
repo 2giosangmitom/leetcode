@@ -14,6 +14,3 @@ test_js:
 
 test_dart:
 	(cd ./Dart/ && dart test)
-
-serve:
-	(cd ./book/ && mdbook serve --open)
