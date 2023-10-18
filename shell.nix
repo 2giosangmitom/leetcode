@@ -9,5 +9,6 @@ pkgs.mkShell {
     rustup
     dotnet-sdk_7
     go_1_21
+    ruby_3_2
   ];
 }
