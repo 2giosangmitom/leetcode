@@ -31,9 +31,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
-        blog: {
-          showReadingTime: true,
-        },
+        blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -56,9 +54,8 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/2giosangmitom/leetcode",
             label: "GitHub",
