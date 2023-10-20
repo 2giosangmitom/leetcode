@@ -1,10 +1,8 @@
 namespace CSharp.AddTwoNumbers;
 
-public class Test
-{
+public class Test {
     [Fact]
-    public void AddTwoNumbersTest()
-    {
+    public void AddTwoNumbersTest() {
         List<(ListNode l1, ListNode l2, ListNode want)> TestCases =
             new()
             {
@@ -45,8 +43,7 @@ public class Test
                 )
             };
 
-        foreach ((ListNode l1, ListNode l2, ListNode want) in TestCases)
-        {
+        foreach ((ListNode l1, ListNode l2, ListNode want) in TestCases) {
             ListNode result = Solution.AddTwoNumbers(l1, l2);
             Assert.Equivalent(want, result);
         }

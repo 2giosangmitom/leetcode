@@ -1,10 +1,8 @@
 namespace CSharp.TwoSum;
 
-public class Test
-{
+public class Test {
     [Fact]
-    public void TwoSumTest()
-    {
+    public void TwoSumTest() {
         List<(int[] nums, int target, int[] want)> TestCases =
             new()
             {
@@ -14,8 +12,7 @@ public class Test
                 (nums: new int[] { 2, 3, 4, 1, 25, 8 }, target: 30, want: new int[] { -1 }),
             };
 
-        foreach ((int[] nums, int target, int[] want) in TestCases)
-        {
+        foreach ((int[] nums, int target, int[] want) in TestCases) {
             int[] result = Solution.TwoSum(nums, target);
             int[] result2 = Solution.TwoSum2(nums, target);
             Assert.Equal(want, result);

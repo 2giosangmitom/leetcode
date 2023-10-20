@@ -12,6 +12,7 @@ tab_width = 4
 insert_final_newline = false
 dotnet_diagnostic.IDE0160.severity = none
 dotnet_diagnostic.IDE0161.severity = none
+dotnet_diagnostic.CA1051.severity = none
 csharp_new_line_before_open_brace = none
 csharp_new_line_before_else = true
 csharp_new_line_before_catch = true
