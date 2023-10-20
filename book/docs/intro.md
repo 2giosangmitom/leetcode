@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Introduction
 
 **LeetCode** is a platform that helps users improve their programming skills through interview questions commonly used at the world's leading technology companies.
