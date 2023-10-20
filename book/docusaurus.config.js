@@ -70,6 +70,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ["csharp", "rust", "go", "dart", "ruby"],
       },
     }),
 };
