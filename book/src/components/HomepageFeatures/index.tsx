@@ -9,30 +9,23 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
+    title: "Beginner friendly",
+    description: <>Algorithms is easy to understand, optimal, and accurate.</>,
+  },
+  {
+    title: "Popular programming languages",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        The repository contains solutions to LeetCode problems written in many
+        programming languages, such as{" "}
+        <b>Ruby, Rust, Go, C#, Dart, JavaScript</b>.
       </>
     ),
   },
   {
-    title: "Focus on What Matters",
+    title: "Unit test",
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: "Powered by React",
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <>You can learn how to write unit tests in many programming languages</>
     ),
   },
 ];
