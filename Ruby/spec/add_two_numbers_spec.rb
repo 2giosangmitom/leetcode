@@ -15,7 +15,7 @@ def are_equal(l1, l2)
   return true
 end
 
-describe 'add_two_numbers' do
+describe 'add two numbers' do
   cases = [
     {
       l1: ListNode.new(2, ListNode.new(4, ListNode.new(3, nil))),
@@ -33,6 +33,7 @@ describe 'add_two_numbers' do
       l2: ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, nil)))),
       want: ListNode.new(8, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(0, ListNode.new(0, ListNode.new(0, ListNode.new(1, nil)))))))),
     }
+    # rubocop:enable Layout/LineLength
   ]
 
   cases.each_with_index do |c, i|
