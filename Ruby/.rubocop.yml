@@ -1,2 +1,11 @@
 Style:
   Enabled: false
+
+Metrics:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
