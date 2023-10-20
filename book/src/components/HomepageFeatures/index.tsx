@@ -9,15 +9,15 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Beginner friendly",
+    title: "Clean Code",
     description: <>Algorithms is easy to understand, optimal, and accurate.</>,
   },
   {
-    title: "Popular programming languages",
+    title: "Different programming languages",
     description: (
       <>
-        The repository contains solutions to LeetCode problems written in many
-        programming languages, such as{" "}
+        The repository contains solutions to LeetCode problems written in
+        different programming languages, such as{" "}
         <b>Ruby, Rust, Go, C#, Dart, JavaScript</b>.
       </>
     ),
@@ -25,7 +25,13 @@ const FeatureList: FeatureItem[] = [
   {
     title: "Unit test",
     description: (
-      <>You can learn how to write unit tests in many programming languages</>
+      <>
+        You can learn about{" "}
+        <a href="https://en.wikipedia.org/wiki/Test-driven_development">
+          Test-driven development
+        </a>{" "}
+        in different programming languages.
+      </>
     ),
   },
 ];
