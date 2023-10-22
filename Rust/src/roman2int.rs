@@ -60,6 +60,10 @@ fn test_roman_to_integer() {
             roman: "XXIV".to_string(),
             want: 24,
         },
+        Tt {
+            roman: "LLVMR".to_string(),
+            want: -1,
+        },
     ];
 
     for t in cases.into_iter() {
