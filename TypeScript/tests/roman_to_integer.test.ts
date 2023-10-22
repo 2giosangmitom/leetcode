@@ -12,6 +12,7 @@ describe("two sum", () => {
     { roman: "LVIII", want: 58 },
     { roman: "MCMXCIV", want: 1994 },
     { roman: "XXIV", want: 24 },
+    { roman: "LLVMR", want: -1 },
   ];
 
   for (const tt of cases) {
