@@ -1,8 +1,14 @@
 import { twoSum, twoSum2 } from "@/two_sum";
 import { describe, test, expect } from "bun:test";
 
+type T = {
+  nums: number[];
+  target: number;
+  want: number[];
+};
+
 describe("two sum", () => {
-  const cases = [
+  const cases: T[] = [
     {
       nums: [2, 7, 11, 15],
       target: 9,
