@@ -1,6 +1,5 @@
-import { test, describe } from "node:test";
-import assert from "node:assert";
-import { twoSum, twoSum2 } from "../src/two_sum.js";
+import { twoSum, twoSum2 } from "@/two_sum";
+import { describe, test, expect } from "bun:test";
 
 describe("two sum", () => {
   const cases = [
@@ -28,8 +27,8 @@ describe("two sum", () => {
 
   for (const tt of cases) {
     test(JSON.stringify(tt), () => {
-      assert.deepStrictEqual(twoSum(tt.nums, tt.target), tt.want);
-      assert.deepStrictEqual(twoSum2(tt.nums, tt.target), tt.want);
+      expect(twoSum(tt.nums, tt.target)).toEqual(tt.want);
+      expect(twoSum2(tt.nums, tt.target)).toEqual(tt.want);
     });
   }
 });

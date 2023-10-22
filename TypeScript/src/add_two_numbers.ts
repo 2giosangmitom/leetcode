@@ -1,22 +1,15 @@
-// Definition for singly-linked list.
-export class ListNode {
-  /**
-   * @param {number} val
-   * @param {ListNode | null} next
-   */
-  constructor(val, next) {
+class ListNode {
+  val: number;
+  next: ListNode | null;
+
+  constructor(val: number, next: ListNode | null) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
   }
 }
 
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @returns {ListNode}
- */
-const addTwoNumbers = function (l1, l2) {
-  let dummyHead = new ListNode();
+function addTwoNumbers(l1: ListNode | null, l2: ListNode | null) {
+  let dummyHead = new ListNode(0, null);
   let tail = dummyHead;
   let carry = 0;
 
@@ -37,6 +30,6 @@ const addTwoNumbers = function (l1, l2) {
   }
 
   return dummyHead.next;
-};
+}
 
-export default addTwoNumbers;
+export { addTwoNumbers, ListNode };

@@ -1,7 +1,5 @@
-// @ts-check
-import { test, describe } from "node:test";
-import assert from "node:assert";
-import addTwoNumbers, { ListNode } from "../src/add_two_numbers.js";
+import { describe, test, expect } from "bun:test";
+import { addTwoNumbers, ListNode } from "@/add_two_numbers";
 
 describe("add two numbers", () => {
   const cases = [
@@ -54,8 +52,7 @@ describe("add two numbers", () => {
 
   for (const [i, tt] of cases.entries()) {
     test(`case ${i}`, () => {
-      const result = addTwoNumbers(tt.l1, tt.l2);
-      assert.deepStrictEqual(result, tt.want);
+      expect(addTwoNumbers(tt.l1, tt.l2)).toEqual(tt.want);
     });
   }
 });

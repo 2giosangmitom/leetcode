@@ -1,6 +1,5 @@
-import reverse from "../src/reverse_integer.js";
-import { test, describe } from "node:test";
-import assert from "node:assert";
+import { reverse } from "@/reverse_integer";
+import { describe, test, expect } from "bun:test";
 
 describe("reverse integer", () => {
   const cases = [
@@ -14,7 +13,7 @@ describe("reverse integer", () => {
 
   for (const tt of cases) {
     test(JSON.stringify(tt), () => {
-      assert.equal(reverse(tt.x), tt.want);
+      expect(reverse(tt.x)).toBe(tt.want);
     });
   }
 });

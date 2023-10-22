@@ -1,9 +1,4 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @returns {number[]}
- */
-function twoSum(nums, target) {
+function twoSum(nums: number[], target: number): number[] {
   const map = new Map();
   for (let i = 0; i < nums.length; i++) {
     const complement = target - nums[i];
@@ -15,12 +10,7 @@ function twoSum(nums, target) {
   return [-1];
 }
 
-/**
- * @param {number[]} nums
- * @param {number} target
- * @returns {number[]}
- */
-function twoSum2(nums, target) {
+function twoSum2(nums: number[], target: number): number[] {
   for (let i = 0; i < nums.length; i++) {
     const complement = target - nums[i];
     for (let j = i + 1; j < nums.length; j++) {
