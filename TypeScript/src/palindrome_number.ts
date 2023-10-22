@@ -1,13 +1,13 @@
 function isPalindrome(x: number): boolean {
   if (x < 0) return false;
 
-  const reverse = (x: number): number => {
+  const reverse = (n: number): number => {
     let result = 0;
 
-    while (x != 0) {
-      const lastDigit = x % 10;
+    while (n != 0) {
+      const lastDigit = n % 10;
       result = result * 10 + lastDigit;
-      x = Math.floor(x / 10);
+      n = Math.floor(n / 10);
     }
 
     return result;
