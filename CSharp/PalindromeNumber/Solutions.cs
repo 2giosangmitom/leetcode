@@ -6,12 +6,12 @@ public class Solution {
             return false;
         }
 
-        static int reverse(int val) {
+        static int reverse(int n) {
             int result = 0;
-            while (val != 0) {
-                int lastDigit = val % 10;
+            while (n != 0) {
+                int lastDigit = n % 10;
                 result = (result * 10) + lastDigit;
-                val /= 10;
+                n /= 10;
             }
             return result;
         }
