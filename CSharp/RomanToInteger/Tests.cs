@@ -10,6 +10,7 @@ public class Test {
                 (roman: "LVIII", want: 58),
                 (roman: "MCMXCIV", want: 1994),
                 (roman: "XXIV", want: 24),
+                (roman: "LLVMR", want: -1),
             };
 
         foreach ((string roman, int want) in TestCases) {
