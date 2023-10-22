@@ -1,8 +1,4 @@
-/**
- * @param {number} x
- * @returns {number}
- */
-const reverse = function (x) {
+function reverse(x: number): number {
   const MAX = Math.pow(2, 31) - 1;
   let result = 0;
   let isNegative = x < 0;
@@ -22,6 +18,6 @@ const reverse = function (x) {
   }
 
   return isNegative ? -result : result;
-};
+}
 
-export default reverse;
+export { reverse };

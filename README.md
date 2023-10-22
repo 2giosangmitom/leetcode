@@ -5,7 +5,7 @@
 
 [![C#](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml)
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
-[![JavaScript](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml)
+[![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/jtypescript.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
 [![Ruby](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml)
 
@@ -13,9 +13,9 @@
 
 | Problem title                                                | Solution                                                                                                                                                                                                         | Difficulty |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [JavaScript](./JavaScript/src/two_sum.js), [C#](./CSharp/TwoSum/Solutions.cs), [Go](./Golang/two_sum/1.go), [Ruby](./Ruby/lib/two_sum.rb)                                         | Easy       |
-| [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [JavaScript](./JavaScript/src/add_two_numbers.js), [C#](./CSharp/AddTwoNumbers/Solutions.cs), [Go](./Golang/add_two_numbers/2.go), [Ruby](./Ruby/lib/add_two_numbers.rb)  | Medium     |
-| [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [JavaScript](./JavaScript/src/reverse_integer.js), [C#](./CSharp/ReverseInteger/Solutions.cs), [Go](./Golang/reverse_integer/7.go), [Ruby](./Ruby/lib/reverse_integer.rb) | Medium     |
+| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [TypeScript](./TypeScript/src/two_sum.ts), [C#](./CSharp/TwoSum/Solutions.cs), [Go](./Golang/two_sum/1.go), [Ruby](./Ruby/lib/two_sum.rb)                                         | Easy       |
+| [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [TypeScript](./TypeScript/src/add_two_numbers.ts), [C#](./CSharp/AddTwoNumbers/Solutions.cs), [Go](./Golang/add_two_numbers/2.go), [Ruby](./Ruby/lib/add_two_numbers.rb)  | Medium     |
+| [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [TypeScript](./TypeScript/src/reverse_integer.ts), [C#](./CSharp/ReverseInteger/Solutions.cs), [Go](./Golang/reverse_integer/7.go), [Ruby](./Ruby/lib/reverse_integer.rb) | Medium     |
 | [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs)                                                                                                                                                                             | Easy       |
 | [13. Roman to Integer][13]                                   | [Rust](./Rust/src/roman2int.rs)                                                                                                                                                                                  | Easy       |
 | [14. Longest Common Prefix][14]                              | [Rust](./Rust/src/longest_common_prefix.rs)                                                                                                                                                                      | Easy       |

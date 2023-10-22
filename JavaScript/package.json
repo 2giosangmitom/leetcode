@@ -1,7 +1,0 @@
-{
-  "name": "leetcode",
-  "type": "module",
-  "scripts": {
-    "test": "node --test ./test/*"
-  }
-}
