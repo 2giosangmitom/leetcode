@@ -13,4 +13,4 @@ test_ts:
 	(cd ./TypeScript/ && bun test)
 
 test_ruby:
-	(cd ./Ruby/ && bundle exec rspec)
+	(cd ./Ruby/ && bundle exec rspec -f d)
