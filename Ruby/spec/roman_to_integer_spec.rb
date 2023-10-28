@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-require "roman_to_integer"
+require 'roman_to_integer'
 
-describe "roman to integer" do
+describe 'roman to integer' do
   cases = [
-    { roman: "III", want: 3 },
-    { roman: "LVIII", want: 58 },
-    { roman: "MCMXCIV", want: 1994 },
-    { roman: "XXIV", want: 24 },
-    { roman: "LLVMR", want: -1 },
+    { roman: 'III', want: 3 },
+    { roman: 'LVIII', want: 58 },
+    { roman: 'MCMXCIV', want: 1994 },
+    { roman: 'XXIV', want: 24 },
+    { roman: 'LLVMR', want: -1 }
   ]
 
   cases.each_with_index do |c, i|
