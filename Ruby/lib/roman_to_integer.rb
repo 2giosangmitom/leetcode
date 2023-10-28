@@ -10,14 +10,14 @@ def roman_to_int(s)
     L: 50,
     C: 100,
     D: 500,
-    M: 1000,
+    M: 1000
   }
 
   result = 0
 
   s.reverse.each_char do |c|
     number = roman_map[c.to_sym]
-    return -1 if number == nil
+    return -1 if number.nil?
 
     if number * 4 < result
       result -= number
@@ -26,5 +26,5 @@ def roman_to_int(s)
     end
   end
 
-  return result
+  result
 end

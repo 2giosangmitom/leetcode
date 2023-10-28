@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "add_two_numbers"
+require 'add_two_numbers'
 
 # @param {ListNode} l1
 # @param {ListNode} l2
@@ -9,13 +9,13 @@ def are_equal(l1, l2)
   while !l1.nil? && !l2.nil?
     return false if l1.val != l2.val
 
-    l1 = l1.next if !l1.nil?
-    l2 = l2.next if !l2.nil?
+    l1 = l1.next unless l1.nil?
+    l2 = l2.next unless l2.nil?
   end
-  return true
+  true
 end
 
-describe "add two numbers" do
+describe 'add two numbers' do
   cases = [
     {
       l1: ListNode.new(2, ListNode.new(4, ListNode.new(3, nil))),
@@ -25,13 +25,13 @@ describe "add two numbers" do
     {
       l1: ListNode.new(0, nil),
       l2: ListNode.new(0, nil),
-      want: ListNode.new(0, nil),
+      want: ListNode.new(0, nil)
     },
     # rubocop:disable Layout/LineLength
     {
       l1: ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, nil))))))),
       l2: ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(9, nil)))),
-      want: ListNode.new(8, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(0, ListNode.new(0, ListNode.new(0, ListNode.new(1, nil)))))))),
+      want: ListNode.new(8, ListNode.new(9, ListNode.new(9, ListNode.new(9, ListNode.new(0, ListNode.new(0, ListNode.new(0, ListNode.new(1, nil))))))))
     }
     # rubocop:enable Layout/LineLength
   ]

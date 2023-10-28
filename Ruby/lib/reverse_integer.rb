@@ -16,5 +16,5 @@ def reverse(x)
     x = (x / 10).floor
   end
 
-  return is_negative ? -result : result
+  is_negative ? -result : result
 end

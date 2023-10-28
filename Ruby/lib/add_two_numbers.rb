@@ -18,9 +18,9 @@ def add_two_numbers(l1, l2)
   tail = dummy_head
   carry = 0
 
-  while l1 != nil || l2 != nil || carry != 0
-    digit1 = l1 == nil ? 0 : l1.val
-    digit2 = l2 == nil ? 0 : l2.val
+  while !l1.nil? || !l2.nil? || carry != 0
+    digit1 = l1.nil? ? 0 : l1.val
+    digit2 = l2.nil? ? 0 : l2.val
 
     sum = digit1 + digit2 + carry
     digit = sum % 10
@@ -30,9 +30,9 @@ def add_two_numbers(l1, l2)
     tail.next = new_node
     tail = tail.next
 
-    l1 = l1.next if !l1.nil?
-    l2 = l2.next if !l2.nil?
+    l1 = l1.next unless l1.nil?
+    l2 = l2.next unless l2.nil?
   end
 
-  return dummy_head.next
+  dummy_head.next
 end

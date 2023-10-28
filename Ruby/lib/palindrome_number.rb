@@ -3,11 +3,11 @@
 # @param {Integer} x
 # @return {Boolean}
 def is_palindrome(x)
-  return false if x < 0
+  return false if x.negative?
 
   # @param {Integer} n
   # @return {Integer}
-  reverse = ->(n) {
+  reverse = lambda { |n|
     result = 0
 
     while n != 0
@@ -19,5 +19,5 @@ def is_palindrome(x)
     return result
   }
 
-  return reverse.call(x) == x
+  reverse.call(x) == x
 end
