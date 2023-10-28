@@ -11,11 +11,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          bun-version: latest
+          node-version: latest
+          cache: npm
+          cache-dependency-path: "TypeScript/package.json"
+
+      - name: Install dependencies
+        run: npm install
 
       - name: Test
-        run: bun install && bun test
+        run: npm run test
         working-directory: TypeScript

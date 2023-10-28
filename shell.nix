@@ -5,5 +5,6 @@ pkgs.mkShell {
     dotnet-sdk_7
     rustup
     go
+    nodejs_21
   ];
 }

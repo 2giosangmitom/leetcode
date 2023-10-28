@@ -10,7 +10,7 @@ test_go:
 	(cd ./Golang/ && go test -cover ./...)
 
 test_ts:
-	(cd ./TypeScript/ && bun test)
+	(cd ./TypeScript/ && npm run test)
 
 test_ruby:
 	(cd ./Ruby/ && bundle exec rspec -f d)
