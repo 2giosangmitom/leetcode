@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'add_two_numbers'
+require "add_two_numbers"
 
 # @param {ListNode} l1
 # @param {ListNode} l2
@@ -15,7 +15,7 @@ def are_equal(l1, l2)
   return true
 end
 
-describe 'add two numbers' do
+describe "add two numbers" do
   cases = [
     {
       l1: ListNode.new(2, ListNode.new(4, ListNode.new(3, nil))),

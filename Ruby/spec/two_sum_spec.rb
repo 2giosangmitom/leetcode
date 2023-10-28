@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'two_sum'
+require "two_sum"
 
-describe 'two sum' do
+describe "two sum" do
   cases = [
     { nums: [2, 7, 11, 15], target: 9, want: [0, 1] },
     { nums: [3, 2, 4], target: 6, want: [1, 2] },

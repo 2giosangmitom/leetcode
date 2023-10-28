@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # @param {Integer} x
 # @return {Boolean}
 def is_palindrome(x)
