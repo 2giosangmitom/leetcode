@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'palindrome_number'
+require "palindrome_number"
 
-describe 'palindrome number' do
+describe "palindrome number" do
   cases = [
     { num: -10, want: false },
     { num: 5, want: true },

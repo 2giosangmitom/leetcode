@@ -2,7 +2,7 @@
 
 require "roman_to_integer"
 
-describe 'roman to integer' do
+describe "roman to integer" do
   cases = [
     { roman: "III", want: 3 },
     { roman: "LVIII", want: 58 },
