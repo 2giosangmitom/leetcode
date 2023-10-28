@@ -1,14 +1,23 @@
-Style:
-  Enabled: false
-
-Metrics:
-  Enabled: false
-
 Naming/MethodParameterName:
   Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+AllCops:
+  TargetRubyVersion: 3.2
 
 Lint/UnderscorePrefixedVariableName:
   Enabled: false
 
-Naming/PredicateName:
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/For:
   Enabled: false
