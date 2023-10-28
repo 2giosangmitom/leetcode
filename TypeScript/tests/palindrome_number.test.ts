@@ -1,5 +1,5 @@
-import { isPalindrome, isPalindrome2 } from "@/palindrome_number";
-import { describe, test, expect } from "bun:test";
+import { isPalindrome, isPalindrome2 } from "../src/palindrome_number.ts";
+import { describe, test, expect } from "@jest/globals";
 
 describe("palindrome number", () => {
   const cases = [

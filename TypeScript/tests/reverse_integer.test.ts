@@ -1,5 +1,5 @@
-import { reverse } from "@/reverse_integer";
-import { describe, test, expect } from "bun:test";
+import { reverse } from "../src/reverse_integer.ts";
+import { describe, test, expect } from "@jest/globals";
 
 describe("reverse integer", () => {
   const cases = [

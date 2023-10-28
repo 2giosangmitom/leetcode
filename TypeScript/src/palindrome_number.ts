@@ -16,7 +16,7 @@ function isPalindrome(x: number): boolean {
   return reverse(x) === x;
 }
 
-// NOTE: TypeScript hack
+// HACK: TypeScript hack
 function isPalindrome2(x: number): boolean {
   return +x.toString().split("").reverse().join("") == x;
 }

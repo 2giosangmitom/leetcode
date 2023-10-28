@@ -1,5 +1,5 @@
-import { describe, test, expect } from "bun:test";
-import { addTwoNumbers, ListNode } from "@/add_two_numbers";
+import { describe, test, expect } from "@jest/globals";
+import { addTwoNumbers, ListNode } from "../src/add_two_numbers.ts";
 
 describe("add two numbers", () => {
   const cases = [

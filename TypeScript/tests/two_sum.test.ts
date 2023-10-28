@@ -1,5 +1,5 @@
-import { twoSum, twoSum2 } from "@/two_sum";
-import { describe, test, expect } from "bun:test";
+import { twoSum, twoSum2 } from "../src/two_sum.ts";
+import { describe, test, expect } from "@jest/globals";
 
 type T = {
   nums: number[];

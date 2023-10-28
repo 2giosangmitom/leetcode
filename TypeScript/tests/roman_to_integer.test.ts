@@ -1,5 +1,5 @@
-import { romanToInt } from "@/roman_to_integer";
-import { describe, test, expect } from "bun:test";
+import { romanToInt } from "../src/roman_to_integer.ts";
+import { describe, test, expect } from "@jest/globals";
 
 type T = {
   roman: string;
