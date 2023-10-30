@@ -1,14 +1,8 @@
 import { twoSum, twoSum2 } from "../src/two_sum.ts";
 import { describe, test, expect } from "@jest/globals";
 
-type T = {
-  nums: number[];
-  target: number;
-  want: number[];
-};
-
 describe("two sum", () => {
-  const cases: T[] = [
+  const cases = [
     {
       nums: [2, 7, 11, 15],
       target: 9,

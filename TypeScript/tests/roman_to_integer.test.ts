@@ -1,13 +1,8 @@
 import { romanToInt } from "../src/roman_to_integer.ts";
 import { describe, test, expect } from "@jest/globals";
 
-type T = {
-  roman: string;
-  want: number;
-};
-
 describe("two sum", () => {
-  const cases: T[] = [
+  const cases = [
     { roman: "III", want: 3 },
     { roman: "LVIII", want: 58 },
     { roman: "MCMXCIV", want: 1994 },
