@@ -39,6 +39,10 @@ fn test_longest_common_prefix() {
             strs: vec!["dog".to_string(), "racecar".to_string(), "car".to_string()],
             want: "".to_string(),
         },
+        Tt {
+            strs: vec!["chi".to_string(), "chien".to_string(), "chau".to_string()],
+            want: "ch".to_string(),
+        },
     ];
 
     for t in cases.into_iter() {
