@@ -7,6 +7,6 @@ pkgs.mkShell {
     go
     nodejs_21
     maven
-    jdk21
+    temurin-bin-21
   ];
 }
