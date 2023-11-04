@@ -6,5 +6,7 @@ pkgs.mkShell {
     rustup
     go
     nodejs_21
+    maven
+    jdk21
   ];
 }
