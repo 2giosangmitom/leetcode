@@ -1,5 +1,3 @@
-test_all: test_rust test_go test_cs test_ts test_ruby
-
 test_rust:
 	(cd ./Rust/ && cargo test --lib )
 
@@ -14,3 +12,6 @@ test_ts:
 
 test_ruby:
 	(cd ./Ruby/ && bundle exec rspec -f d)
+
+test_java:
+	(cd ./Java/ && mvn test)
