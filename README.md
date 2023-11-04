@@ -5,6 +5,7 @@
 [![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
 [![Ruby](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/ruby.yml)
+[![Java](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml/badge.svg?branch=master)](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml)
 
 ## Summary table
 
