@@ -23,5 +23,5 @@ jobs:
         working-directory: TypeScript
 
       - name: Test
-        run: npm run test
+        run: npm test
         working-directory: TypeScript
