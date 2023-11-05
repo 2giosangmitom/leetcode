@@ -8,7 +8,7 @@ test_go:
 	(cd ./Golang/ && go test -cover ./...)
 
 test_ts:
-	(cd ./TypeScript/ && npm run test)
+	(cd ./TypeScript/ && npm test)
 
 test_ruby:
 	(cd ./Ruby/ && bundle exec rspec -f d)
