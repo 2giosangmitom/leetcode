@@ -9,8 +9,7 @@ public class Solution {
 
             try {
                 result = checked((result * 10) + lastDigit);
-            }
-            catch (OverflowException) {
+            } catch (OverflowException) {
                 return 0;
             }
 
