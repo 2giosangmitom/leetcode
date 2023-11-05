@@ -7,8 +7,7 @@ public class Solution {
             int complement = target - nums[i];
             if (map.ContainsKey(complement)) {
                 return new int[] { map[complement], i };
-            }
-            else {
+            } else {
                 map.Add(nums[i], i);
             }
         }

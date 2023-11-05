@@ -21,12 +21,10 @@ public class Solution {
                 int number = value;
                 if (value * 4 < result) {
                     result -= number;
-                }
-                else {
+                } else {
                     result += number;
                 }
-            }
-            else {
+            } else {
                 return -1;
             }
         }
