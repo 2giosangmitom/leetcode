@@ -14,4 +14,4 @@ test_ruby:
 	(cd ./Ruby/ && bundle exec rspec -f d)
 
 test_java:
-	(cd ./Java/ && mvn test)
+	(cd ./Java/ && gradle test)
