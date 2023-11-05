@@ -6,7 +6,5 @@ pkgs.mkShell {
     rustup
     go
     nodejs_21
-    maven
-    temurin-bin-21
   ];
 }
