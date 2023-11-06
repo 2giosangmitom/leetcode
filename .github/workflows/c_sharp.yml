@@ -16,6 +16,10 @@ jobs:
         with:
           dotnet-version: 7
 
+      - name: Restore dependencies
+        run: dotnet restore
+        working-directory: CSharp
+
       - name: Test
         run: dotnet test
         working-directory: CSharp

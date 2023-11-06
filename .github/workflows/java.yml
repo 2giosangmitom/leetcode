@@ -19,5 +19,5 @@ jobs:
           cache: "gradle"
 
       - name: Test
-        run: ./gradlew test
+        run: gradle test
         working-directory: Java
