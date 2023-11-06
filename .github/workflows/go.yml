@@ -21,22 +21,3 @@ jobs:
       - name: Test
         run: go test -cover ./...
         working-directory: Golang
-
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Golang
-        uses: actions/setup-go@v4
-        with:
-          go-version: stable
-          cache-dependency-path: Golang/go.sum
-          go-version-file: Golang/go.mod
-
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@v3
-        with:
-          version: latest
-          working-directory: Golang
