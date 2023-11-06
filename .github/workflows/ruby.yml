@@ -20,5 +20,5 @@ jobs:
           working-directory: Ruby
 
       - name: Test
-        run: bundle exec rspec
+        run: bundle exec rspec -f d
         working-directory: Ruby
