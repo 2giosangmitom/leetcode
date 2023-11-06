@@ -16,7 +16,6 @@ jobs:
         with:
           go-version: stable
           cache-dependency-path: Golang/go.sum
-          go-version-file: Golang/go.mod
 
       - name: Test
         run: go test -cover ./...
