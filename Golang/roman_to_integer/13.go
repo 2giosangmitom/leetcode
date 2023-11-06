@@ -13,7 +13,7 @@ func romanToInt(s string) int {
 
 	result := 0
 
-  // Reverse `s`
+	// Reverse `s`
 	func(x *string) {
 		r := ""
 		for _, v := range *x {
