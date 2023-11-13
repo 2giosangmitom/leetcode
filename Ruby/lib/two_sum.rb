@@ -20,9 +20,10 @@ end
 def two_sum2(nums, target)
   nums.each_with_index do |num, i|
     complement = target - num
-    for j in i + 1...nums.length do
+
+    for j in i + 1...nums.length
       return [i, j] if complement == nums[j]
-      end
+    end
   end
   [-1]
 end
