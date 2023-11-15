@@ -15,3 +15,6 @@ test_ruby:
 
 test_java:
 	(cd ./Java/ && gradle test)
+
+nix:
+	nix-shell --command fish
