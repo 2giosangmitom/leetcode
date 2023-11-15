@@ -6,6 +6,7 @@ pkgs.mkShell {
     rustup
     go
     nodejs_21
+    corepack_21
     temurin-bin-21
     gradle
   ];
