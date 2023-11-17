@@ -46,6 +46,14 @@ fn test_valid_parentheses() {
             s: "(]".to_string(),
             want: false,
         },
+        Tt {
+            s: "){".to_string(),
+            want: false,
+        },
+        Tt {
+            s: "][]".to_string(),
+            want: false,
+        },
     ];
 
     for t in cases.into_iter() {
