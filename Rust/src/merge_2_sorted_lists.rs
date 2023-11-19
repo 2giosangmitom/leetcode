@@ -29,21 +29,21 @@ impl Merge2SortedLists for Solution {
         mut list2: Option<Box<ListNode>>,
     ) -> Option<Box<ListNode>> {
         let mut head = ListNode::new(0);
-        let mut current_node = &mut head;
+        let mut prev = &mut head;
 
         while let (Some(node1), Some(node2)) = (&list1, &list2) {
             if node1.val < node2.val {
-                current_node.next = list1.take();
-                current_node = current_node.next.as_mut().unwrap();
-                list1 = current_node.next.take();
+                prev.next = list1.take();
+                prev = prev.next.as_mut().unwrap();
+                list1 = prev.next.take();
             } else {
-                current_node.next = list2.take();
-                current_node = current_node.next.as_mut().unwrap();
-                list2 = current_node.next.take();
+                prev.next = list2.take();
+                prev = prev.next.as_mut().unwrap();
+                list2 = prev.next.take();
             }
         }
 
-        current_node.next = list1.or(list2);
+        prev.next = list1.or(list2);
         head.next
     }
 }
