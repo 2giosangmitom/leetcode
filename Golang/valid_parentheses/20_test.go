@@ -16,7 +16,7 @@ func Test_20(t *testing.T) {
 		{s: "()[]{}", want: true},
 		{s: "(]", want: false},
 		{s: "){", want: false},
-    {s: "][]", want: false},
+		{s: "][]", want: false},
 	}
 
 	for i, tt := range cases {
