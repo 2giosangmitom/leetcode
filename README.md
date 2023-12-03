@@ -16,7 +16,7 @@
 | [14. Longest Common Prefix][14]                              | [Rust](./Rust/src/longest_common_prefix.rs), [C#](./CSharp/LongestCommonPrefix/Solutions.cs), [Go](./Golang/longest_common_prefix/14.go) | Easy       |
 | [20. Valid Parentheses][20]                                  | [Rust](./Rust/src/valid_parentheses.rs), [Go](./Golang/valid_parentheses/20.go)                                                          | Easy       |
 | [21. Merge Two Sorted Lists][21]                             | [Rust](./Rust/src/merge_2_sorted_lists.rs), [Go](./Golang/merge_two_sorted_lists/21.go)                                                  | Easy       |
-| [26. Remove Duplicates from Sorted Array][26]                | [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs)                                                                                  | Easy       |
+| [26. Remove Duplicates from Sorted Array][26]                | [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs), [Go](./Golang/remove_duplicates_from_sorted_array/26.go)                        | Easy       |
 | [27. Remove Element][27]                                     | [Rust](./Rust/src/remove_element.rs)                                                                                                     | Easy       |
 | [28. Find the Index of the First Occurrence in a String][28] | [Rust](./Rust/src/find_index_of_the1st_occur_in_a_string.rs)                                                                             | Easy       |
 | [35. Search Insert Position][35]                             | [Rust](./Rust/src/search_insert_position.rs)                                                                                             | Easy       |
