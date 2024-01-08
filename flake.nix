@@ -13,6 +13,7 @@
             cargo
             dotnet-sdk_8
             go
+            rustfmt
           ];
         };
         formatter = pkgs.nixpkgs-fmt;
