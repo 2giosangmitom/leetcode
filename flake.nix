@@ -14,6 +14,7 @@
             dotnet-sdk_8
             go
             rustfmt
+            deno
           ];
         };
         formatter = pkgs.nixpkgs-fmt;
