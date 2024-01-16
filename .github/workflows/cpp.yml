@@ -1,0 +1,23 @@
+name: C++
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup CMake
+        uses: threeal/cmake-action@v1.3.0
+
+      - name: Build Project
+        run: cmake --build build
+        working-directory: C++
+
+      - name: Test
+        run: ctest --test-dir build
+        working-directory: C++
