@@ -3,6 +3,7 @@
 [![C#](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml)
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
+[![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml)
 
 ## Summary table
 
