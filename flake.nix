@@ -18,6 +18,7 @@
           clang
           clang-tools
           cmake
+          cargo-nextest
         ];
       in
       {
