@@ -12,4 +12,16 @@ function twoSum(nums: number[], target: number): number[] {
 	return [-1];
 }
 
-export { twoSum };
+function twoSum2(nums: number[], target: number): number[] {
+	for (let i = 0; i < nums.length; i++) {
+		const complement = target - nums[i];
+		for (let j = i + 1; j < nums.length; j++) {
+			if (nums[j] === complement) {
+				return [i, j];
+			}
+		}
+	}
+	return [-1];
+}
+
+export { twoSum, twoSum2 };

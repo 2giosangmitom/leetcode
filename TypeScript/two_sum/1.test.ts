@@ -1,5 +1,5 @@
 import { assertEquals } from "../deps.ts";
-import { twoSum } from "./1.ts";
+import { twoSum, twoSum2 } from "./1.ts";
 
 interface tt {
 	nums: number[];
@@ -17,6 +17,11 @@ const cases: tt[] = [
 for (const t of cases) {
 	Deno.test(`twoSum(${JSON.stringify(t.nums)}, ${t.target})`, () => {
 		const result = twoSum(t.nums, t.target);
+		assertEquals(result, t.want);
+	});
+
+	Deno.test(`twoSum2(${JSON.stringify(t.nums)}, ${t.target})`, () => {
+		const result = twoSum2(t.nums, t.target);
 		assertEquals(result, t.want);
 	});
 }
