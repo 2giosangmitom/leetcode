@@ -19,6 +19,7 @@
           clang-tools
           cmake
           cargo-nextest
+          zig
         ];
       in
       {
