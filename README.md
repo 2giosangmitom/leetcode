@@ -9,7 +9,7 @@
 
 | Problem title                                                | Solution                                                                                                                                 | Difficulty |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/TwoSum/Solutions.cs), [Go](./Golang/two_sum/1.go)                                           | Easy       |
+| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/TwoSum/Solutions.cs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/two_sum/1.ts)  | Easy       |
 | [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [C#](./CSharp/AddTwoNumbers/Solutions.cs), [Go](./Golang/add_two_numbers/2.go)                    | Medium     |
 | [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [C#](./CSharp/ReverseInteger/Solutions.cs), [Go](./Golang/reverse_integer/7.go)                   | Medium     |
 | [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [C#](./CSharp/PalindromeNumber/Solutions.cs), [Go](./Golang/palindrome_number/9.go)                | Easy       |
