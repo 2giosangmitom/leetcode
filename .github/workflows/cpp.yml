@@ -13,6 +13,8 @@ jobs:
 
       - name: Setup CMake
         uses: threeal/cmake-action@v1.3.0
+        with:
+          source-dir: C++
 
       - name: Build Project
         run: cmake --build build
