@@ -18,7 +18,7 @@ jobs:
           cache-dependency-path: Golang/go.sum
 
       - name: Test
-        run: go test -cover ./...
+        run: go test -cover -race -coverprofile=coverage.txt -covermode=atomic ./...
         working-directory: Golang
 
       - name: Upload coverage reports to Codecov
