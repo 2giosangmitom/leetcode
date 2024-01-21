@@ -18,8 +18,10 @@ jobs:
         run: cargo test --lib
         working-directory: Rust
 
-      - name: rust-grcov
-        uses: actions-rs/grcov@v0.1
+      - name: grcov
+        run: |
+          curl -L https://github.com/mozilla/grcov/releases/latest/download/grcov-x86_64-unknown-linux-gnu.tar.bz2 | tar jxf -
+          ./grcov
 
       - name: Codecov
         uses: codecov/codecov-action@v4-beta
