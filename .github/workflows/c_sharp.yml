@@ -21,7 +21,7 @@ jobs:
         working-directory: CSharp
 
       - name: Test
-        run: dotnet test --collect:"XPlat Code Coverage"
+        run: dotnet test --collect:"XPlat Code Coverage;Format=lcov"
         working-directory: CSharp
 
       - name: Upload coverage reports to Codecov
