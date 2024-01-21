@@ -18,6 +18,14 @@ jobs:
         run: cargo test --lib
         working-directory: Rust
 
+      - name: rust-grcov
+        uses: actions-rs/grcov@v0.1
+
+      - name: Codecov
+        uses: codecov/codecov-action@v4-beta
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_ORG_TOKEN }}
+
   check:
     runs-on: ubuntu-latest
     steps:
