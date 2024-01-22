@@ -1,9 +1,7 @@
 namespace Solutions;
 
-public class RomanToInteger
-{
-    public static int RomanToInt(string s)
-    {
+public class RomanToInteger {
+    public static int RomanToInt(string s) {
         Dictionary<char, int> romanMap =
             new()
             {
@@ -18,22 +16,15 @@ public class RomanToInteger
 
         int result = 0;
 
-        foreach (char c in s.Reverse())
-        {
-            if (romanMap.TryGetValue(c, out int value))
-            {
+        foreach (char c in s.Reverse()) {
+            if (romanMap.TryGetValue(c, out int value)) {
                 int number = value;
-                if (value * 4 < result)
-                {
+                if (value * 4 < result) {
                     result -= number;
-                }
-                else
-                {
+                } else {
                     result += number;
                 }
-            }
-            else
-            {
+            } else {
                 return -1;
             }
         }

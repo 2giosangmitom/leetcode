@@ -2,11 +2,9 @@ using Solutions;
 
 namespace Tests;
 
-public class PalindromeNumberTest
-{
+public class PalindromeNumberTest {
     [Fact]
-    public void Test()
-    {
+    public void Test() {
         List<(int num, bool want)> TestCases =
         [
             (num: -10, want: false),
@@ -16,8 +14,7 @@ public class PalindromeNumberTest
             (num: 111, want: true)
         ];
 
-        foreach ((int num, bool want) in TestCases)
-        {
+        foreach ((int num, bool want) in TestCases) {
             bool result = PalindromeNumber.IsPalindrome(num);
             Assert.Equal(want, result);
         }

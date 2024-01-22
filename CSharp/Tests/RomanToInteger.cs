@@ -2,11 +2,9 @@ using Solutions;
 
 namespace Tests;
 
-public class RomanToIntegerTest
-{
+public class RomanToIntegerTest {
     [Fact]
-    public void RomanToIntegerTest1()
-    {
+    public void RomanToIntegerTest1() {
         List<(string roman, int want)> TestCases =
         [
             (roman: "III", want: 3),
@@ -16,8 +14,7 @@ public class RomanToIntegerTest
             (roman: "LLVMR", want: -1),
         ];
 
-        foreach ((string roman, int want) in TestCases)
-        {
+        foreach ((string roman, int want) in TestCases) {
             int result = RomanToInteger.RomanToInt(roman);
             Assert.Equal(want, result);
         }
