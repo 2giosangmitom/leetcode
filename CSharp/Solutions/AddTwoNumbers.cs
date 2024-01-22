@@ -1,21 +1,17 @@
 namespace Solutions;
 
-public class ListNode(int val, ListNode? next = null)
-{
+public class ListNode(int val, ListNode? next = null) {
     public int val = val;
     public ListNode next = next!;
 }
 
-public class AddTwoNumbers
-{
-    public static ListNode AddTwoNumbers1(ListNode? l1, ListNode? l2)
-    {
+public class AddTwoNumbers {
+    public static ListNode AddTwoNumbers1(ListNode? l1, ListNode? l2) {
         ListNode dummyHead = new(0);
         ListNode tail = dummyHead;
         int carry = 0;
 
-        while (l1 != null || l2 != null || carry != 0)
-        {
+        while (l1 != null || l2 != null || carry != 0) {
             int digit1 = l1?.val ?? 0;
             int digit2 = l2?.val ?? 0;
 

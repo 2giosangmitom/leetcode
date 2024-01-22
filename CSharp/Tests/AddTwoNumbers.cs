@@ -2,11 +2,9 @@ using Solutions;
 
 namespace Tests;
 
-public class AddTwoNumbersTest
-{
+public class AddTwoNumbersTest {
     [Fact]
-    public void Test()
-    {
+    public void Test() {
         List<(ListNode l1, ListNode l2, ListNode want)> TestCases =
         [
             (
@@ -43,8 +41,7 @@ public class AddTwoNumbersTest
             )
         ];
 
-        foreach ((ListNode l1, ListNode l2, ListNode want) in TestCases)
-        {
+        foreach ((ListNode l1, ListNode l2, ListNode want) in TestCases) {
             ListNode result = AddTwoNumbers.AddTwoNumbers1(l1, l2);
             Assert.Equivalent(want, result);
         }

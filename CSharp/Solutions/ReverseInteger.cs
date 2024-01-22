@@ -1,21 +1,15 @@
 namespace Solutions;
 
-public class ReverseInteger
-{
-    public static int Reverse(int x)
-    {
+public class ReverseInteger {
+    public static int Reverse(int x) {
         int result = 0;
 
-        while (x != 0)
-        {
+        while (x != 0) {
             int lastDigit = x % 10;
 
-            try
-            {
+            try {
                 result = checked((result * 10) + lastDigit);
-            }
-            catch (OverflowException)
-            {
+            } catch (OverflowException) {
                 return 0;
             }
 

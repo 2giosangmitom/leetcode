@@ -2,11 +2,9 @@ using Solutions;
 
 namespace Tests;
 
-public class ReverseIntegerTest
-{
+public class ReverseIntegerTest {
     [Fact]
-    public void ReverseIntegerTest1()
-    {
+    public void ReverseIntegerTest1() {
         List<(int x, int want)> TestCases =
         [
             (x: 123, want: 321),
@@ -17,8 +15,7 @@ public class ReverseIntegerTest
             (x: 900000, want: 9)
         ];
 
-        foreach ((int x, int want) in TestCases)
-        {
+        foreach ((int x, int want) in TestCases) {
             int result = ReverseInteger.Reverse(x);
             Assert.Equal(want, result);
         }
