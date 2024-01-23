@@ -13,7 +13,16 @@ func Test_21(t *testing.T) {
 		list2 ListNode
 		want  ListNode
 	}{
-		{list1: ListNode{1, &ListNode{2, &ListNode{4, nil}}}, list2: ListNode{1, &ListNode{3, &ListNode{4, nil}}}, want: ListNode{1, &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{4, nil}}}}}}},
+		{
+			list1: ListNode{1, &ListNode{2, &ListNode{4, nil}}},
+			list2: ListNode{1, &ListNode{3, &ListNode{4, nil}}},
+			want:  ListNode{1, &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{4, nil}}}}}},
+		},
+		{
+			list1: ListNode{2, &ListNode{3, &ListNode{5, nil}}},
+			list2: ListNode{2, &ListNode{3, &ListNode{9, nil}}},
+			want:  ListNode{2, &ListNode{2, &ListNode{3, &ListNode{3, &ListNode{5, &ListNode{9, nil}}}}}},
+		},
 	}
 
 	for i, tt := range cases {
