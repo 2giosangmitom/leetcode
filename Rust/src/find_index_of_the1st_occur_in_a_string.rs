@@ -47,7 +47,7 @@ fn test_find_index_of_the_first_occur_in_a_string() {
         },
         Tt {
             haystack: "onepiece".to_string(),
-            needle: "il".to_string(),
+            needle: "pheloiquaaeoi".to_string(),
             want: -1,
         },
     ];
