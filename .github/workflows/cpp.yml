@@ -23,3 +23,12 @@ jobs:
       - name: Test
         run: ctest --test-dir build
         working-directory: C++
+
+      - name: Collect coverage
+        run: cd build && ctest -T Coverage
+        working-directory: C++
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
