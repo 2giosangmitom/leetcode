@@ -15,11 +15,9 @@
           go
           rustfmt
           deno
-          clang
-          clang-tools
           cmake
+          gcc13
           cargo-nextest
-          zig
         ];
       in
       {
