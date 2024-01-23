@@ -1,0 +1,3 @@
+Language: CSharp
+IndentWidth: 4
+BasedOnStyle: LLVM
