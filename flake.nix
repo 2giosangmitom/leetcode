@@ -9,11 +9,9 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         packages = with pkgs; [
-          rustc
-          cargo
+          rustup
           dotnet-sdk_8
           go
-          rustfmt
           deno
           cmake
           gcc13
