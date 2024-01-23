@@ -45,6 +45,11 @@ fn test_find_index_of_the_first_occur_in_a_string() {
             needle: "ll".to_string(),
             want: 2,
         },
+        Tt {
+            haystack: "onepiece".to_string(),
+            needle: "il".to_string(),
+            want: -1,
+        },
     ];
 
     for t in cases.into_iter() {
