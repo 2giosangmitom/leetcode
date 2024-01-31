@@ -47,6 +47,10 @@ fn test_reverse_integer() {
             x: -2147483648,
             want: 0,
         },
+        Tt {
+            x: 2147412349,
+            want: 0,
+        },
         Tt { x: 900000, want: 9 },
     ];
 
