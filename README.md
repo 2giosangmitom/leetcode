@@ -4,13 +4,12 @@
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
 [![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml)
-[![C++](https://github.com/2giosangmitom/leetcode/actions/workflows/cpp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/cpp.yml)
 
 ## Summary table
 
 | Problem title                                                | Solution                                                                                                                                                               | Difficulty |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/Solutions/TwoSum.cs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/two_sum/1.ts), [C++](./C++/src/two_sum.cpp)  | Easy       |
+| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/Solutions/TwoSum.cs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/two_sum/1.ts)                                | Easy       |
 | [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [C#](./CSharp/Solutions/AddTwoNumbers.cs), [Go](./Golang/add_two_numbers/2.go), [TypeScript](./TypeScript/add_two_numbers/2.ts) | Medium     |
 | [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [C#](./CSharp/Solutions/ReverseInteger.cs), [Go](./Golang/reverse_integer/7.go)                                                 | Medium     |
 | [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [C#](./CSharp/Solutions/PalindromeNumber.cs), [Go](./Golang/palindrome_number/9.go)                                              | Easy       |
