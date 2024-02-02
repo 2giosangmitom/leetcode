@@ -30,7 +30,7 @@ const cases: tt[] = [
 ];
 
 for (const t of cases) {
-  Deno.test(`addTwoNumbers(${JSON.stringify(t.l1)}, ${JSON.stringify(t.l2)}, ${JSON.stringify(t.want)})`, () => {
+  Deno.test(`${JSON.stringify(t)}`, () => {
     const result = addTwoNumbers(t.l1, t.l2);
     assertEquals(result, t.want);
   });
