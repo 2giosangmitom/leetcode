@@ -1,25 +1,17 @@
 use std::cell::RefCell;
 use std::rc::Rc;
 
-// Definition for a binary tree node.
 #[derive(Debug, PartialEq, Eq)]
-pub struct TreeNode {
+struct TreeNode {
     pub val: i32,
     pub left: Option<Rc<RefCell<TreeNode>>>,
     pub right: Option<Rc<RefCell<TreeNode>>>,
 }
 
-struct Solution;
-
-trait SameTree {
-    fn is_same_tree(p: Option<Rc<RefCell<TreeNode>>>, q: Option<Rc<RefCell<TreeNode>>>) -> bool;
-}
-
-impl SameTree for Solution {
-    // HACK: #[derive(Eq)]
-    fn is_same_tree(p: Option<Rc<RefCell<TreeNode>>>, q: Option<Rc<RefCell<TreeNode>>>) -> bool {
-        p == q
-    }
+// HACK: #[derive(Eq)]
+#[allow(dead_code)]
+fn is_same_tree(p: Option<Rc<RefCell<TreeNode>>>, q: Option<Rc<RefCell<TreeNode>>>) -> bool {
+    p == q
 }
 
 #[test]
@@ -113,7 +105,7 @@ fn test_same_tree() {
     ];
 
     for t in cases.into_iter() {
-        let result = Solution::is_same_tree(t.p, t.q);
+        let result = is_same_tree(t.p, t.q);
         assert_eq!(result, t.want);
     }
 }
