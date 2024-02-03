@@ -29,6 +29,7 @@
 | [88. Merge Sorted Array][88]                                 | [Rust](./Rust/src/merge_sorted_arr.rs)                                                                                                                                       | Easy       |
 | [100. Same Tree][100]                                        | [Rust](./Rust/src/same_tree.rs)                                                                                                                                              | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Rust](./Rust/src/best_time2buy_n_sell_stock.rs)                                                                                                                             | Easy       |
+| [136. Single Number][136]                                    | [Rust](./Rust/src/single_number.rs)                                                                                                                                          | Easy       |
 | [268. Missing Number][268]                                   | [Rust](./Rust/src/missing_number.rs)                                                                                                                                         | Easy       |
 | [704. Binary Search][704]                                    | [Rust](./Rust/src/binary_search.rs)                                                                                                                                          | Easy       |
 | [929. Unique Email Addresses][929]                           | [Rust](./Rust/src/unique_email_addresses.rs)                                                                                                                                 | Easy       |
@@ -38,6 +39,7 @@
 | [1603. Design Parking System][1603]                          | [Rust](./Rust/src/parking_system.rs)                                                                                                                                         | Easy       |
 
 [100]: https://leetcode.com/problems/same-tree/description/
+[136]: https://leetcode.com/problems/single-number/description/
 [53]: https://leetcode.com/problems/maximum-subarray/description/
 [88]: https://leetcode.com/problems/merge-sorted-array/description/
 [1603]: https://leetcode.com/problems/design-parking-system/
