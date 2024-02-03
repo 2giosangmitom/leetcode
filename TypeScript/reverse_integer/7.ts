@@ -8,8 +8,8 @@ function reverse(x: number): number {
   }
 
   while (x !== 0) {
-    const lastNumber = x % 10;
-    result = result * 10 + lastNumber;
+    const lastDigit = x % 10;
+    result = result * 10 + lastDigit;
     x = Math.floor(x / 10);
   }
 
