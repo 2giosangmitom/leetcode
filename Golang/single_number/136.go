@@ -10,11 +10,12 @@ func singleNumber(nums []int) int {
 		}
 	}
 
+	result := 0
 	for i := 0; i < len(nums); i++ {
 		if hash_map[nums[i]] == 1 {
-			return nums[i]
+			result = nums[i]
 		}
 	}
 
-	return -1
+	return result
 }
