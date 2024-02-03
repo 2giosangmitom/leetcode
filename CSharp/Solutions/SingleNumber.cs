@@ -11,12 +11,13 @@ public class SingleNumber {
             }
         }
 
+        int result = 0;
         for (int i = 0; i < nums.Length; i++) {
             if (map[nums[i]] == 1) {
-                return nums[i];
+                result = nums[i];
             }
         }
 
-        return -1;
+        return result;
     }
 }
