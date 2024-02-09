@@ -31,6 +31,7 @@
 | [100. Same Tree][100]                                        | [Rust](./Rust/src/same_tree.rs)                                                                                                                                              | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Rust](./Rust/src/best_time2buy_n_sell_stock.rs)                                                                                                                             | Easy       |
 | [136. Single Number][136]                                    | [Rust](./Rust/src/single_number.rs), [C#](./CSharp/Solutions/SingleNumber.cs), [Go](./Golang/single_number/136.go), [TypeScript](./TypeScript/single_number/136.ts)          | Easy       |
+| [228. Summary Ranges][228]                                   | [Rust](./Rust/src/summary_ranges.rs), [C#](./CSharp/Solutions/SummaryRanges.cs), [Go](./Golang/summary_ranges/228.go), [TypeScript](./TypeScript/summary_ranges/228.ts)      | Easy       |
 | [268. Missing Number][268]                                   | [Rust](./Rust/src/missing_number.rs)                                                                                                                                         | Easy       |
 | [704. Binary Search][704]                                    | [Rust](./Rust/src/binary_search.rs)                                                                                                                                          | Easy       |
 | [929. Unique Email Addresses][929]                           | [Rust](./Rust/src/unique_email_addresses.rs)                                                                                                                                 | Easy       |
@@ -41,6 +42,7 @@
 
 [100]: https://leetcode.com/problems/same-tree/description/
 [136]: https://leetcode.com/problems/single-number/description/
+[228]: https://leetcode.com/problems/summary-ranges/description/
 [53]: https://leetcode.com/problems/maximum-subarray/description/
 [88]: https://leetcode.com/problems/merge-sorted-array/description/
 [1603]: https://leetcode.com/problems/design-parking-system/
