@@ -5,8 +5,7 @@ namespace Tests;
 public class PalindromeNumberTest {
     [Fact]
     public void Test() {
-        List<(int num, bool want)> TestCases =
-        [
+        List<(int num, bool want)> TestCases = [
             (num: -10, want: false),
             (num: 5, want: true),
             (num: 121, want: true),
