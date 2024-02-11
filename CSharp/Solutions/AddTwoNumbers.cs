@@ -1,6 +1,7 @@
 namespace Solutions;
 
-public class ListNode(int val, ListNode? next = null) {
+public class ListNode
+(int val, ListNode? next = null) {
     public int val = val;
     public ListNode next = next!;
 }

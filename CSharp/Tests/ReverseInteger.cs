@@ -5,8 +5,7 @@ namespace Tests;
 public class ReverseIntegerTest {
     [Fact]
     public void ReverseIntegerTest1() {
-        List<(int x, int want)> TestCases =
-        [
+        List<(int x, int want)> TestCases = [
             (x: 123, want: 321),
             (x: -123, want: -321),
             (x: 120, want: 21),

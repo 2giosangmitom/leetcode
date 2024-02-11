@@ -5,8 +5,7 @@ namespace Tests;
 public class RomanToIntegerTest {
     [Fact]
     public void RomanToIntegerTest1() {
-        List<(string roman, int want)> TestCases =
-        [
+        List<(string roman, int want)> TestCases = [
             (roman: "III", want: 3),
             (roman: "LVIII", want: 58),
             (roman: "MCMXCIV", want: 1994),
