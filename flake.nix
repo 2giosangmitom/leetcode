@@ -15,7 +15,6 @@
           deno
           cmake
           gcc13
-          cargo-nextest
         ];
       in
       {
