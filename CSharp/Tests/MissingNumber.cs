@@ -6,7 +6,8 @@ public class MissingNumberTest {
     [Fact]
     public void Test() {
         List<(int[] nums, int want)> TestCases = [
-            (nums: [3, 0, 1], want: 2), (nums: [0, 1], want: 2),
+            (nums: [3, 0, 1], want: 2),
+            (nums: [0, 1], want: 2),
             (nums: [9, 6, 4, 2, 3, 5, 7, 0, 1], want: 8)
         ];
 
