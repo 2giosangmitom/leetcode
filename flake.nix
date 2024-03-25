@@ -1,27 +1,38 @@
 {
   description = "LeetCode solutions for Rust, Go, TypeScript and C#";
+
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
+  outputs = {
+    nixpkgs,
+    flake-utils,
+  }:
+    flake-utils.lib.eachDefaultSystem (
+      system: let
         pkgs = nixpkgs.legacyPackages.${system};
         packages = with pkgs; [
           rustup
           dotnet-sdk_8
           go
           deno
-          cmake
-          gcc13
+          nil
+          fish
+          statix
+          alejandra
+          deadnix
+          nodejs_20
         ];
-      in
-      {
+      in {
         devShell = pkgs.mkShell {
           buildInputs = packages;
+          shellHook = ''
+            exec fish
+          '';
         };
-        formatter = pkgs.nixpkgs-fmt;
+        formatter = pkgs.alejandra;
       }
     );
 }
