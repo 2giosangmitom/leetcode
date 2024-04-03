@@ -9,3 +9,13 @@ updates:
     directory: "CSharp"
     schedule:
       interval: "weekly"
+
+  - package-ecosystem: "gradle"
+    directory: "Java"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
