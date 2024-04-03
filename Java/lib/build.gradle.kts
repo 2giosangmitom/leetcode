@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    `jacoco`
+    jacoco
 }
 
 repositories {
@@ -26,9 +26,15 @@ java {
     }
 }
 
+tasks.test {
+    finalizedBy(tasks.jacocoTestReport)
+}
+
 tasks.jacocoTestReport {
+    dependsOn(tasks.test)
     reports {
         xml.required = true
         csv.required = false
+        html.outputLocation = layout.buildDirectory.dir("jacocoHtml")
     }
 }
