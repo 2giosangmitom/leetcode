@@ -18,7 +18,6 @@ mod remove_duplicates_from_sorted_arr;
 mod remove_element;
 mod reverse_integer;
 mod roman2int;
-mod same_tree;
 mod search_insert_position;
 mod single_number;
 mod sqrt;
