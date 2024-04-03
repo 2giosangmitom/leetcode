@@ -4,6 +4,7 @@
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
 [![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml)
+[![Java](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml)
 [![codecov](https://codecov.io/gh/2giosangmitom/leetcode/graph/badge.svg?token=8RNNO312XA)](https://codecov.io/gh/2giosangmitom/leetcode)
 
 ## Summary table
