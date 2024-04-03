@@ -24,7 +24,8 @@
           statix
           alejandra
           deadnix
-          nodejs_20
+          jdk21
+          gradle
         ];
       in {
         devShell = pkgs.mkShell {
