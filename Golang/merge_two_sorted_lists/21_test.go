@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_21(t *testing.T) {
+func TestMergeTwoLists(t *testing.T) {
 	cases := []struct {
 		list1 ListNode
 		list2 ListNode
@@ -26,7 +26,7 @@ func Test_21(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := mergeTwoLists(&tt.list1, &tt.list2)
 			assert.Equal(t, tt.want, *result)
 		})

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_2(t *testing.T) {
+func TestAddTwoNumbers(t *testing.T) {
 	cases := []struct {
 		l1   ListNode
 		l2   ListNode
@@ -31,7 +31,7 @@ func Test_2(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := addTwoNumbers(&tt.l1, &tt.l2)
 			assert.Equal(t, &tt.want, result)
 		})

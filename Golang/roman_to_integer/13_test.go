@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_13(t *testing.T) {
+func TestRomanToInt(t *testing.T) {
 	cases := []struct {
 		roman string
 		want  int
@@ -20,7 +20,7 @@ func Test_13(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := romanToInt(tt.roman)
 			assert.Equal(t, tt.want, result)
 		})

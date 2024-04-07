@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_136(t *testing.T) {
+func TestSingleNumber(t *testing.T) {
 	cases := []struct {
 		nums []int
 		want int
@@ -18,7 +18,7 @@ func Test_136(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := singleNumber(tt.nums)
 			assert.Equal(t, tt.want, result)
 		})
