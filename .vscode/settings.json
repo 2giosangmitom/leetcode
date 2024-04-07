@@ -1,4 +1,6 @@
 {
   "java.configuration.updateBuildConfiguration": "automatic",
-  "java.compile.nullAnalysis.mode": "automatic"
+  "java.compile.nullAnalysis.mode": "automatic",
+  "deno.enable": true,
+  "typescript.validate.enable": false
 }
