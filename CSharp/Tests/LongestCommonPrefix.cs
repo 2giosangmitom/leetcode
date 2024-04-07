@@ -4,16 +4,29 @@ namespace Tests;
 
 public class LongestCommonPrefixTest {
     [Fact]
-    public void Test() {
-        List<(string[] strs, string want)> TestCases = [
-            (new string[] { "flower", "flow", "flight" }, "fl"),
-            (new string[] { "dog", "racecar", "car" }, ""),
-            (new string[] { "chi", "chien", "chau" }, "ch")
-        ];
+    public void LongestCommonPrefix_Case1() {
+        string[] strs = ["flower", "flow", "flight"];
+        string want = "fl";
 
-        foreach ((string[] strs, string want) in TestCases) {
-            string result = LongestCommonPrefix.LongestCommonPrefix1(strs);
-            Assert.Equal(want, result);
-        }
+        string result = LongestCommonPrefix.LongestCommonPrefix1(strs);
+        Assert.Equal(want, result);
+    }
+
+    [Fact]
+    public void LongestCommonPrefix_Case2() {
+        string[] strs = ["dog", "racecar", "car"];
+        string want = "";
+
+        string result = LongestCommonPrefix.LongestCommonPrefix1(strs);
+        Assert.Equal(want, result);
+    }
+
+    [Fact]
+    public void LongestCommonPrefix_Case3() {
+        string[] strs = ["chi", "chien", "chau"];
+        string want = "ch";
+
+        string result = LongestCommonPrefix.LongestCommonPrefix1(strs);
+        Assert.Equal(want, result);
     }
 }
