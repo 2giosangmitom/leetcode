@@ -1,18 +1,32 @@
 using Solutions;
+
 namespace Tests;
 
 public class ValidParenthesesTest {
     [Fact]
-    public void Test() {
-        List<(string s, bool want)> TestCases = [
-            (s: "[]", want: true),
-            (s: "()[]{}", want: true),
-            (s: "(]", want: false),
-        ];
+    public void TestValidParentheses_Case1() {
+        string s = "[]";
+        bool want = true;
 
-        foreach ((string s, bool want) in TestCases) {
-            bool result = ValidParentheses.IsValid(s);
-            Assert.Equal(want, result);
-        }
+        bool result = ValidParentheses.IsValid(s);
+        Assert.Equal(want, result);
+    }
+
+    [Fact]
+    public void TestValidParentheses_Case2() {
+        string s = "()[]{}";
+        bool want = true;
+
+        bool result = ValidParentheses.IsValid(s);
+        Assert.Equal(want, result);
+    }
+
+    [Fact]
+    public void TestValidParentheses_Case3() {
+        string s = "(]";
+        bool want = false;
+
+        bool result = ValidParentheses.IsValid(s);
+        Assert.Equal(want, result);
     }
 }
