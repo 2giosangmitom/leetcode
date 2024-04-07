@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_20(t *testing.T) {
+func TestIsValid(t *testing.T) {
 	cases := []struct {
 		s    string
 		want bool
@@ -20,7 +20,7 @@ func Test_20(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := isValid(tt.s)
 			assert.Equal(t, tt.want, result)
 		})

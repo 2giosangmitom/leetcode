@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_1(t *testing.T) {
+func TestTwoSum(t *testing.T) {
 	cases := []struct {
 		nums   []int
 		target int
@@ -20,7 +20,7 @@ func Test_1(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := twoSum(tt.nums, tt.target)
 			result2 := twoSum2(tt.nums, tt.target)
 			assert.Equal(t, tt.want, result)

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_7(t *testing.T) {
+func TestReverseInteger(t *testing.T) {
 	cases := []struct {
 		x    int
 		want int
@@ -21,7 +21,7 @@ func Test_7(t *testing.T) {
 	}
 
 	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := reverse(tt.x)
 			assert.Equal(t, tt.want, result)
 		})
