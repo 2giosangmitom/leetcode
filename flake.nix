@@ -1,5 +1,5 @@
 {
-  description = "LeetCode solutions for Rust, Go, TypeScript and C#";
+  description = "LeetCode solutions for Rust, Go, TypeScript, C# and Java";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
