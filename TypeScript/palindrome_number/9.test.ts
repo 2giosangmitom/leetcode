@@ -14,8 +14,8 @@ const cases: tt[] = [
   { num: 111, want: true },
 ];
 
-for (const [i, t] of cases.entries()) {
-  Deno.test(`case ${i}`, () => {
+for (const t of cases) {
+  Deno.test(JSON.stringify(t), () => {
     const result = isPalindrome(t.num);
     assertEquals(result, t.want);
   });

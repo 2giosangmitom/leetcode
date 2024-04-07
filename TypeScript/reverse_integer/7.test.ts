@@ -15,8 +15,8 @@ const cases: tt[] = [
   { x: 900000, want: 9 },
 ];
 
-for (const [i, t] of cases.entries()) {
-  Deno.test(`case ${i}`, () => {
+for (const t of cases) {
+  Deno.test(JSON.stringify(t), () => {
     const result = reverse(t.x);
     assertEquals(result, t.want);
   });
