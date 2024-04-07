@@ -11,23 +11,23 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import java.util.Arrays;
 
 class BinarySearchTest {
-    private Solution solution;
+    private BinarySearch binarySearch;
 
     @BeforeEach
     void setUp() {
-        solution = new Solution();
+        binarySearch = new BinarySearch();
     }
 
     @Test
     @DisplayName("Search for existing element")
     void testExistingElement() {
-        assertEquals(4, solution.search(new int[] { -1, 0, 3, 5, 9, 12 }, 9));
+        assertEquals(4, binarySearch.search(new int[] { -1, 0, 3, 5, 9, 12 }, 9));
     }
 
     @Test
     @DisplayName("Search for non-existing element")
     void testNonExistingElement() {
-        assertEquals(-1, solution.search(new int[] { -1, 0, 3, 5, 9, 12 }, 2));
+        assertEquals(-1, binarySearch.search(new int[] { -1, 0, 3, 5, 9, 12 }, 2));
     }
 
     @ParameterizedTest(name = "Search for {1} in array [{2}]")
@@ -37,6 +37,6 @@ class BinarySearchTest {
     })
     void testSearchVariants(int expectedIndex, int target, String array) {
         int[] arr = Arrays.stream(array.split(", ")).mapToInt(Integer::parseInt).toArray();
-        assertEquals(expectedIndex, solution.search(arr, target));
+        assertEquals(expectedIndex, binarySearch.search(arr, target));
     }
 }
