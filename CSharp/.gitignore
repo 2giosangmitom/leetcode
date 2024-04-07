@@ -5,6 +5,7 @@
 
 # dotenv files
 .env
+.mono
 
 # User-specific files
 *.rsuser
