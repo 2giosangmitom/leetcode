@@ -1,0 +1,9 @@
+.mono
+obj
+bin
+build
+.gradle
+target/
+cov/
+cov_profile/
+cov.lcov
