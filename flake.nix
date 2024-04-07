@@ -26,6 +26,8 @@
           deadnix
           jdk21
           gradle
+          nodePackages.prettier
+          google-java-format
         ];
       in {
         devShells.default = pkgs.mkShell {
