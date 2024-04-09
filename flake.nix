@@ -20,7 +20,6 @@
           go
           deno
           nil
-          fish
           statix
           alejandra
           deadnix
@@ -32,9 +31,6 @@
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = packages;
-          shellHook = ''
-            exec fish
-          '';
         };
         formatter = pkgs.alejandra;
       }
