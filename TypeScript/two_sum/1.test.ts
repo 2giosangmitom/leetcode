@@ -1,4 +1,4 @@
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "@std/assert";
 import { twoSum, twoSum2 } from "./1.ts";
 
 interface TestCase {

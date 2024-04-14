@@ -1,4 +1,4 @@
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "@std/assert";
 import { reverse } from "./7.ts";
 
 interface tt {

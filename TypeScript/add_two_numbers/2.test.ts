@@ -1,4 +1,4 @@
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "@std/assert";
 import { addTwoNumbers, ListNode } from "./2.ts";
 
 interface tt {

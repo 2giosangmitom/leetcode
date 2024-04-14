@@ -1,4 +1,4 @@
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "@std/assert";
 import { isPalindrome } from "./9.ts";
 
 interface tt {
