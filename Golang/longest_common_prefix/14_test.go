@@ -24,7 +24,7 @@ func TestLongestCommonPrefix(t *testing.T) {
 	for i, tc := range cases {
 		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			result := longestCommonPrefix(tc.strs)
-			assert.Equal(t, tc.want, result, fmt.Sprintf("test case %d failed", i))
+			assert.Equal(t, tc.want, result)
 		})
 	}
 }

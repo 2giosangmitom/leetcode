@@ -23,7 +23,7 @@
           statix
           alejandra
           deadnix
-          jdk21
+          jdk22
           gradle
           nodePackages.prettier
           google-java-format
