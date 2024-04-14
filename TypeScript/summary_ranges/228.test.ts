@@ -1,4 +1,4 @@
-import { assertEquals } from "../deps.ts";
+import { assertEquals } from "@std/assert";
 import { summaryRanges } from "./228.ts";
 
 interface tt {
