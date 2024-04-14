@@ -38,7 +38,7 @@
 | [1512. Number of Good Pairs][1512]                           | [Rust](./Rust/src/num_of_good_pairs.rs)                                                                                                                                                            | Easy       |
 | [1518. Water Bottles][1518]                                  | [Rust](./Rust/src/water_bottles.rs)                                                                                                                                                                | Easy       |
 | [1523. Count Odd Numbers in an Interval Range][1523]         | [Rust](./Rust/src/count_odd_number.rs)                                                                                                                                                             | Easy       |
-| [1603. Design Parking System][1603]                          | [Rust](./Rust/src/parking_system.rs)                                                                                                                                                               | Easy       |
+| [1603. Design Parking System][1603]                          | [Rust](./Rust/src/parking_system.rs), [Go](./Golang/design_parking_system/1603.go)                                                                                                                 | Easy       |
 
 [136]: https://leetcode.com/problems/single-number/description/
 [228]: https://leetcode.com/problems/summary-ranges/description/
