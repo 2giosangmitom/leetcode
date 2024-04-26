@@ -1,6 +1,0 @@
-{
-  "java.configuration.updateBuildConfiguration": "automatic",
-  "java.compile.nullAnalysis.mode": "automatic",
-  "deno.enable": true,
-  "typescript.disableAutomaticTypeAcquisition": true
-}
