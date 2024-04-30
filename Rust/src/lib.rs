@@ -40,4 +40,6 @@ pub mod count_odd_number;
 pub mod find_index_of_the1st_occur_in_a_string;
 pub mod len_of_last_word;
 pub mod longest_common_prefix;
+pub mod maximum_subarray;
+pub mod merge_2_sorted_lists;
 pub mod two_sum;
