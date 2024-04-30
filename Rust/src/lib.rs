@@ -44,4 +44,7 @@ pub mod maximum_subarray;
 pub mod merge_2_sorted_lists;
 pub mod merge_sorted_arr;
 pub mod missing_number;
+pub mod num_of_good_pairs;
+pub mod palindrome_num;
+pub mod parking_system;
 pub mod two_sum;
