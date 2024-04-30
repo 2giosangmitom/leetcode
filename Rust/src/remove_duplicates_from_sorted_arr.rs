@@ -1,4 +1,4 @@
-pub fn remove_duplicates(nums: &mut Vec<i32>) -> i32 {
+pub fn remove_duplicates(nums: &mut [i32]) -> i32 {
     let mut k = 0;
     for i in 1..nums.len() {
         if nums[i] != nums[k] {

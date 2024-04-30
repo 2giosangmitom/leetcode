@@ -49,4 +49,5 @@ pub mod palindrome_num;
 pub mod parking_system;
 pub mod plus_one;
 pub mod remove_duplicates_from_sorted_arr;
+pub mod remove_element;
 pub mod two_sum;
