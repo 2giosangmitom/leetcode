@@ -47,6 +47,6 @@ pub mod missing_number;
 pub mod num_of_good_pairs;
 pub mod palindrome_num;
 pub mod parking_system;
-pub mod two_sum;
 pub mod plus_one;
 pub mod remove_duplicates_from_sorted_arr;
+pub mod two_sum;
