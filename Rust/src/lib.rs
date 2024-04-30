@@ -55,4 +55,8 @@ pub mod roman2int;
 pub mod search_insert_position;
 pub mod single_number;
 pub mod sqrt;
+pub mod summary_ranges;
 pub mod two_sum;
+pub mod unique_email_addresses;
+pub mod valid_parentheses;
+pub mod water_bottles;
