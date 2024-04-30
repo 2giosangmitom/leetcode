@@ -50,4 +50,7 @@ pub mod parking_system;
 pub mod plus_one;
 pub mod remove_duplicates_from_sorted_arr;
 pub mod remove_element;
+pub mod reverse_integer;
+pub mod roman2int;
+pub mod search_insert_position;
 pub mod two_sum;
