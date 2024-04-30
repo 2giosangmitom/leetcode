@@ -38,6 +38,6 @@ pub mod binary_search;
 pub mod climbing_stairs;
 pub mod count_odd_number;
 pub mod find_index_of_the1st_occur_in_a_string;
-pub mod two_sum;
 pub mod len_of_last_word;
 pub mod longest_common_prefix;
+pub mod two_sum;
