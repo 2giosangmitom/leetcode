@@ -1,28 +1,40 @@
-mod add_two_numbers;
-mod best_time2buy_n_sell_stock;
-mod binary_search;
-mod climbing_stairs;
-mod count_odd_number;
-mod find_index_of_the1st_occur_in_a_string;
-mod len_of_last_word;
-mod longest_common_prefix;
-mod maximum_subarray;
-mod merge_2_sorted_lists;
-mod merge_sorted_arr;
-mod missing_number;
-mod num_of_good_pairs;
-mod palindrome_num;
-mod parking_system;
-mod plus_one;
-mod remove_duplicates_from_sorted_arr;
-mod remove_element;
-mod reverse_integer;
-mod roman2int;
-mod search_insert_position;
-mod single_number;
-mod sqrt;
-mod summary_ranges;
-mod two_sum;
-mod unique_email_addresses;
-mod valid_parentheses;
-mod water_bottles;
+// Helper functions for LinkedList
+#[derive(PartialEq, Eq, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
+
+impl ListNode {
+    fn new(val: i32) -> Self {
+        ListNode { val, next: None }
+    }
+
+    fn append(&mut self, val: i32) {
+        let mut current = self;
+        while let Some(ref mut next_node) = current.next {
+            current = next_node;
+        }
+        current.next = Some(Box::new(ListNode::new(val)));
+    }
+}
+
+pub fn create_linked_list(vals: &[i32]) -> Option<Box<ListNode>> {
+    let mut head: Option<Box<ListNode>> = None;
+    for &val in vals.iter() {
+        let node = ListNode::new(val);
+        if let Some(ref mut tail) = head {
+            tail.append(val);
+        } else {
+            head = Some(Box::new(node));
+        }
+    }
+    head
+}
+
+pub mod add_two_numbers;
+pub mod two_sum;
+pub mod best_time2buy_n_sell_stock;
+pub mod binary_search;
+pub mod climbing_stairs;
+pub mod count_odd_number;
