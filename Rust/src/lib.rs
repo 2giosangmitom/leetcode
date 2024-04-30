@@ -42,4 +42,6 @@ pub mod len_of_last_word;
 pub mod longest_common_prefix;
 pub mod maximum_subarray;
 pub mod merge_2_sorted_lists;
+pub mod merge_sorted_arr;
+pub mod missing_number;
 pub mod two_sum;
