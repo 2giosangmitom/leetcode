@@ -33,8 +33,11 @@ pub fn create_linked_list(vals: &[i32]) -> Option<Box<ListNode>> {
 }
 
 pub mod add_two_numbers;
-pub mod two_sum;
 pub mod best_time2buy_n_sell_stock;
 pub mod binary_search;
 pub mod climbing_stairs;
 pub mod count_odd_number;
+pub mod find_index_of_the1st_occur_in_a_string;
+pub mod two_sum;
+pub mod len_of_last_word;
+pub mod longest_common_prefix;
