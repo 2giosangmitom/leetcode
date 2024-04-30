@@ -53,4 +53,6 @@ pub mod remove_element;
 pub mod reverse_integer;
 pub mod roman2int;
 pub mod search_insert_position;
+pub mod single_number;
+pub mod sqrt;
 pub mod two_sum;
