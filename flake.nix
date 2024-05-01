@@ -1,5 +1,5 @@
 {
-  description = "LeetCode solutions for Rust, Go, TypeScript, C# and Java";
+  description = "LeetCode solutions for Rust, Go, TypeScript and C#";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -20,13 +20,7 @@
           go
           deno
           nil
-          statix
           alejandra
-          deadnix
-          jdk22
-          gradle
-          nodePackages.prettier
-          google-java-format
         ];
       in {
         devShells.default = pkgs.mkShell {
