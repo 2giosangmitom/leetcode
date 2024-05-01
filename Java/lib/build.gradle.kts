@@ -1,4 +1,5 @@
 plugins {
+    java
     `java-library`
     jacoco
 }
@@ -8,16 +9,8 @@ repositories {
 }
 
 dependencies {
-    api(libs.commons.math3)
-    implementation(libs.guava)
-}
-
-testing {
-    suites {
-        val test by getting(JvmTestSuite::class) {
-            useJUnitJupiter("5.10.0")
-        }
-    }
+    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
 java {
@@ -28,6 +21,14 @@ java {
 
 tasks.test {
     finalizedBy(tasks.jacocoTestReport)
+    useJUnitPlatform()
+
+    maxHeapSize = "1G"
+
+    testLogging {
+        events("standardOut", "started", "passed", "skipped", "failed")
+        showStandardStreams = true
+    }
 }
 
 tasks.jacocoTestReport {
