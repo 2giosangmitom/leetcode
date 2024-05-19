@@ -13,18 +13,21 @@
   }:
     flake-utils.lib.eachDefaultSystem (
       system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-        packages = with pkgs; [
-          rustup
-          dotnet-sdk_8
-          go
-          deno
-          nil
-          alejandra
-        ];
+        pkgs = import nixpkgs {inherit system;};
       in {
         devShells.default = pkgs.mkShell {
-          buildInputs = packages;
+          buildInputs = with pkgs; [
+            dotnet-sdk_8
+            go
+            deno
+            nil
+            alejandra
+            cargo
+            rustc
+            rustfmt
+            rust-analyzer
+            clippy
+          ];
         };
         formatter = pkgs.alejandra;
       }
