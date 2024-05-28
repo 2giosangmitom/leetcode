@@ -17,7 +17,6 @@
       in {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            dotnet-sdk_8
             go
             deno
             nil
