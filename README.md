@@ -1,6 +1,5 @@
 # Solution for LeetCode problems
 
-[![C#](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/c_sharp.yml)
 [![Dog](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
 [![Rust](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/rust.yml)
 [![TypeScript](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/typescript.yml)
@@ -10,13 +9,13 @@
 
 | Problem title                                                | Solution                                                                                                                                                                     | Difficulty |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [C#](./CSharp/Solutions/TwoSum.cs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/two_sum/1.ts)                                      | Easy       |
-| [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [C#](./CSharp/Solutions/AddTwoNumbers.cs), [Go](./Golang/add_two_numbers/2.go), [TypeScript](./TypeScript/add_two_numbers/2.ts)       | Medium     |
-| [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [C#](./CSharp/Solutions/ReverseInteger.cs), [Go](./Golang/reverse_integer/7.go), [TypeScript](./TypeScript/reverse_integer/7.ts)      | Medium     |
-| [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [C#](./CSharp/Solutions/PalindromeNumber.cs), [Go](./Golang/palindrome_number/9.go), [TypeScript](./TypeScript/palindrome_number/9.ts) | Easy       |
-| [13. Roman to Integer][13]                                   | [Rust](./Rust/src/roman2int.rs), [C#](./CSharp/Solutions/RomanToInteger.cs), [Go](./Golang/roman_to_integer/13.go)                                                           | Easy       |
-| [14. Longest Common Prefix][14]                              | [Rust](./Rust/src/longest_common_prefix.rs), [C#](./CSharp/Solutions/LongestCommonPrefix.cs), [Go](./Golang/longest_common_prefix/14.go)                                     | Easy       |
-| [20. Valid Parentheses][20]                                  | [Rust](./Rust/src/valid_parentheses.rs), [C#](./CSharp/Solutions/ValidParentheses.cs), [Go](./Golang/valid_parentheses/20.go)                                                | Easy       |
+| [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/two_sum/1.ts)                                      | Easy       |
+| [2. Add Two Numbers][2]                                      | [Rust](./Rust/src/add_two_numbers.rs), [Go](./Golang/add_two_numbers/2.go), [TypeScript](./TypeScript/add_two_numbers/2.ts)       | Medium     |
+| [7. Reverse Integer][7]                                      | [Rust](./Rust/src/reverse_integer.rs), [Go](./Golang/reverse_integer/7.go), [TypeScript](./TypeScript/reverse_integer/7.ts)      | Medium     |
+| [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [Go](./Golang/palindrome_number/9.go), [TypeScript](./TypeScript/palindrome_number/9.ts) | Easy       |
+| [13. Roman to Integer][13]                                   | [Rust](./Rust/src/roman2int.rs), [Go](./Golang/roman_to_integer/13.go)                                                           | Easy       |
+| [14. Longest Common Prefix][14]                              | [Rust](./Rust/src/longest_common_prefix.rs), [Go](./Golang/longest_common_prefix/14.go)                                     | Easy       |
+| [20. Valid Parentheses][20]                                  | [Rust](./Rust/src/valid_parentheses.rs), [Go](./Golang/valid_parentheses/20.go)                                                | Easy       |
 | [21. Merge Two Sorted Lists][21]                             | [Rust](./Rust/src/merge_2_sorted_lists.rs), [Go](./Golang/merge_two_sorted_lists/21.go)                                                                                      | Easy       |
 | [26. Remove Duplicates from Sorted Array][26]                | [Rust](./Rust/src/remove_duplicates_from_sorted_arr.rs), [Go](./Golang/remove_duplicates_from_sorted_array/26.go)                                                            | Easy       |
 | [27. Remove Element][27]                                     | [Rust](./Rust/src/remove_element.rs), [Go](./Golang/remove_element/27.go)                                                                                                    | Easy       |
@@ -29,9 +28,9 @@
 | [70. Climbing Stairs][70]                                    | [Rust](./Rust/src/climbing_stairs.rs)                                                                                                                                        | Easy       |
 | [88. Merge Sorted Array][88]                                 | [Rust](./Rust/src/merge_sorted_arr.rs)                                                                                                                                       | Easy       |
 | [121. Best Time to Buy and Sell Stock][121]                  | [Rust](./Rust/src/best_time2buy_n_sell_stock.rs)                                                                                                                             | Easy       |
-| [136. Single Number][136]                                    | [Rust](./Rust/src/single_number.rs), [C#](./CSharp/Solutions/SingleNumber.cs), [Go](./Golang/single_number/136.go), [TypeScript](./TypeScript/single_number/136.ts)          | Easy       |
-| [228. Summary Ranges][228]                                   | [Rust](./Rust/src/summary_ranges.rs), [C#](./CSharp/Solutions/SummaryRanges.cs), [Go](./Golang/summary_ranges/228.go), [TypeScript](./TypeScript/summary_ranges/228.ts)      | Easy       |
-| [268. Missing Number][268]                                   | [Rust](./Rust/src/missing_number.rs), [C#](./CSharp/Solutions/MissingNumber.cs)                                                                                              | Easy       |
+| [136. Single Number][136]                                    | [Rust](./Rust/src/single_number.rs), [Go](./Golang/single_number/136.go), [TypeScript](./TypeScript/single_number/136.ts)          | Easy       |
+| [228. Summary Ranges][228]                                   | [Rust](./Rust/src/summary_ranges.rs), [Go](./Golang/summary_ranges/228.go), [TypeScript](./TypeScript/summary_ranges/228.ts)      | Easy       |
+| [268. Missing Number][268]                                   | [Rust](./Rust/src/missing_number.rs),                                                                                               | Easy       |
 | [704. Binary Search][704]                                    | [Rust](./Rust/src/binary_search.rs)                                                                                                                                          | Easy       |
 | [929. Unique Email Addresses][929]                           | [Rust](./Rust/src/unique_email_addresses.rs)                                                                                                                                 | Easy       |
 | [1512. Number of Good Pairs][1512]                           | [Rust](./Rust/src/num_of_good_pairs.rs)                                                                                                                                      | Easy       |
