@@ -26,6 +26,7 @@
             rustfmt
             rust-analyzer
             clippy
+            nodejs_20
           ];
         };
         formatter = pkgs.alejandra;
