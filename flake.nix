@@ -1,6 +1,4 @@
 {
-  description = "LeetCode solutions for Rust, Go, TypeScript and C#";
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
