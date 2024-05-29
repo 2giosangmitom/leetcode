@@ -1,4 +1,4 @@
-function singleNumber(nums: number[]): number {
+export function singleNumber(nums: number[]): number {
   const map = new Map<number, number>();
 
   nums.forEach((num) => {
@@ -20,5 +20,3 @@ function singleNumber(nums: number[]): number {
 
   return result;
 }
-
-export { singleNumber };

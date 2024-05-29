@@ -1,4 +1,4 @@
-function reverse(x: number): number {
+export function reverse(x: number): number {
   const MAX = 2 ** 31 - 1;
   let result = 0;
   const isNegative = x < 0;
@@ -19,5 +19,3 @@ function reverse(x: number): number {
 
   return isNegative ? -result : result;
 }
-
-export { reverse };

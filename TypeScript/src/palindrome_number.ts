@@ -1,4 +1,4 @@
-function isPalindrome(x: number): boolean {
+export function isPalindrome(x: number): boolean {
   if (x < 0) {
     return false;
   }
@@ -17,5 +17,3 @@ function isPalindrome(x: number): boolean {
 
   return reverse(x) === x;
 }
-
-export { isPalindrome };

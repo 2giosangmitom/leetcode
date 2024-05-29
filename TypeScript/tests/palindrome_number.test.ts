@@ -1,12 +1,7 @@
 import { assertEquals } from "@std/assert";
-import { isPalindrome } from "./9.ts";
+import { isPalindrome } from "../src/palindrome_number.ts";
 
-interface tt {
-  num: number;
-  want: boolean;
-}
-
-const cases: tt[] = [
+const cases = [
   { num: -10, want: false },
   { num: 5, want: true },
   { num: 121, want: true },
@@ -14,8 +9,9 @@ const cases: tt[] = [
   { num: 111, want: true },
 ];
 
-for (const t of cases) {
-  Deno.test(JSON.stringify(t), () => {
+for (let i = 0; i < cases.length; i++) {
+  const t = cases[i];
+  Deno.test(`palindromeNumber - test case ${i + 1}`, () => {
     const result = isPalindrome(t.num);
     assertEquals(result, t.want);
   });

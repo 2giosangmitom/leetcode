@@ -1,13 +1,6 @@
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+import { ListNode } from "../lib.ts";
 
-function addTwoNumbers(
+export function addTwoNumbers(
   l1: ListNode | null,
   l2: ListNode | null,
 ): ListNode | null {
@@ -32,5 +25,3 @@ function addTwoNumbers(
 
   return dummyHead.next;
 }
-
-export { addTwoNumbers, ListNode };

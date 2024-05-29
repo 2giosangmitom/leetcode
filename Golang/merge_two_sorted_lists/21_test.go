@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	helpers "leetcode"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -14,14 +16,14 @@ func TestMergeTwoLists(t *testing.T) {
 		want  ListNode
 	}{
 		{
-			list1: ListNode{1, &ListNode{2, &ListNode{4, nil}}},
-			list2: ListNode{1, &ListNode{3, &ListNode{4, nil}}},
-			want:  ListNode{1, &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{4, nil}}}}}},
+			list1: helpers.CreateList([]int{1, 2, 4}),
+			list2: helpers.CreateList([]int{1, 3, 4}),
+			want:  helpers.CreateList([]int{1, 1, 2, 3, 4, 4}),
 		},
 		{
-			list1: ListNode{2, &ListNode{3, &ListNode{5, nil}}},
-			list2: ListNode{2, &ListNode{3, &ListNode{9, nil}}},
-			want:  ListNode{2, &ListNode{2, &ListNode{3, &ListNode{3, &ListNode{5, &ListNode{9, nil}}}}}},
+			list1: helpers.CreateList([]int{2, 3, 5}),
+			list2: helpers.CreateList([]int{2, 3, 9}),
+			want:  helpers.CreateList([]int{2, 2, 3, 3, 5, 9}),
 		},
 	}
 

@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"testing"
 
+	helpers "leetcode"
+
 	"github.com/stretchr/testify/assert"
 )
 
@@ -14,19 +16,19 @@ func TestAddTwoNumbers(t *testing.T) {
 		want ListNode
 	}{
 		{
-			l1:   ListNode{2, &ListNode{4, &ListNode{3, nil}}},
-			l2:   ListNode{5, &ListNode{6, &ListNode{4, nil}}},
-			want: ListNode{7, &ListNode{0, &ListNode{8, nil}}},
+			l1:   helpers.CreateList([]int{2, 4, 3}),
+			l2:   helpers.CreateList([]int{5, 6, 4}),
+			want: helpers.CreateList([]int{7, 0, 8}),
 		},
 		{
-			l1:   ListNode{0, nil},
-			l2:   ListNode{0, nil},
-			want: ListNode{0, nil},
+			l1:   helpers.CreateList([]int{0}),
+			l2:   helpers.CreateList([]int{0}),
+			want: helpers.CreateList([]int{0}),
 		},
 		{
-			l1:   ListNode{9, &ListNode{9, &ListNode{9, &ListNode{9, &ListNode{9, &ListNode{9, &ListNode{9, nil}}}}}}},
-			l2:   ListNode{9, &ListNode{9, &ListNode{9, &ListNode{9, nil}}}},
-			want: ListNode{8, &ListNode{9, &ListNode{9, &ListNode{9, &ListNode{0, &ListNode{0, &ListNode{0, &ListNode{1, nil}}}}}}}},
+			l1:   helpers.CreateList([]int{9, 9, 9, 9, 9, 9, 9}),
+			l2:   helpers.CreateList([]int{9, 9, 9, 9}),
+			want: helpers.CreateList([]int{8, 9, 9, 9, 0, 0, 0, 1}),
 		},
 	}
 

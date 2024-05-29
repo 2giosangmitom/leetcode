@@ -1,12 +1,7 @@
 import { assertEquals } from "@std/assert";
-import { reverse } from "./7.ts";
+import { reverse } from "../src/reverse_integer.ts";
 
-interface tt {
-  x: number;
-  want: number;
-}
-
-const cases: tt[] = [
+const cases = [
   { x: 123, want: 321 },
   { x: -123, want: -321 },
   { x: 120, want: 21 },
@@ -15,8 +10,9 @@ const cases: tt[] = [
   { x: 900000, want: 9 },
 ];
 
-for (const t of cases) {
-  Deno.test(JSON.stringify(t), () => {
+for (let i = 0; i < cases.length; i++) {
+  const t = cases[i];
+  Deno.test(`reverseInteger - test case ${i + 1}`, () => {
     const result = reverse(t.x);
     assertEquals(result, t.want);
   });

@@ -1,4 +1,4 @@
-function summaryRanges(nums: number[]): string[] {
+export function summaryRanges(nums: number[]): string[] {
   const result: string[] = [];
 
   for (let i = 0; i < nums.length; i++) {
@@ -18,5 +18,3 @@ function summaryRanges(nums: number[]): string[] {
 
   return result;
 }
-
-export { summaryRanges };

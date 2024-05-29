@@ -1,9 +1,10 @@
 package mergetwosortedlists
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+import (
+	helpers "leetcode"
+)
+
+type ListNode = helpers.ListNode
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	head := ListNode{}
