@@ -20,7 +20,7 @@ This repository contains solutions to various LeetCode problems implemented in R
 | Problem Title                                                | Solutions                                                                                                                     |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | [1. Two Sum][1]                                              | [Rust](./Rust/src/two_sum.rs), [Go](./Golang/two_sum/1.go), [TypeScript](./TypeScript/src/two_sum.ts)                         |
-| [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [Go](./Golang/palindrome_number/9.go), [TypeScript](./TypeScript/src/palindrome_num.ts) |
+| [9. Palindrome Number][9]                                    | [Rust](./Rust/src/palindrome_num.rs), [Go](./Golang/palindrome_number/9.go), [TypeScript](./TypeScript/src/palindrome_number.ts) |
 | [13. Roman to Integer][13]                                   | [Rust](./Rust/src/roman2int.rs), [Go](./Golang/roman_to_integer/13.go)                                                        |
 | [14. Longest Common Prefix][14]                              | [Rust](./Rust/src/longest_common_prefix.rs), [Go](./Golang/longest_common_prefix/14.go)                                       |
 | [20. Valid Parentheses][20]                                  | [Rust](./Rust/src/valid_parentheses.rs), [Go](./Golang/valid_parentheses/20.go)                                               |
