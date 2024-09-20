@@ -3,7 +3,7 @@
   "description": "LeetCode solutions",
   "type": "module",
   "scripts": {
-    "test": "node --test './tests/*.test.*'"
+    "test": "node --test ./tests/*.test.*"
   },
   "author": "Vo Quang Chien"
 }
