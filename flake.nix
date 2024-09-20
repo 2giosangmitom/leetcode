@@ -1,5 +1,5 @@
 {
-  description = "LeetCode solutions implemented in Rust, Go, Java, Python3, C, C++ and TypeScript";
+  description = "LeetCode solutions implemented in C++, Go, Java, JavaScript";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
@@ -15,17 +15,11 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            go
-            deno
-            cargo
-            rustc
-            rustfmt
-            rust-analyzer
-            clippy
+            go_1_23
             zig
             jdk22
             gradle
-            python3
+            nodejs_22
           ];
         };
         formatter = pkgs.nixfmt-rfc-style;

@@ -5,11 +5,6 @@ updates:
     schedule:
       interval: "weekly"
 
-  - package-ecosystem: "nuget"
-    directory: "CSharp"
-    schedule:
-      interval: "weekly"
-
   - package-ecosystem: "gradle"
     directory: "Java"
     schedule:

@@ -1,4 +1,4 @@
-name: Dog
+name: Go
 
 on:
   push:
@@ -12,15 +12,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Golang
-        uses: actions/setup-go@v5
-        with:
-          go-version: stable
-          cache-dependency-path: Golang/go.sum
+      - name: Install Nix
+        uses: cachix/install-nix-action@v27
+
+      - name: Use flake devShell
+        run: nix develop
 
       - name: Test
         run: go test -cover -race -coverprofile=coverage.txt -covermode=atomic ./...
-        working-directory: Golang
+        working-directory: Go
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4
