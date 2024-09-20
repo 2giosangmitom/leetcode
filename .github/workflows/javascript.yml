@@ -1,4 +1,4 @@
-name: Go
+name: JavaScript
 
 on:
   push:
@@ -19,4 +19,4 @@ jobs:
         run: nix develop
 
       - name: Test
-        run: make test_go
+        run: make test_javascript
