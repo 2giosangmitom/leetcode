@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains solutions to various LeetCode problems implemented in C++, Go, Java, JavaScript. Each solution is organized by problem title and includes the difficulty level.
+This repository contains solutions to various LeetCode problems implemented in Go, Java, and JavaScript. Each solution is organized by problem title and includes the difficulty level.
 
 ## Easy Problems
 
