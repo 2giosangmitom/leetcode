@@ -15,8 +15,6 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@V28
 
-      - name: Use flake devShell
-        run: nix develop
-
-      - name: Test
-        run: echo $GTEST_PKG && make test_cpp
+      - name: Use flake devShell and run tests
+        run: |
+          nix develop --command sh -c "GTEST_PKG=\$GTEST_PKG make test_cpp"
