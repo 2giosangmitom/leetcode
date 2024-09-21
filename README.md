@@ -1,5 +1,10 @@
 # LeetCode Solutions
 
+[![C++](https://github.com/2giosangmitom/leetcode/actions/workflows/cpp.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/cpp.yml)
+[![JavaScript](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/javascript.yml)
+[![Java](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/java.yml)
+[![Go](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml/badge.svg)](https://github.com/2giosangmitom/leetcode/actions/workflows/go.yml)
+
 ## Overview
 
 This repository contains solutions to various LeetCode problems implemented in Go, Java, and JavaScript. Each solution is organized by problem title and includes the difficulty level.
