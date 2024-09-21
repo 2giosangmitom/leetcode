@@ -7,7 +7,7 @@ SOLUTIONS_DIR = src
 TESTS_DIR = tests
 INCLUDE_DIR = include
 
-# Google Test Paths
+# Google Test paths
 GTEST_ROOT = $(GTEST_PKG)
 GTEST_INCS = $(GTEST_ROOT)/include
 GTEST_LIB = $(GTEST_ROOT)/lib/libgtest.so
