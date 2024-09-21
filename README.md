@@ -11,6 +11,7 @@ This repository contains solutions to various LeetCode problems implemented in G
 
 ## Easy Problems
 
-| Title                                                            | Solutions                                                                                                              |
-| ---------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [1. Two Sum](https://leetcode.com/problems/two-sum/description/) | [Go](./Go/1/1.go), [Java](./Java/lib/src/main/java/leetcode/TwoSum/Solution.java), [JavaScript](./JavaScript/src/1.js) |
+| Title                                                                            | Solutions                                                                                                                                              |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/description/)                 | [Go](./Go/1/1.go), [Java](./Java/lib/src/main/java/leetcode/TwoSum/Solution.java), [JavaScript](./JavaScript/src/1.js), [C++](./C++/src/1.cpp)         |
+| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) | [Go](./Go/7/7.go), [Java](./Java/lib/src/main/java/leetcode/ReverseInteger/Solution.java), [JavaScript](./JavaScript/src/7.js), [C++](./C++/src/7.cpp) |
