@@ -1,0 +1,22 @@
+name: C++
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@V28
+
+      - name: Use flake devShell
+        run: nix develop
+
+      - name: Test
+        run: make test_cpp
