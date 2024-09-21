@@ -24,7 +24,6 @@
           ];
           shellHook = ''
             export GTEST_PKG="${pkgs.gtest}"
-            echo "GTEST path: $GTEST_PKG"
           '';
         };
         formatter = pkgs.nixfmt-rfc-style;
