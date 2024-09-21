@@ -16,7 +16,8 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             go_1_23
-            zig
+            clang
+            gtest
             jdk22
             gradle
             nodejs_22
