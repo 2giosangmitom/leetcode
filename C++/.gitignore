@@ -33,3 +33,5 @@ debug/
 *.log
 *.tgz
 *.tar.gz
+
+*_test

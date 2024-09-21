@@ -1,7 +1,4 @@
 #include <solution_tmpl.h>
-#include <unordered_map>
-#include <vector>
-using namespace std;
 
 vector<int> Solution::twoSum(vector<int> &nums, int target) {
   unordered_map<int, int> hashMap;

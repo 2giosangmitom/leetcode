@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
 #include <solution_tmpl.h>
-#include <vector>
-using namespace std;
 
 Solution solution;
 

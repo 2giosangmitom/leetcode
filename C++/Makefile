@@ -1,36 +1,51 @@
 CXX = clang++
-CXXFLAGS = -std=c++17 -Wall -Iinclude
+CXXFLAGS = -std=c++17 -Wall -I$(INCLUDE_DIR)
+LDFLAGS = -pthread
 
+# Directories
 SOLUTIONS_DIR = src
 TESTS_DIR = tests
 INCLUDE_DIR = include
 
+# Google Test Paths
+GTEST_ROOT = /nix/store/*-gtest-*
+GTEST_INCS = $(GTEST_ROOT)/include
+GTEST_LIB = $(GTEST_ROOT)/lib/libgtest.so
+GTEST_MAIN_LIB = $(GTEST_ROOT)/lib/libgtest_main.so
+
+# Source files and object files
 SOLUTION_SRCS = $(wildcard $(SOLUTIONS_DIR)/*.cpp)
 TEST_SRCS = $(wildcard $(TESTS_DIR)/*.cpp)
 SOLUTION_OBJS = $(SOLUTION_SRCS:.cpp=.o)
 TEST_OBJS = $(TEST_SRCS:.cpp=.o)
 
+# Test executables
 TESTS = $(TEST_OBJS:.o=)
 
-GTEST_INCS = /nix/store/*-gtest-*/include
-GTEST_LIB = /nix/store/*-gtest-*/lib/libgtest.so
-GTEST_MAIN_LIB = /nix/store/*-gtest-*/lib/libgtest_main.so
-GTEST_FLAGS = -pthread
-
+# Default target
 all: $(TESTS)
 
-# Build test executables
-$(TESTS): % : %.o $(SOLUTION_OBJS) $(GTEST_LIB) $(GTEST_MAIN_LIB)
-	$(CXX) $(CXXFLAGS) -I$(GTEST_INCS) $< $(SOLUTION_OBJS) $(GTEST_LIB) $(GTEST_MAIN_LIB) -o $@ $(GTEST_FLAGS)
+# Rule to build test executables
+$(TESTS): % : %.o $(SOLUTION_OBJS)
+	$(CXX) $(CXXFLAGS) -I$(GTEST_INCS) $< $(SOLUTION_OBJS) $(GTEST_LIB) $(GTEST_MAIN_LIB) -o $@ $(LDFLAGS)
 
-# Build object files
+# Pattern rule to build object files for both solutions and tests
 %.o: %.cpp
-	$(CXX) $(CXXFLAGS) -I$(INCLUDE_DIR) -I$(GTEST_INCS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -I$(GTEST_INCS) -c $< -o $@
 
+# Run all tests
 test: all
-	@for test in $(TESTS); do ./$$test; done
+	@for test in $(TESTS); do \
+		echo "Running $$test..."; \
+		./$$test; \
+	done
 
+# Debug build
+debug: CXXFLAGS += -g
+debug: all
+
+# Clean up
 clean:
 	rm -f $(SOLUTION_OBJS) $(TEST_OBJS) $(TESTS)
 
-.PHONY: all test clean
+.PHONY: all test debug clean
