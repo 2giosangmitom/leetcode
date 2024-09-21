@@ -8,7 +8,7 @@ TESTS_DIR = tests
 INCLUDE_DIR = include
 
 # Google Test Paths
-GTEST_ROOT = /nix/store/*-gtest-*
+GTEST_ROOT = $(GTEST_PKG)
 GTEST_INCS = $(GTEST_ROOT)/include
 GTEST_LIB = $(GTEST_ROOT)/lib/libgtest.so
 GTEST_MAIN_LIB = $(GTEST_ROOT)/lib/libgtest_main.so

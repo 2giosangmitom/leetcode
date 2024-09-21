@@ -22,6 +22,9 @@
             gradle
             nodejs_22
           ];
+          shellHook = ''
+            export GTEST_PKG=${pkgs.gtest}
+          '';
         };
         formatter = pkgs.nixfmt-rfc-style;
       }
