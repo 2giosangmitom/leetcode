@@ -1,6 +1,6 @@
 import { describe, test } from "node:test";
 import { twoSum } from "../src/1.js";
-import assert from "node:assert";
+import assert from "node:assert/strict";
 
 const cases = [
   {
