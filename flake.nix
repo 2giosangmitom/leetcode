@@ -21,9 +21,11 @@
             jdk22
             gradle
             nodejs_22
+            bear
           ];
           shellHook = ''
             export GTEST_PKG="${pkgs.gtest}"
+            export GTEST_DEV="${pkgs.gtest.dev}"
           '';
         };
         formatter = pkgs.nixfmt-rfc-style;

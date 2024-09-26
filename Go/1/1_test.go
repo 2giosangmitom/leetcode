@@ -32,7 +32,7 @@ func Test_1_Two_Sum(t *testing.T) {
 	for i, tt := range cases {
 		t.Run(fmt.Sprintf("case %d", i+1), func(t *testing.T) {
 			actual := twoSum(tt.nums, tt.target)
-			assert.Equal(t, actual, tt.want)
+			assert.DeepEqual(t, actual, tt.want)
 		})
 	}
 }

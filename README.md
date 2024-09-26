@@ -11,8 +11,9 @@ This repository contains solutions to various LeetCode problems implemented in C
 
 ## Problems
 
-| Title                                                                                | Solutions                                                                                                                                                |
-| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [1. Two Sum](https://leetcode.com/problems/two-sum/description/)                     | [Go](./Go/1/1.go), [Java](./Java/lib/src/main/java/leetcode/TwoSum/Solution.java), [JavaScript](./JavaScript/src/1.js), [C++](./C++/src/1.cpp)           |
-| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)     | [Go](./Go/7/7.go), [Java](./Java/lib/src/main/java/leetcode/ReverseInteger/Solution.java), [JavaScript](./JavaScript/src/7.js), [C++](./C++/src/7.cpp)   |
-| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/) | [Go](./Go/9/9.go), [Java](./Java/lib/src/main/java/leetcode/PalindromeNumber/Solution.java), [JavaScript](./JavaScript/src/9.js), [C++](./C++/src/9.cpp) |
+| Title                                                                                         | Solutions                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [1. Two Sum](https://leetcode.com/problems/two-sum/description/)                              | [Go](./Go/1/1.go), [Java](./Java/lib/src/main/java/leetcode/TwoSum/Solution.java), [JavaScript](./JavaScript/src/1.js), [C++](./C++/src/1.cpp)                  |
+| [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/description/)              | [Go](./Go/7/7.go), [Java](./Java/lib/src/main/java/leetcode/ReverseInteger/Solution.java), [JavaScript](./JavaScript/src/7.js), [C++](./C++/src/7.cpp)          |
+| [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/description/)          | [Go](./Go/9/9.go), [Java](./Java/lib/src/main/java/leetcode/PalindromeNumber/Solution.java), [JavaScript](./JavaScript/src/9.js), [C++](./C++/src/9.cpp)        |
+| [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/description/) | [Go](./Go/14/14.go), [Java](./Java/lib/src/main/java/leetcode/LongestCommonPrefix/Solution.java), [JavaScript](./JavaScript/src/14.js), [C++](./C++/src/14.cpp) |
