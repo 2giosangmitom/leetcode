@@ -22,6 +22,7 @@
             gradle
             nodejs_22
             bear
+            tokei
           ];
           shellHook = ''
             export GTEST_PKG="${pkgs.gtest}"
