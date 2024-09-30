@@ -1,30 +1,33 @@
 #include <gtest/gtest.h>
 #include <solution_tmpl.h>
 
-Solution solution;
+class PalindromeTest : public ::testing::Test {
+protected:
+  Solution solution;
+};
 
-TEST(PalindromeTest, case1) {
+TEST_F(PalindromeTest, PositivePalindrome) {
   int x = 121;
 
   bool actual = solution.isPalindrome(x);
   EXPECT_TRUE(actual);
 }
 
-TEST(PalindromeTest, case2) {
+TEST_F(PalindromeTest, NegativePalindrome) {
   int x = -121;
 
   bool actual = solution.isPalindrome(x);
   EXPECT_FALSE(actual);
 }
 
-TEST(PalindromeTest, case3) {
+TEST_F(PalindromeTest, NotPalindromeEndingInZero) {
   int x = 10;
 
   bool actual = solution.isPalindrome(x);
   EXPECT_FALSE(actual);
 }
 
-TEST(PalindromeTest, case4) {
+TEST_F(PalindromeTest, NotPalindromeLargeNumber) {
   int x = 1234567899;
 
   bool actual = solution.isPalindrome(x);

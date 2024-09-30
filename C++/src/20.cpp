@@ -1,4 +1,5 @@
 #include <solution_tmpl.h>
+using namespace std;
 
 bool Solution::isValid(string s) {
   int length = s.length();
@@ -6,18 +7,17 @@ bool Solution::isValid(string s) {
     return false;
   }
 
-  vector<char> stack = {};
-  for (int i = 0; i < length; i++) {
-    if (s[i] == '(' || s[i] == '{' || s[i] == '[') {
-      stack.push_back(s[i]);
+  vector<char> stack;
+  for (char c : s) {
+    if (c == '(' || c == '{' || c == '[') {
+      stack.push_back(c);
     } else {
       if (stack.empty()) {
         return false;
       }
-
-      if ((s[i] == ')' && stack.back() == '(') ||
-          (s[i] == '}' && stack.back() == '{') ||
-          (s[i] == ']' && stack.back() == '[')) {
+      char top = stack.back();
+      if ((c == ')' && top == '(') || (c == '}' && top == '{') ||
+          (c == ']' && top == '[')) {
         stack.pop_back();
       } else {
         return false;

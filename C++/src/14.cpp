@@ -1,4 +1,5 @@
 #include <solution_tmpl.h>
+using namespace std;
 
 string Solution::longestCommonPrefix(vector<string> &strs) {
   string longestPrefix = strs[0];

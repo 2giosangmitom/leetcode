@@ -2,34 +2,42 @@
 #include <solution_tmpl.h>
 using namespace std;
 
-Solution solution;
+class ValidParenthesesTest : public ::testing::Test {
+protected:
+  Solution solution;
+};
 
-TEST(ValidParenthesesTest, case1) {
+TEST_F(ValidParenthesesTest, ValidSimpleParentheses) {
   string s = "()";
-
   EXPECT_TRUE(solution.isValid(s));
 }
 
-TEST(ValidParenthesesTest, case2) {
+TEST_F(ValidParenthesesTest, ValidMultipleTypes) {
   string s = "()[]{}";
-
   EXPECT_TRUE(solution.isValid(s));
 }
 
-TEST(ValidParenthesesTest, case3) {
+TEST_F(ValidParenthesesTest, InvalidMixedParentheses) {
   string s = "(]";
-
   EXPECT_FALSE(solution.isValid(s));
 }
 
-TEST(ValidParenthesesTest, case4) {
+TEST_F(ValidParenthesesTest, ValidNestedParentheses) {
   string s = "([])";
-
   EXPECT_TRUE(solution.isValid(s));
 }
 
-TEST(ValidParenthesesTest, case5) {
+TEST_F(ValidParenthesesTest, InvalidNestedParentheses) {
   string s = "([}}])";
+  EXPECT_FALSE(solution.isValid(s));
+}
 
+TEST_F(ValidParenthesesTest, InvalidSingleOpeningBracket) {
+  string s = "(";
+  EXPECT_FALSE(solution.isValid(s));
+}
+
+TEST_F(ValidParenthesesTest, InvalidSingleClosingBracket) {
+  string s = ")";
   EXPECT_FALSE(solution.isValid(s));
 }

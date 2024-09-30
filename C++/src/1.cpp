@@ -1,15 +1,16 @@
 #include <solution_tmpl.h>
 #include <unordered_map>
+using namespace std;
 
 vector<int> Solution::twoSum(vector<int> &nums, int target) {
   unordered_map<int, int> hashMap;
   for (int i = 0; i < nums.size(); i++) {
     int remainder = target - nums[i];
-    if (hashMap.find(remainder) == nullptr) {
-      hashMap.insert({nums[i], i});
-    } else {
+    if (hashMap.find(remainder) != hashMap.end()) {
       return vector<int>{hashMap[remainder], i};
     }
+
+    hashMap[nums[i]] = i;
   }
   return vector<int>{};
 }
