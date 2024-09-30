@@ -10,16 +10,16 @@ import org.junit.jupiter.params.provider.MethodSource;
 class LongestCommonPrefixTest {
   Solution solution = new Solution();
 
-  static Stream<Arguments> argsProvider() {
+  static Stream<Arguments> longestCommonPrefixProvider() {
     return Stream.of(
         Arguments.of(new String[] {"flower", "flow", "flight"}, "fl"),
         Arguments.of(new String[] {"dog", "racecar", "car"}, ""));
   }
 
-  @ParameterizedTest
-  @MethodSource("argsProvider")
-  void parameterizedTest(String[] strs, String want) {
-    String result = solution.longestCommonPrefix(strs);
-    assertEquals(want, result);
+  @ParameterizedTest(name = "Case {index}: input = {0}, expected = \"{1}\"")
+  @MethodSource("longestCommonPrefixProvider")
+  void testLongestCommonPrefix(String[] input, String expected) {
+    String result = solution.longestCommonPrefix(input);
+    assertEquals(expected, result);
   }
 }

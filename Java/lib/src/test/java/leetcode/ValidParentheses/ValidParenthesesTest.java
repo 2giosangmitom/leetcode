@@ -8,10 +8,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 class ValidParenthesesTest {
   Solution solution = new Solution();
 
-  @ParameterizedTest
+  @ParameterizedTest(name = "Case {index}: isValid({0}) = {1}")
   @CsvSource({"'()', true", "'()[]{}', true", "'(]', false", "'([])', true", "'([}}])', false"})
-  void manyTests(String s, boolean want) {
+  void testIsValid(String s, boolean expected) {
     boolean result = solution.isValid(s);
-    assertEquals(want, result);
+    assertEquals(expected, result);
   }
 }

@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 class ReverseTest {
   Solution solution = new Solution();
 
-  @ParameterizedTest
+  @ParameterizedTest(name = "Case {index}: reverse({0}) = {1}")
   @CsvSource({
     "123, 321",
     "-123, -321",
@@ -16,8 +16,8 @@ class ReverseTest {
     "1463847412, 2147483641",
     "-2147483648, 0",
   })
-  void manyTests(int x, int want) {
+  void testReverse(int x, int expected) {
     int result = solution.reverse(x);
-    assertEquals(result, want);
+    assertEquals(expected, result);
   }
 }

@@ -9,15 +9,15 @@ import org.junit.jupiter.params.provider.ValueSource;
 class PalindromeNumberTest {
   Solution solution = new Solution();
 
-  @ParameterizedTest
+  @ParameterizedTest(name = "Case {index}: input = {0}, expected = true")
   @ValueSource(ints = {121, 212})
-  void shouldReturnTrueForPalindromeNums(int number) {
+  void testPalindrome(int number) {
     assertTrue(solution.isPalindrome(number));
   }
 
-  @ParameterizedTest
+  @ParameterizedTest(name = "Case {index}: input = {0}, expected = false")
   @ValueSource(ints = {123, 10, -121})
-  void shouldReturnFalseForNonPalindromeNums(int number) {
+  void testNonPalindrome(int number) {
     assertFalse(solution.isPalindrome(number));
   }
 }
