@@ -10,6 +10,7 @@ public:
   int reverse(int x);
   bool isPalindrome(int x);
   string longestCommonPrefix(vector<string> &strs);
+  bool isValid(string s);
 };
 
 #endif
