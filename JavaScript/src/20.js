@@ -8,17 +8,17 @@ function isValid(s) {
   }
 
   const stack = [];
+  const matchingBrackets = {
+    "(": ")",
+    "{": "}",
+    "[": "]",
+  };
+
   for (const char of s) {
-    if (char === "(" || char === "{" || char === "[") {
-      stack.push(char);
+    if (matchingBrackets[char]) {
+      stack.push(matchingBrackets[char]);
     } else {
-      if (char === ")" && stack[stack.length - 1] === "(") {
-        stack.pop();
-      } else if (char === "}" && stack[stack.length - 1] === "{") {
-        stack.pop();
-      } else if (char === "]" && stack[stack.length - 1] === "[") {
-        stack.pop();
-      } else {
+      if (stack.pop() !== char) {
         return false;
       }
     }
