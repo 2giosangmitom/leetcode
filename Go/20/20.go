@@ -7,19 +7,20 @@ func isValid(s string) bool {
 	}
 
 	stack := []rune{}
-	for i := 0; i < length; i++ {
-		if (s[i] == '(') || s[i] == '{' || s[i] == '[' {
-			stack = append(stack, rune(s[i]))
-		} else {
-			if len(stack) == 0 {
-				return false
-			}
+	matchingBrackets := map[rune]rune{
+		')': '(',
+		'}': '{',
+		']': '[',
+	}
 
-			if s[i] == ')' && stack[len(stack)-1] == '(' || s[i] == '}' && stack[len(stack)-1] == '{' || s[i] == ']' && stack[len(stack)-1] == '[' {
-				stack = stack[:len(stack)-1]
-			} else {
+	for _, char := range s {
+		if char == '(' || char == '{' || char == '[' {
+			stack = append(stack, char)
+		} else {
+			if len(stack) == 0 || stack[len(stack)-1] != matchingBrackets[char] {
 				return false
 			}
+			stack = stack[:len(stack)-1]
 		}
 	}
 

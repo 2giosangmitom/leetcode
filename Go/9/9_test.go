@@ -1,23 +1,23 @@
 package palindrome_number
 
 import (
-	"fmt"
 	"leetcode/pkg/assert"
 	"testing"
 )
 
-func Test_9_Palindrome_Number(t *testing.T) {
+func TestPalindromeNumber(t *testing.T) {
 	cases := []struct {
+		name string
 		x    int
 		want bool
 	}{
-		{x: 121, want: true},
-		{x: -121, want: false},
-		{x: 10, want: false},
+		{name: "PositivePalindrome", x: 121, want: true},
+		{name: "NegativeNumber", x: -121, want: false},
+		{name: "SingleDigitNotPalindrome", x: 10, want: false},
 	}
 
-	for i, tt := range cases {
-		t.Run(fmt.Sprintf("case %d", i), func(t *testing.T) {
+	for _, tt := range cases {
+		t.Run(tt.name, func(t *testing.T) {
 			actual := isPalindrome(tt.x)
 			assert.Equal(t, actual, tt.want)
 		})
