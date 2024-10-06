@@ -1,6 +1,9 @@
+#include <algorithm>
 #include <gtest/gtest.h>
+#include <map>
 #include <solution_tmpl.h>
 #include <string>
+#include <unordered_map>
 #include <vector>
 using namespace std;
 
@@ -10,21 +13,31 @@ protected:
 };
 
 void check_equal(vector<vector<string>> result, vector<vector<string>> want) {
-  for (size_t i = 0; i < result.size(); i++) {
-    for (size_t j = 0; j < result[i].size(); j++) {
-      string target = result[i][j];
-      bool found = false;
-      for (size_t r = 0; r < want[i].size(); r++) {
-        if (want[i][r] == target) {
-          found = true;
-          break;
-        }
+  unordered_map<string, int> hash_map = {};
+  for (auto pair : result) {
+    bool found = false;
+    for (auto pair2 : want) {
+      if (pair.size() != pair2.size()) {
+        continue;
       }
-      if (!found) {
-        ADD_FAILURE_AT(__FILE__, __LINE__)
-            << "Mismatch at result[" << i << "][" << j << "]: " << target
-            << " not found in want[" << i << "]";
+
+      map<string, int> count_left = {};
+      for (string s : pair) {
+        count_left[s]++;
       }
+
+      map<string, int> count_right = {};
+      for (string s : pair2) {
+        count_right[s]++;
+      }
+
+      if (equal(count_left.begin(), count_left.end(), count_right.begin(),
+                count_right.end())) {
+        found = true;
+      }
+    }
+    if (!found) {
+      ADD_FAILURE_AT(__FILE__, __LINE__);
     }
   }
 }
