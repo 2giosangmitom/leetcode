@@ -23,10 +23,12 @@
             nodejs_22
             bear
             tokei
+            bashInteractive
           ];
           shellHook = ''
             export GTEST_PKG="${pkgs.gtest}"
             export GTEST_DEV="${pkgs.gtest.dev}"
+            export SHELL="${pkgs.bashInteractive}/bin/bash"
           '';
         };
         formatter = pkgs.nixfmt-rfc-style;
