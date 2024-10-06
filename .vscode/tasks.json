@@ -1,14 +1,15 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "C++: build debug",
-      "command": "make",
-      "type": "shell",
-      "args": ["clean", "debug"],
-      "options": {
-        "cwd": "${workspaceFolder}/C++"
-      }
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "C++: build debug",
+			"command": "make",
+			"type": "shell",
+			"args": ["clean", "debug"],
+			"options": {
+				"cwd": "${workspaceFolder}/C++"
+			},
+			"problemMatcher": []
+		}
+	]
 }

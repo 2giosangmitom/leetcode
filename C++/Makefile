@@ -1,5 +1,5 @@
 CXX = clang++
-CXXFLAGS = -std=c++17 -Wall -I$(INCLUDE_DIR)
+CXXFLAGS = -std=c++17 -Wall -Wextra -I$(INCLUDE_DIR)
 LDFLAGS = -pthread
 
 # Directories
