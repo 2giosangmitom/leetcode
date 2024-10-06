@@ -29,7 +29,7 @@ void check_equal(vector<vector<string>> result, vector<vector<string>> want) {
   }
 }
 
-TEST_F(GroupAnagrams, SameLengths) {
+TEST_F(GroupAnagrams, SameLength) {
   vector<string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
   vector<vector<string>> want = {
       {"bat"}, {"nat", "tan"}, {"ate", "eat", "tea"}};
@@ -38,7 +38,7 @@ TEST_F(GroupAnagrams, SameLengths) {
   check_equal(result, want);
 }
 
-TEST_F(GroupAnagrams, EmptyStrings) {
+TEST_F(GroupAnagrams, EmptyString) {
   vector<string> strs = {""};
   vector<vector<string>> want = {{""}};
   vector<vector<string>> result = solution.groupAnagrams(strs);
