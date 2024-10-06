@@ -1,8 +1,6 @@
 #include <algorithm>
 #include <solution_tmpl.h>
-#include <string>
 #include <unordered_map>
-#include <vector>
 
 vector<vector<string>> Solution::groupAnagrams(vector<string> &strs) {
   unordered_map<string, vector<string>> hash_map;
