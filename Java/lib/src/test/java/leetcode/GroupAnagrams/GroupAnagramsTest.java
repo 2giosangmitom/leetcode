@@ -47,4 +47,26 @@ class GroupAnagramsTest {
 
         assertNestedList(actual, want);
     }
+
+    @Test
+    @DisplayName("empty string")
+    void case2() {
+        String[] strs = {""};
+        List<List<String>> want = Arrays.asList(Arrays.asList(""));
+
+        List<List<String>> actual = solution.groupAnagrams(strs);
+
+        assertNestedList(actual, want);
+    }
+
+    @Test
+    @DisplayName("single char")
+    void case3() {
+        String[] strs = {"a"};
+        List<List<String>> want = Arrays.asList(Arrays.asList("a"));
+
+        List<List<String>> actual = solution.groupAnagrams(strs);
+
+        assertNestedList(actual, want);
+    }
 }
