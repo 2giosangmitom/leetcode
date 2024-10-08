@@ -11,6 +11,27 @@ function assertEqualAnagrams(result, expected) {
 			`Assertion failed!\n Expect: ${JSON.stringify(expected)}\n Actual: ${JSON.stringify(result)}`,
 		);
 	}
+
+	for (let i = 0; i < expected.length; i++) {
+		let found = false;
+
+		for (let j = 0; j < result.length; j++) {
+			if (expected[i].length !== result[j].length) {
+				continue;
+			}
+
+			found = expected[i].every((str) => result[j].includes(str));
+			if (found) {
+				break;
+			}
+		}
+
+		if (!found) {
+			throw new Error(
+				`Assertion failed!\n Expect: ${JSON.stringify(expected)}\n Actual: ${JSON.stringify(result)}`,
+			);
+		}
+	}
 }
 
 const cases = [
