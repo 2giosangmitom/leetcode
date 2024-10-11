@@ -17,4 +17,4 @@ jobs:
 
       - name: Use flake devShell and run tests
         run: |
-          nix develop --command sh -c "GTEST_PKG=\$GTEST_PKG make test_cpp"
+          nix develop --command sh -c "make test_cpp"
