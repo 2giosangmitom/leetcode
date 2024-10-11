@@ -1,4 +1,3 @@
-import { describe, test } from "node:test";
 import { groupAnagrams } from "../src/49.js";
 
 /**
@@ -49,11 +48,9 @@ const cases = [
 	},
 ];
 
-describe("49. Group Anagrams", () => {
+Deno.test("49. Group Anagrams", () => {
 	for (let i = 0; i < cases.length; i++) {
-		test(`case ${i + 1}`, () => {
-			const result = groupAnagrams(cases[i].strs);
-			assertEqualAnagrams(result, cases[i].want);
-		});
+		const result = groupAnagrams(cases[i].strs);
+		assertEqualAnagrams(result, cases[i].want);
 	}
 });

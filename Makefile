@@ -4,7 +4,7 @@ test_go:
 	(cd Go && go test ./... -v)
 
 test_javascript:
-	(cd JavaScript && npm run test)
+	(cd JavaScript && deno test)
 
 test_java:
 	(cd Java && ./gradlew cleanTest test)

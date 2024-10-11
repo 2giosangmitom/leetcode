@@ -7,9 +7,9 @@ function isPalindrome(x) {
     return false;
   }
 
-  let reversed = x.toString().split("").reverse().join("");
+  const reversed = x.toString().split("").reverse().join("");
 
-  return reversed == x;
+  return +reversed === x;
 }
 
 export { isPalindrome }
