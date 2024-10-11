@@ -15,6 +15,6 @@ jobs:
       - name: Install Nix
         uses: cachix/install-nix-action@v30
 
-      - name: Use flake devShell
+      - name: Use flake devShell and run test
         run: |
           nix develop --command sh -c "make test_javascript"
