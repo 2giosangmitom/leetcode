@@ -12,6 +12,7 @@ public:
   string longestCommonPrefix(vector<string> &strs);
   bool isValid(string s);
   vector<vector<string>> groupAnagrams(vector<string> &strs);
+  int removeElement(vector<int> &nums, int val);
 };
 
 #endif
