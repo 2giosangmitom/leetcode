@@ -10,49 +10,12 @@
     flake-utils.lib.eachDefaultSystem (
       system:
       let
-        pkgs = import nixpkgs {
-          inherit system;
-          overlays = [
-            (final: prev: {
-              deno = prev.stdenvNoCC.mkDerivation rec {
-                pname = "deno";
-                version = "v2.0.0";
-                dontBuild = true;
-                strictDeps = true;
-                nativeBuildInputs = with pkgs; [
-                  unzip
-                  installShellFiles
-                ];
-                dontConfigure = true;
-                src = prev.fetchurl {
-                  url = "https://github.com/denoland/deno/releases/download/${version}/deno-x86_64-unknown-linux-gnu.zip";
-                  sha256 = "sha256-0gG4ErvGzCVlAS5SwqnLmWXXaK/Si7wroprmZ79yUKY=";
-                };
-
-                unpackPhase = ''
-                  runHook preUnpack
-                  mkdir $TMPDIR/deno-unpacked
-                  unzip $src -d $TMPDIR/deno-unpacked
-                  echo "Unpacked contents:"
-                  ls -l $TMPDIR/deno-unpacked
-                  runHook postUnpack
-                '';
-
-                installPhase = ''
-                  runHook preInstall
-                  install -Dm 755 $TMPDIR/deno-unpacked/deno $out/bin/deno
-                  ln -s $out/bin/deno $out/bin/deno-link
-                  runHook postInstall
-                '';
-              };
-            })
-          ];
-        };
+        pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShells.default = pkgs.mkShell {
+        devShells.default = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [
-            go_1_23
+            go
             clang
             gtest
             jdk22
@@ -61,6 +24,7 @@
             tokei
             bashInteractive
             deno
+            gnumake
           ];
           shellHook = ''
             export GTEST_PKG="${pkgs.gtest}"
