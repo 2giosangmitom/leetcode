@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <gtest/gtest.h>
 #include <solution_tmpl.h>
 #include <vector>
@@ -17,12 +18,13 @@ TEST_F(RemoveElement, case1) {
   ASSERT_EQ(nums.size(), 4);
   nums.pop_back();
   nums.pop_back();
+  sort(nums.begin(), nums.end());
   ASSERT_EQ(nums, want);
 }
 
 TEST_F(RemoveElement, case2) {
   vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
-  vector<int> want = {0, 1, 3, 0, 4};
+  vector<int> want = {0, 0, 1, 3, 4};
   int val = 2;
 
   int result = solution.removeElement(nums, val);
@@ -30,5 +32,6 @@ TEST_F(RemoveElement, case2) {
   nums.pop_back();
   nums.pop_back();
   nums.pop_back();
+  sort(nums.begin(), nums.end());
   ASSERT_EQ(nums.size(), want.size());
 }
