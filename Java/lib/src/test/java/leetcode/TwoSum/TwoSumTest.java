@@ -19,7 +19,7 @@ class TwoSumTest {
         Arguments.of(new int[] {1, 2, 3}, 10, new int[] {}, "no solution"));
   }
 
-  @ParameterizedTest(name = "{2}")
+  @ParameterizedTest(name = "{3}")
   @MethodSource("provideTestCases")
   void testTwoSum(int[] nums, int target, int[] expected, String displayName) {
     int[] result = solution.twoSum(nums, target);

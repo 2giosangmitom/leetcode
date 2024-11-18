@@ -13,7 +13,7 @@ public class CounOddNumbersTest {
     "1, 10, 5, odd low and even high",
     "2, 11, 5, even low and odd high",
   })
-  void countOdds(int low, int high, int expected) {
+  void countOdds(int low, int high, int expected, String displayName) {
     Solution solution = new Solution();
     int result = solution.countOdds(low, high);
     assertEquals(expected, result);
