@@ -8,4 +8,4 @@ public:
   int search(std::vector<int> &nums, int target);
 };
 
-#endif
+#endif // BINARY_SEARCH_HPP
