@@ -1,11 +1,7 @@
 #include <spiral_matrix_2.hpp>
 
 vector<vector<int>> Solution::generateMatrix(int n) {
-  vector<vector<int>> result(n);
-  for (int i = 0; i < n; i++) {
-    result[i] = vector<int>(n);
-  }
-
+  vector<vector<int>> result(n, vector<int>(n));
   int layer = 0;
   int k = 1;
   while (layer < (n + 1) / 2) {
