@@ -1,7 +1,7 @@
 # Generate Makefiles using CMake
 generate:
 	@echo "Generating Makefiles..."
-	CXX=clang++ CC=clang cmake -B build/
+	CXX=clang++ CC=clang cmake -Wdev -B build/
 	ln -sf build/compile_commands.json compile_commands.json
 	@echo "Done!"
 
