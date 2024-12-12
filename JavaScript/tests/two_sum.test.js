@@ -1,5 +1,5 @@
-import { twoSum } from "../src/two_sum.js";
-import { assertEquals } from "@std/assert";
+import { twoSum } from "#src/two_sum.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -35,8 +35,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = twoSum(tt.nums, tt.target);
-    assertEquals(actual, tt.want);
+    expect(actual).toEqual(tt.want);
   });
 }

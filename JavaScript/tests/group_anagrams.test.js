@@ -1,5 +1,5 @@
-import { groupAnagrams } from "../src/group_anagrams.js";
-import { assertEquals } from "@std/assert";
+import { groupAnagrams } from "#src/group_anagrams.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -35,12 +35,12 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = groupAnagrams(tt.strs);
     actual.forEach((arr) => arr.sort());
     tt.want.forEach((arr) => arr.sort());
     actual.sort((a, b) => a.length - b.length);
     tt.want.sort((a, b) => a.length - b.length);
-    assertEquals(actual, tt.want);
+    expect(actual).toEqual(tt.want);
   });
 }

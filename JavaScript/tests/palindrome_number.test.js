@@ -1,5 +1,5 @@
+import { expect, test } from "vitest";
 import { isPalindrome } from "../src/palindrome_number.js";
-import { assertEquals } from "@std/assert";
 
 const cases = [
   {
@@ -25,8 +25,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = isPalindrome(tt.x);
-    assertEquals(actual, tt.want);
+    expect(actual).toBe(tt.want);
   });
 }

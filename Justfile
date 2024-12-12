@@ -22,4 +22,7 @@ java:
 javascript:
     #!/usr/bin/env bash
     cd JavaScript
-    deno test
+    if [[ ! -d "node_modules" ]]; then
+        npm install
+    fi
+    npm run test

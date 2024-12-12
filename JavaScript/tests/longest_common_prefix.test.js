@@ -1,5 +1,5 @@
-import { longestCommonPrefix } from "../src/longest_common_prefix.js";
-import { assertEquals } from "@std/assert";
+import { longestCommonPrefix } from "#src/longest_common_prefix.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -40,8 +40,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = longestCommonPrefix(tt.strs);
-    assertEquals(actual, tt.want);
+    expect(actual).toBe(tt.want);
   });
 }

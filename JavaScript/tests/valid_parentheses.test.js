@@ -1,5 +1,5 @@
-import { isValid } from "../src/valid_parentheses.js";
-import { assertEquals } from "@std/assert";
+import { isValid } from "#src/valid_parentheses.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -40,8 +40,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = isValid(tt.s);
-    assertEquals(actual, tt.want);
+    expect(actual).toBe(tt.want);
   });
 }

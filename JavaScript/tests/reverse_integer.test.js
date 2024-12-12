@@ -1,5 +1,5 @@
 import { reverse } from "../src/reverse_integer.js";
-import { assertEquals } from "@std/assert";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -30,8 +30,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = reverse(tt.x);
-    assertEquals(actual, tt.want);
+    expect(actual).toBe(tt.want);
   });
 }

@@ -1,5 +1,5 @@
+import { expect, test } from "vitest";
 import { sortArray } from "../src/sort_an_array.js";
-import { assertEquals } from "@std/assert";
 
 const cases = [
   {
@@ -15,7 +15,7 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
-    assertEquals(sortArray(tt.nums), tt.want);
+  test(tt.name, () => {
+    expect(sortArray(tt.nums)).toEqual(tt.want);
   });
 }

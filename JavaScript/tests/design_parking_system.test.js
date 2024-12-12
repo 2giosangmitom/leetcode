@@ -1,5 +1,5 @@
-import { ParkingSystem } from "../src/design_parking_system.js";
-import { assertEquals } from "@std/assert";
+import { ParkingSystem } from "#src/design_parking_system.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -53,10 +53,10 @@ const cases = [
 ];
 
 for (const c of cases) {
-  Deno.test(c.name, () => {
+  test(c.name, () => {
     const ps = new ParkingSystem(c.big, c.medium, c.small);
     for (let i = 0; i < c.addCars.length; i++) {
-      assertEquals(ps.addCar(c.addCars[i]), c.want[i]);
+      expect(ps.addCar(c.addCars[i])).toBe(c.want[i]);
     }
   });
 }

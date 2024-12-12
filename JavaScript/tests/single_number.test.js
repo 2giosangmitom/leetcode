@@ -1,5 +1,5 @@
 import { singleNumber, singleNumber2 } from "../src/single_number.js";
-import { assertEquals } from "@std/assert";
+import { expect, test } from "vitest";
 
 const cases = [
   { name: "same numbers twice", nums: [2, 2, 1], want: 1 },
@@ -8,12 +8,8 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
-    assertEquals(
-      singleNumber(tt.nums),
-      tt.want,
-      "implementation 1 (bit manipulation)",
-    );
-    assertEquals(singleNumber2(tt.nums), tt.want, "implementation 2 (sort)");
+  test(tt.name, () => {
+    expect(singleNumber(tt.nums), "bit manipulation").toBe(tt.want);
+    expect(singleNumber2(tt.nums), "sort").toBe(tt.want);
   });
 }

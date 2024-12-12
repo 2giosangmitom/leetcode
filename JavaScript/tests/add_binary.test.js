@@ -1,5 +1,5 @@
-import { assertEquals } from "@std/assert";
-import { addBinary } from "../src/add_binary.js";
+import { expect, test } from "vitest";
+import { addBinary } from "#src/add_binary.js";
 
 const cases = [
   { a: "11", b: "1", want: "100" },
@@ -8,8 +8,8 @@ const cases = [
 ];
 
 cases.forEach(({ a, b, want }, i) => {
-  Deno.test(`case ${i + 1}`, () => {
+  test(`case ${i + 1}`, () => {
     const actual = addBinary(a, b);
-    assertEquals(actual, want);
+    expect(actual).toEqual(want);
   });
 });

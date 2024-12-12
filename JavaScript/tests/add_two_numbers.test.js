@@ -1,6 +1,6 @@
-import { ListNode } from "../lib/linked_list.js";
-import { addTwoNumbers } from "../src/add_two_numbers.js";
-import { assertEquals } from "@std/assert";
+import { ListNode } from "#lib/linked_list.js";
+import { addTwoNumbers } from "#src/add_two_numbers.js";
+import { expect, test } from "vitest";
 
 const cases = [
   {
@@ -30,8 +30,8 @@ const cases = [
 ];
 
 for (const c of cases) {
-  Deno.test(c.name, () => {
+  test(c.name, () => {
     const result = addTwoNumbers(c.l1, c.l2);
-    assertEquals(result?.toArray() ?? [], c.want);
+    expect(result?.toArray() ?? []).toEqual(c.want);
   });
 }

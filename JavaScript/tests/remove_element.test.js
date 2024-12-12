@@ -1,5 +1,5 @@
+import { expect, test } from "vitest";
 import { removeElement } from "../src/remove_element.js";
-import { assertEquals } from "@std/assert";
 
 const cases = [
   {
@@ -40,9 +40,9 @@ const cases = [
 ];
 
 for (const tt of cases) {
-  Deno.test(tt.name, () => {
+  test(tt.name, () => {
     const actual = removeElement(tt.nums, tt.val);
-    assertEquals(actual, tt.want);
-    assertEquals(tt.nums.slice(0, tt.want), tt.wantNums);
+    expect(actual).toBe(tt.want);
+    expect(tt.nums.slice(0, tt.want)).toEqual(tt.wantNums);
   });
 }
