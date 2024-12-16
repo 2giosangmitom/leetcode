@@ -7,9 +7,11 @@
   },
   "scripts": {
     "test:dev": "vitest dev",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:ui": "vitest --ui"
   },
   "devDependencies": {
+    "@vitest/ui": "^2.1.8",
     "vitest": "^2.1.8"
   }
 }
