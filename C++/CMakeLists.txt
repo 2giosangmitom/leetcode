@@ -25,13 +25,13 @@ file(GLOB TEST_FILES "${CMAKE_SOURCE_DIR}/tests/*_test.cpp")
 foreach(TEST_FILE IN LISTS TEST_FILES)
   # Extract the base name of the test file (without extension)
   get_filename_component(TEST_NAME ${TEST_FILE} NAME_WE)
-  
+
   # Derive the problem name by removing the "_test" suffix
   string(REPLACE "_test" "" PROBLEM_NAME ${TEST_NAME})
   set(HEADER_FILE "${CMAKE_SOURCE_DIR}/src/${PROBLEM_NAME}.hpp")
 
   # Only proceed if the corresponding header file exists
-  if (EXISTS "${HEADER_FILE}")
+  if(EXISTS "${HEADER_FILE}")
     # Create an executable for the test
     add_executable(${TEST_NAME} ${HEADER_FILE} ${TEST_FILE})
     target_include_directories(${TEST_NAME} PRIVATE ${CMAKE_SOURCE_DIR}/src)
