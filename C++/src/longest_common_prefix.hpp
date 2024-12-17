@@ -3,10 +3,24 @@
 
 #include <string>
 #include <vector>
+using namespace std;
 
 class Solution {
 public:
-  std::string longestCommonPrefix(std::vector<std::string> &strs);
+  std::string longestCommonPrefix(std::vector<std::string> &strs) {
+    string longestPrefix = strs.empty() ? "" : strs[0];
+
+    for (size_t i = 1; i < strs.size(); i++) {
+      while (strs[i].find(longestPrefix) != 0) {
+        longestPrefix.pop_back();
+        if (longestPrefix.empty()) {
+          return "";
+        }
+      }
+    }
+
+    return longestPrefix;
+  };
 };
 
 #endif // LONGEST_COMMON_PREFIX_HPP
