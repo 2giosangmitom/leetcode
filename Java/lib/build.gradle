@@ -1,24 +1,24 @@
 plugins {
-    id 'java-library'
+  id 'java-library'
 }
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation libs.junit.jupiter
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-    api libs.commons.math3
-    implementation libs.guava
+  testImplementation libs.junit.jupiter
+  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+  api libs.commons.math3
+  implementation libs.guava
 }
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+  toolchain {
+    languageVersion = JavaLanguageVersion.of(21)
+  }
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
