@@ -17,6 +17,7 @@ enable_testing()
 
 # Include the source directory for headers
 include_directories(${CMAKE_SOURCE_DIR}/src)
+include_directories(${CMAKE_SOURCE_DIR}/lib)
 
 # Glob all test files matching *_test.cpp in the tests directory
 file(GLOB TEST_FILES "${CMAKE_SOURCE_DIR}/tests/*_test.cpp")
