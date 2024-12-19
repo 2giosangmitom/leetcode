@@ -1,4 +1,4 @@
-import { groupAnagrams } from "#src/group_anagrams.js";
+import { groupAnagrams } from "#src/group_anagrams";
 import { expect, test } from "vitest";
 
 const cases = [

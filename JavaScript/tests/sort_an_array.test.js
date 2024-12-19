@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { sortArray } from "../src/sort_an_array.js";
+import { sortArray } from "#src/sort_an_array";
 
 const cases = [
   {

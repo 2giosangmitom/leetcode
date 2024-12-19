@@ -1,5 +1,5 @@
-import { ListNode } from "#lib/linked_list.js";
-import { addTwoNumbers } from "#src/add_two_numbers.js";
+import { ListNode } from "#lib/linked_list";
+import { addTwoNumbers } from "#src/add_two_numbers";
 import { expect, test } from "vitest";
 
 const cases = [

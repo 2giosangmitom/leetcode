@@ -1,4 +1,4 @@
-import { numWaterBottles } from "../src/water_bottles.js";
+import { numWaterBottles } from "#src/water_bottles";
 import { expect, test } from "vitest";
 
 const cases = [

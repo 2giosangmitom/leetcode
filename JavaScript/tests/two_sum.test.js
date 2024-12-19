@@ -1,4 +1,4 @@
-import { twoSum } from "#src/two_sum.js";
+import { twoSum } from "#src/two_sum";
 import { expect, test } from "vitest";
 
 const cases = [

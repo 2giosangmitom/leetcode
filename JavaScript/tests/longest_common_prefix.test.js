@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from "#src/longest_common_prefix.js";
+import { longestCommonPrefix } from "#src/longest_common_prefix";
 import { expect, test } from "vitest";
 
 const cases = [

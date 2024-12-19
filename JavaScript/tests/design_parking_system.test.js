@@ -1,4 +1,4 @@
-import { ParkingSystem } from "#src/design_parking_system.js";
+import { ParkingSystem } from "#src/design_parking_system";
 import { expect, test } from "vitest";
 
 const cases = [

@@ -1,4 +1,4 @@
-import { isValid } from "#src/valid_parentheses.js";
+import { isValid } from "#src/valid_parentheses";
 import { expect, test } from "vitest";
 
 const cases = [

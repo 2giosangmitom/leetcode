@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { addBinary } from "#src/add_binary.js";
+import { addBinary } from "#src/add_binary";
 
 const cases = [
   { a: "11", b: "1", want: "100" },

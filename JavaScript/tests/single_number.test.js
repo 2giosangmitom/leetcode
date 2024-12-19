@@ -1,4 +1,4 @@
-import { singleNumber, singleNumber2 } from "../src/single_number.js";
+import { singleNumber, singleNumber2 } from "#src/single_number";
 import { expect, test } from "vitest";
 
 const cases = [

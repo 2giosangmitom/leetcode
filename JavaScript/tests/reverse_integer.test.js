@@ -1,4 +1,4 @@
-import { reverse } from "../src/reverse_integer.js";
+import { reverse } from "#src/reverse_integer";
 import { expect, test } from "vitest";
 
 const cases = [

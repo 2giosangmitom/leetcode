@@ -1,47 +1,26 @@
 /**
- * @param {string} s
- * @returns {string} the string with no leading zeros
- */
-function trimLeadingZeros(s) {
-  const firstOne = s.indexOf("1");
-  return firstOne === -1 ? "0" : s.slice(firstOne);
-}
-
-/**
  * @param {string} a
  * @param {string} b
  * @return {string}
  */
 function addBinary(a, b) {
-  let result = "";
-  a = trimLeadingZeros(a);
-  b = trimLeadingZeros(b);
+  const len_a = a.length;
+  const len_b = b.length;
 
-  if (a.length < b.length) {
-    return addBinary(b, a);
-  }
-
-  let j = b.length - 1;
+  let i = len_a - 1;
+  let j = len_b - 1;
   let carry = 0;
 
-  for (let i = a.length - 1; i >= 0; i--) {
-    let sum = +a[i] + carry;
-
-    if (j >= 0) {
-      sum += +b[j];
-      j--;
-    }
-
-    const bit = sum % 2;
+  let result = "";
+  while (j >= 0 || j >= 0 || carry > 0) {
+    let bit1 = i >= 0 ? Number(a[i--]) : 0;
+    let bit2 = j >= 0 ? Number(b[j--]) : 0;
+    let sum = bit1 + bit2 + carry;
+    result += (sum % 2).toString();
     carry = Math.floor(sum / 2);
-    result = bit.toString().concat(result);
   }
 
-  if (carry > 0) {
-    result = "1".concat(result);
-  }
-
-  return result;
+  return result.split("").reverse().join("");
 }
 
 export { addBinary };

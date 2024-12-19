@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { removeElement } from "../src/remove_element.js";
+import { removeElement } from "#src/remove_element";
 
 const cases = [
   {

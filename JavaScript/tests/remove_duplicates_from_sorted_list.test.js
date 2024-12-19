@@ -1,5 +1,5 @@
-import { deleteDuplicates } from "#src/remove_duplicates_from_sorted_list.js";
-import { ListNode } from "#lib/linked_list.js";
+import { deleteDuplicates } from "#src/remove_duplicates_from_sorted_list";
+import { ListNode } from "#lib/linked_list";
 import { expect, test } from "vitest";
 
 const cases = [

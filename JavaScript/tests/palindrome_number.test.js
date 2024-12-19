@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { isPalindrome } from "../src/palindrome_number.js";
+import { isPalindrome } from "#src/palindrome_number";
 
 const cases = [
   {
