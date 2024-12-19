@@ -14,6 +14,14 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {}
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 
+  /**
+   * This function take a vector of values in a list to create a linked list.
+   * If the vector is empty, it will return nullptr.
+   *
+   * Example:
+   * To create a list: 1 -> 2 -> 3
+   * We use: ListNode::from({1, 2, 3})
+   */
   static unique_ptr<ListNode> from(const vector<int> &values) {
     if (values.empty()) {
       return nullptr;

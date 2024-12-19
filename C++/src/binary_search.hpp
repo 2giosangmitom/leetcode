@@ -6,21 +6,21 @@ using namespace std;
 
 class Solution {
 public:
-  int search(vector<int> &nums, int target) {
-    int start = 0;
-    int end = nums.size() - 1;
+  int search(const vector<int> &nums, int target) {
+    int left = 0;
+    int right = nums.size() - 1;
 
-    while (start <= end) {
-      int middle = (end - start) / 2 + start;
+    while (left <= right) {
+      int middle = (right - left) / 2 + left;
 
       if (nums[middle] == target) {
         return middle;
       }
 
       if (nums[middle] < target) {
-        start = middle + 1;
+        left = middle + 1;
       } else {
-        end = middle - 1;
+        right = middle - 1;
       }
     }
 

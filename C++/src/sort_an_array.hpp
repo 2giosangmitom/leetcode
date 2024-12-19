@@ -45,6 +45,7 @@ public:
       k++;
     }
   };
+
   void merge_sort(vector<int> &nums, int p, int q) {
     if (p < q) {
       int m = p + (q - p) / 2;
@@ -53,6 +54,7 @@ public:
       merge(nums, p, q, m);
     }
   };
+
   vector<int> sortArray(vector<int> &nums) {
     merge_sort(nums, 0, (int)nums.size() - 1);
     return nums;

@@ -6,7 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-  int dominantIndex(vector<int> &nums) {
+  int dominantIndex(const vector<int> &nums) {
     if (nums.empty()) {
       return -1;
     }

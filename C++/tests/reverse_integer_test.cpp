@@ -43,3 +43,10 @@ TEST_F(ReverseIntegerTest, encounter_overflow) {
   int actual2 = solution.reverse(x2);
   EXPECT_EQ(actual2, want2);
 }
+
+TEST_F(ReverseIntegerTest, max_int) {
+  int x = 1463847412;
+  int want = 2147483641;
+  int actual = solution.reverse(x);
+  EXPECT_EQ(actual, want);
+}

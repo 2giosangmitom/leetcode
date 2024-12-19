@@ -8,8 +8,8 @@ protected:
 };
 
 TEST_F(RemoveElementTest, continuous_occurrences) {
-  std::vector<int> nums = {3, 2, 2, 3};
-  std::vector<int> want = {2, 2};
+  vector<int> nums = {3, 2, 2, 3};
+  vector<int> want = {2, 2};
   int val = 3;
 
   int result = solution.removeElement(nums, val);
@@ -17,13 +17,13 @@ TEST_F(RemoveElementTest, continuous_occurrences) {
   ASSERT_EQ(nums.size(), 4);
   nums.pop_back();
   nums.pop_back();
-  std::sort(nums.begin(), nums.end());
+  sort(nums.begin(), nums.end());
   ASSERT_EQ(nums, want);
 }
 
 TEST_F(RemoveElementTest, multiple_occurrences) {
-  std::vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
-  std::vector<int> want = {0, 0, 1, 3, 4};
+  vector<int> nums = {0, 1, 2, 2, 3, 0, 4, 2};
+  vector<int> want = {0, 0, 1, 3, 4};
   int val = 2;
 
   int result = solution.removeElement(nums, val);
@@ -31,13 +31,13 @@ TEST_F(RemoveElementTest, multiple_occurrences) {
   nums.pop_back();
   nums.pop_back();
   nums.pop_back();
-  std::sort(nums.begin(), nums.end());
+  sort(nums.begin(), nums.end());
   ASSERT_EQ(nums.size(), want.size());
 }
 
 TEST_F(RemoveElementTest, no_occurrences) {
-  std::vector<int> nums = {1, 2, 3, 4, 5};
-  std::vector<int> want = {1, 2, 3, 4, 5};
+  vector<int> nums = {1, 2, 3, 4, 5};
+  vector<int> want = {1, 2, 3, 4, 5};
   int val = 6;
 
   int result = solution.removeElement(nums, val);
@@ -46,8 +46,8 @@ TEST_F(RemoveElementTest, no_occurrences) {
 }
 
 TEST_F(RemoveElementTest, all_occurrences) {
-  std::vector<int> nums = {2, 2, 2, 2};
-  std::vector<int> want = {};
+  vector<int> nums = {2, 2, 2, 2};
+  vector<int> want = {};
   int val = 2;
 
   int result = solution.removeElement(nums, val);
@@ -58,8 +58,8 @@ TEST_F(RemoveElementTest, all_occurrences) {
 }
 
 TEST_F(RemoveElementTest, mixed_occurrences) {
-  std::vector<int> nums = {4, 5, 4, 6, 4, 7};
-  std::vector<int> want = {5, 6, 7};
+  vector<int> nums = {4, 5, 4, 6, 4, 7};
+  vector<int> want = {5, 6, 7};
   int val = 4;
 
   int result = solution.removeElement(nums, val);
@@ -67,6 +67,6 @@ TEST_F(RemoveElementTest, mixed_occurrences) {
   nums.pop_back();
   nums.pop_back();
   nums.pop_back();
-  std::sort(nums.begin(), nums.end());
+  sort(nums.begin(), nums.end());
   ASSERT_EQ(nums, want);
 }

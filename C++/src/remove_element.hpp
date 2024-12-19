@@ -2,10 +2,11 @@
 #define REMOVE_ELEMENT_HPP
 
 #include <vector>
+using namespace std;
 
 class Solution {
 public:
-  int removeElement(std::vector<int> &nums, int val) {
+  int removeElement(vector<int> &nums, int val) {
     int k = 0;
     for (size_t i = 0; i < nums.size(); i++) {
       if (nums[i] != val) {

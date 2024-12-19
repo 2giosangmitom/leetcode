@@ -7,7 +7,7 @@ protected:
 };
 
 TEST_F(BinarySearchTest, positive_numbers) {
-  std::vector<int> nums = {0, 3, 5, 9, 12};
+  vector<int> nums = {0, 3, 5, 9, 12};
   int target = 9;
   int expected = 3;
   int result = solution.search(nums, target);
@@ -15,7 +15,7 @@ TEST_F(BinarySearchTest, positive_numbers) {
 }
 
 TEST_F(BinarySearchTest, negative_numbers) {
-  std::vector<int> nums = {-12, -9, -5, -3, 0};
+  vector<int> nums = {-12, -9, -5, -3, 0};
   int target = -9;
   int expected = 1;
   int result = solution.search(nums, target);
@@ -23,7 +23,7 @@ TEST_F(BinarySearchTest, negative_numbers) {
 }
 
 TEST_F(BinarySearchTest, mixed_numbers) {
-  std::vector<int> nums = {-12, -9, 0, 3, 5, 9, 12};
+  vector<int> nums = {-12, -9, 0, 3, 5, 9, 12};
   int target = 0;
   int expected = 2;
   int result = solution.search(nums, target);

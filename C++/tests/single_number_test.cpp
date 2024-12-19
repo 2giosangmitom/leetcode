@@ -7,7 +7,7 @@ protected:
 };
 
 TEST_F(SingleNumberTest, same_numbers_twice) {
-  std::vector<int> nums = {2, 2, 1};
+  vector<int> nums = {2, 2, 1};
   int expected = 1;
   int result = solution.singleNumber(nums);
   int result2 = solution.singleNumber2(nums);
@@ -16,7 +16,7 @@ TEST_F(SingleNumberTest, same_numbers_twice) {
 }
 
 TEST_F(SingleNumberTest, same_numbers_interleaved) {
-  std::vector<int> nums = {4, 1, 2, 1, 2};
+  vector<int> nums = {4, 1, 2, 1, 2};
   int expected = 4;
   int result = solution.singleNumber(nums);
   int result2 = solution.singleNumber2(nums);
@@ -25,7 +25,7 @@ TEST_F(SingleNumberTest, same_numbers_interleaved) {
 }
 
 TEST_F(SingleNumberTest, one_element) {
-  std::vector<int> nums = {1};
+  vector<int> nums = {1};
   int expected = 1;
   int result = solution.singleNumber(nums);
   int result2 = solution.singleNumber2(nums);

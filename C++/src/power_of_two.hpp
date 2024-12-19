@@ -1,5 +1,6 @@
 #ifndef POWER_OF_TWO_HPP
 #define POWER_OF_TWO_HPP
+
 #include <cmath>
 
 class Solution {
@@ -18,7 +19,7 @@ public:
     }
 
     double need = log2(n);
-    double t = (int)need;
+    int t = need;
     return t == need;
   };
 };

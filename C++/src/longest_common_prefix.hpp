@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution {
 public:
-  std::string longestCommonPrefix(std::vector<std::string> &strs) {
+  string longestCommonPrefix(const vector<string> &strs) {
     string longestPrefix = strs.empty() ? "" : strs[0];
 
     for (size_t i = 1; i < strs.size(); i++) {

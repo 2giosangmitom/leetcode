@@ -14,6 +14,7 @@ public:
     }
     return result;
   };
+
   int singleNumber2(vector<int> &nums) {
     sort(nums.begin(), nums.end());
     for (size_t i = 1; i < nums.size(); i += 2) {

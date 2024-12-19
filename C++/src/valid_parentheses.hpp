@@ -3,16 +3,17 @@
 
 #include <string>
 #include <vector>
+using namespace std;
 
 class Solution {
 public:
-  bool isValid(std::string s) {
+  bool isValid(string s) {
     int length = s.length();
     if (length % 2 != 0) {
       return false;
     }
 
-    std::vector<char> stack;
+    vector<char> stack;
     for (char c : s) {
       if (c == '(' || c == '{' || c == '[') {
         stack.push_back(c);
