@@ -6,8 +6,8 @@
 class Solution {
 public:
   ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
-    ListNode dummy(0);
-    ListNode *tail = &dummy;
+    ListNode *dummy_head = new ListNode();
+    ListNode *tail = dummy_head;
     int carry = 0;
 
     while (l1 || l2 || carry) {
@@ -26,7 +26,7 @@ public:
         l2 = l2->next;
     }
 
-    return dummy.next;
+    return dummy_head->next;
   }
 };
 

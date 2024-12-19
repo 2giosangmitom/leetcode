@@ -2,11 +2,16 @@
 #define LINKED_LIST_HPP
 
 #include <cstddef>
-#include <memory>
+#include <sstream>
+#include <string>
 #include <vector>
 using namespace std;
 
-struct ListNode {
+/**
+ * A simple singly linked list node structure.
+ */
+class ListNode {
+public:
   int val;
   ListNode *next;
 
@@ -15,20 +20,19 @@ struct ListNode {
   ListNode(int x, ListNode *next) : val(x), next(next) {}
 
   /**
-   * This function take a vector of values in a list to create a linked list.
-   * If the vector is empty, it will return nullptr.
+   * Constructs a linked list from a vector of integers.
+   * If the vector is empty, returns nullptr.
    *
-   * Example:
-   * To create a list: 1 -> 2 -> 3
-   * We use: ListNode::from({1, 2, 3})
+   * @param values A vector of integers to construct the list.
+   * @return A pointer to the head of the linked list.
    */
-  static unique_ptr<ListNode> from(const vector<int> &values) {
+  static ListNode *from(const std::vector<int> &values) {
     if (values.empty()) {
       return nullptr;
     }
 
-    auto head = make_unique<ListNode>(values[0]);
-    ListNode *tail = head.get();
+    ListNode *head = new ListNode(values[0]);
+    ListNode *tail = head;
 
     for (size_t i = 1; i < values.size(); ++i) {
       tail->next = new ListNode(values[i]);
@@ -38,16 +42,39 @@ struct ListNode {
     return head;
   }
 
-  bool operator==(ListNode *other) {
-    ListNode *current = this;
-    while (current != nullptr && other != nullptr) {
-      if (current->val != other->val) {
-        return false;
+  /**
+   * Converts the linked list to a string representation.
+   *
+   * @return A string representation of the list in the format "1 -> 2 -> 3".
+   */
+  string to_string() {
+    stringstream ss;
+    const ListNode *current = this;
+    if (!current) {
+      return "";
+    }
+
+    while (current) {
+      ss << current->val;
+      if (current->next) {
+        ss << " -> ";
       }
       current = current->next;
-      other = other->next;
     }
-    return current == nullptr && other == nullptr;
+
+    return ss.str();
+  }
+
+  /**
+   * Deletes the linked list starting from this node.
+   */
+  ~ListNode() {
+    ListNode *current = this;
+    while (current) {
+      ListNode *nextNode = current->next;
+      delete current;
+      current = nextNode;
+    }
   }
 };
 
