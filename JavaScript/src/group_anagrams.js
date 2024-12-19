@@ -19,7 +19,7 @@ function groupAnagrams(strs) {
 
   /** @type {string[][]} */
   const result = [];
-  map.forEach((v, _k) => {
+  map.forEach((v) => {
     result.push(v);
   });
 

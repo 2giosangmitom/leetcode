@@ -1,8 +1,6 @@
-import { ListNode } from "#lib/linked_list.js";
-
 /**
- * @param {ListNode} head
- * @return {ListNode}
+ * @param {import("../lib/linked_list").ListNode} head
+ * @returns {import("../lib/linked_list").ListNode}
  */
 function deleteDuplicates(head) {
   if (!head) {
